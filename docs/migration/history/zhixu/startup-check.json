@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-04T13:33:00.709Z",
+  "status": "passed",
+  "url": "http://localhost:3200/",
+  "pid": 42259,
+  "title": "Zhixu",
+  "homepage": 200,
+  "asset": "/assets/index-BiUfAYpF.js",
+  "assetStatus": 200,
+  "experience": "learning",
+  "memory": {
+    "l1Enabled": true,
+    "l2Enabled": true,
+    "l3Enabled": true
+  },
+  "hasConfiguredKey": false,
+  "goals": 0,
+  "sessions": 0,
+  "channels": [],
+  "mcpEnabled": false,
+  "config": "/Users/lili/Desktop/zhixu/runtime/zhixu/config/config.json",
+  "data": "/Users/lili/Desktop/zhixu/runtime/zhixu/data",
+  "workspace": "/Users/lili/Desktop/zhixu/workspace"
+}

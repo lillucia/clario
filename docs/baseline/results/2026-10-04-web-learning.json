@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 1,
+  "kind": "focused-web-learning-acceptance",
+  "createdAt": "2026-10-04T12:44:54.337Z",
+  "status": "passed-with-observations",
+  "referenceCommit": "fc74cd6a283e8226a4307ea8c3046c715cb6e5f3",
+  "applicationSourceUnchanged": false,
+  "runDirectory": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "method": "Real production frontend preparation helper and HTTP/SSE/PTY with synthetic inputs; browser separately verifies 3100 UI using preserved original records. New-tab browser navigation to 3101 was client-blocked; no claim of clicking through the complete fresh flow.",
+  "automatedRegression": {
+    "directory": "runtime/baseline/runs/2026-10-04T12-36-09-395Z-32730",
+    "files": 108,
+    "tests": 847,
+    "checks": [
+      {
+        "id": "node-engine",
+        "status": "passed"
+      },
+      {
+        "id": "sqlite-fts5",
+        "status": "passed"
+      },
+      {
+        "id": "lockfile-unchanged",
+        "status": "passed"
+      },
+      {
+        "id": "key-dependency-versions",
+        "status": "passed"
+      },
+      {
+        "id": "harness-tests",
+        "status": "passed"
+      },
+      {
+        "id": "build",
+        "status": "passed"
+      },
+      {
+        "id": "tests",
+        "status": "passed"
+      },
+      {
+        "id": "l2-retrieval",
+        "status": "passed"
+      },
+      {
+        "id": "core-fixtures",
+        "status": "passed"
+      },
+      {
+        "id": "web-pty",
+        "status": "passed"
+      },
+      {
+        "id": "required-suites-executed",
+        "status": "passed"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "goal-id-reused",
+      "status": "passed",
+      "details": "goal_4752e711"
+    },
+    {
+      "id": "material-actually-read",
+      "status": "passed",
+      "details": "learning-materials/6e1f3d28-40a5-4b53-9ede-70363f71fba9/Python 列表索引材料.md"
+    },
+    {
+      "id": "original-teaching-entry",
+      "status": "passed",
+      "details": "proceed"
+    },
+    {
+      "id": "real-turns-completed",
+      "status": "passed",
+      "details": 2
+    },
+    {
+      "id": "no-tool-errors",
+      "status": "passed",
+      "details": [
+        "record_learning_event",
+        "read",
+        "get_learner_context",
+        "assess_learning_prerequisites",
+        "record_learning_evidence",
+        "record_learning_evidence",
+        "create_practice_lab",
+        "l2_archive"
+      ]
+    },
+    {
+      "id": "model-assessment-provenance",
+      "status": "passed",
+      "details": [
+        {
+          "id": "evd_056e28ba",
+          "evaluator": "model",
+          "state": "fragile"
+        },
+        {
+          "id": "evd_3aabf479",
+          "evaluator": "model",
+          "state": "fragile"
+        }
+      ]
+    },
+    {
+      "id": "archive-truthful-provenance",
+      "status": "passed",
+      "details": {
+        "id": "l2src_238beb71",
+        "rawPath": "raw/uploads/2026-10-04-python-列表索引与-len-边界规则-af79ef.md",
+        "wikiPagePath": "wiki/sources/Python 列表索引与 len 边界规则.md",
+        "linkedPages": [
+          "wiki/concepts/python-列表索引边界规则.md",
+          "wiki/concepts/零基索引zero-based-indexing.md",
+          "wiki/entities/python-列表list.md",
+          "wiki/entities/indexerror.md",
+          "wiki/entities/python.md"
+        ],
+        "reviewCount": 2,
+        "reviewSource": "archive_generation",
+        "lintPerformed": false,
+        "warnings": []
+      }
+    },
+    {
+      "id": "existing-wiki-start-preparation",
+      "status": "passed",
+      "details": "wiki/sources/Python 列表索引与 len 边界规则.md"
+    },
+    {
+      "id": "practice-output-persisted",
+      "status": "passed",
+      "details": {
+        "id": "run_99f848c2983a",
+        "command": "python3 main.py",
+        "workspaceId": "python-len-4269b1ef",
+        "exitCode": 0
+      }
+    },
+    {
+      "id": "failed-practice-retained",
+      "status": "passed",
+      "details": "python missing; failed record retained, python3 rerun passed"
+    },
+    {
+      "id": "l3-turn-index-retained",
+      "status": "passed",
+      "details": {
+        "session_id": "2026-10-04T12-33-03-587Z_01a106e7-4a63-7d83-82f2-9f5ec1466f09.jsonl",
+        "chunk_count": 4
+      }
+    },
+    {
+      "id": "original-43-evidence-files-unchanged",
+      "status": "passed",
+      "details": 43
+    }
+  ],
+  "observations": [
+    {
+      "id": "python-runtime",
+      "status": "open",
+      "detail": "This machine has python3 but no python. Existing Run shortcut defaults to python; command fails with exit 127. Running python3 main.py passes. No system alias was installed and no record was hidden."
+    },
+    {
+      "id": "evidence-session-link",
+      "status": "open",
+      "detail": "The model passed goal_id in record_learning_evidence.session_id for two items. Evaluator and state are valid, but session attribution must not be claimed correct; unchanged L1 contract remains permissive."
+    }
+  ],
+  "deployment": {
+    "at": "2026-10-04T12:39:41.934Z",
+    "results": [
+      {
+        "port": 3100,
+        "pid": 33684,
+        "environment": "/Users/lili/Desktop/inno-agent/runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment",
+        "coldHomepage": 200,
+        "asset": "/assets/index-C0cOwBTS.js",
+        "status": "passed",
+        "experience": "learning",
+        "memory": {
+          "l1Enabled": true,
+          "l2Enabled": true,
+          "l3Enabled": true
+        },
+        "sessionIds": [
+          "2026-10-04T05-42-55-945Z_01a1056f-cec9-7b87-b804-2d2363db0da9.jsonl",
+          "2026-10-04T05-33-39-360Z_01a10567-50a0-7151-a249-83af44e62ee5.jsonl"
+        ],
+        "channels": [],
+        "mcp": {
+          "enabled": false,
+          "adapterLoaded": false,
+          "configPath": "/Users/lili/Desktop/inno-agent/runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/config/mcp.json",
+          "servers": [],
+          "status": null
+        }
+      },
+      {
+        "port": 3101,
+        "pid": 33701,
+        "environment": "/Users/lili/Desktop/inno-agent/runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment",
+        "coldHomepage": 200,
+        "asset": "/assets/index-C0cOwBTS.js",
+        "status": "passed",
+        "experience": "learning",
+        "memory": {
+          "l1Enabled": true,
+          "l2Enabled": true,
+          "l3Enabled": true
+        },
+        "sessionIds": [
+          "2026-10-04T12-33-03-587Z_01a106e7-4a63-7d83-82f2-9f5ec1466f09.jsonl"
+        ],
+        "channels": [],
+        "mcp": {
+          "enabled": false,
+          "adapterLoaded": false,
+          "configPath": "/Users/lili/Desktop/inno-agent/runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/config/mcp.json",
+          "servers": [],
+          "status": null
+        }
+      }
+    ],
+    "originalEvidence": {
+      "before": [
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/answer.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/after-answer-profile.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/archive_and_query.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/after-teach-events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/answer.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/archive_and_query.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/cross_session_recall.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach-input.txt",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/session-A.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.waiting.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/after-teach-profile.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/after-answer-events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/cross_session_recall.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/answer.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding-answer.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.responses.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/answer.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/archive_and_query.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/session-B.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/archive_and_query.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/cross_session_recall.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/cross_session_recall.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/inspection-final.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/inspection-archive.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/inspect-memory.mjs",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/drive.mjs",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/fixtures/exercise.md",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/fixtures/expected-checks.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/fixtures/study-note.md",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/fixtures/flow.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/data/learner/profile.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/data/learner/events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/data/l2/manifest.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/data/l2/reviews.jsonl",
+          "matches": true
+        },
+        {
+          "path": "docs/baseline/results/2026-10-04-live-learning.png",
+          "matches": true
+        }
+      ],
+      "after": [
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/answer.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/after-answer-profile.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/archive_and_query.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/after-teach-events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/answer.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/archive_and_query.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/cross_session_recall.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach-input.txt",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/session-A.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.waiting.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/after-teach-profile.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/after-answer-events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/cross_session_recall.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/answer.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/teach.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding-answer.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.responses.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/answer.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/archive_and_query.events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/session-B.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/archive_and_query.result.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/cross_session_recall.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/cross_session_recall.request.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/captures/onboarding.session.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/inspection-final.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/inspection-archive.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/inspect-memory.mjs",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/drive.mjs",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/fixtures/exercise.md",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/fixtures/expected-checks.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/fixtures/study-note.md",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/fixtures/flow.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/data/learner/profile.json",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/data/learner/events.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/data/l2/manifest.jsonl",
+          "matches": true
+        },
+        {
+          "path": "runtime/baseline/live-learning/2026-10-04T04-41-00-845Z-4482/environment/data/l2/reviews.jsonl",
+          "matches": true
+        },
+        {
+          "path": "docs/baseline/results/2026-10-04-live-learning.png",
+          "matches": true
+        }
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/answer.events.jsonl",
+      "sha256": "4ddba706b9839456ca71525c4bd879a344dff87c35899058908477de7a9a6783",
+      "bytes": 1433570
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/answer.profile.json",
+      "sha256": "2c4a14d61113d97aa880cbec794b396fdf91450e5017b3e604d09ecbb6966631",
+      "bytes": 2843
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/answer.request.json",
+      "sha256": "58b8846091f2f921b98ceff0ca73481baace9f0fee2c5718b16ce6918a246c8a",
+      "bytes": 626
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/answer.result.json",
+      "sha256": "7748dd1690e92019e06ffb1c72c2a144eed50414e039d08f8efea647e47bb12f",
+      "bytes": 2593
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/answer.session.json",
+      "sha256": "6b3577b24d1a472c822aefa0ab352cf897b5775c3509d1404cebf55c4d1de864",
+      "bytes": 148100
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/draft.json",
+      "sha256": "553569c92fc0bc5a60d09ecaa58991714fb20340054f7d6afa331de88e0e3a09",
+      "bytes": 751
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/input.json",
+      "sha256": "18af5e37304c2a308d2dadec68b084a1b9984144db7791c067e5127a5913e4c6",
+      "bytes": 541
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/practice.json",
+      "sha256": "38de11832e8138693ba781c91b8a2e058fd85be4afa216db14372e9092a1a4e4",
+      "bytes": 2656
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/prepared.json",
+      "sha256": "4d7a5c438268a7a93e8b64df2be64a93882b05efdcb4044e44c2b62e3d1be93e",
+      "bytes": 1305
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/session.json",
+      "sha256": "c2066abf26eab48cc46fac26653d32fa4d9787598e8fc811e8cd579195cf8b1a",
+      "bytes": 140
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/start.events.jsonl",
+      "sha256": "b560c10ecdf2a306ab7872033e8334c90fb1719a14f850879d1291fc6c7c3b7a",
+      "bytes": 612466
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/start.profile.json",
+      "sha256": "d443de5065aa002b931a2994ebeb4b1c754ccbdff3027f2b26e36d20b24d9bfc",
+      "bytes": 1655
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/start.request.json",
+      "sha256": "f18fa3dc57fddde53ff5955e8e889acbe55a1f1e382481190d092ebbec704aa7",
+      "bytes": 1383
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/start.result.json",
+      "sha256": "baf36af1f01822c044eb2b1a6f60f544b07ea97c7f53253d91447a2ee2d4a82e",
+      "bytes": 1807
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/start.session.json",
+      "sha256": "249f2c5fb252e79edaba092900f13a93a859a3b5c19c0347ca27974d8f1f7c7c",
+      "bytes": 57814
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/wiki-pages.json",
+      "sha256": "87441009748e2bf3ea268bdac3e6a24d1e43e0ddfadd8dff5ddde0fdcd5e9592",
+      "bytes": 7009
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/wiki-prepared.json",
+      "sha256": "62ddb6d6aa5c53b36073205af58eecb6aa64c852c0db3cfbd2b9ec734cb93d4f",
+      "bytes": 1207
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/captures/workspaces.json",
+      "sha256": "bdeb602c494a00115dd662707789423b5ef1d377a31a8c9ce594b89da83fcb6f",
+      "bytes": 581
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/data/learner/events.jsonl",
+      "sha256": "7d96c22137f9cff35adc1db3957ce54ab3c89e9fcd1a9e740c52154437d3228a",
+      "bytes": 1997
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/data/learner/profile.json",
+      "sha256": "2c4a14d61113d97aa880cbec794b396fdf91450e5017b3e604d09ecbb6966631",
+      "bytes": 2843
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/data/runs/2026-10-04/run_99f848c2983a.json",
+      "sha256": "b056a8aa4ac5c832f9975ddd7592406640987d840a2b6a4a0f41fcaa216894bd",
+      "bytes": 647
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/data/runs/2026-10-04/run_99f848c2983a.log",
+      "sha256": "483e23f44409de29653998cfe69231cb5cc1a0d7168b628145c0c6f6b885b934",
+      "bytes": 959
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/data/runs/2026-10-04/run_dc9c0f65c2c7.json",
+      "sha256": "eac2a8e43c62a946767e5296ea455133f58ededd98b6797b8a7d0954b3bf1e10",
+      "bytes": 648
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/data/runs/2026-10-04/run_dc9c0f65c2c7.log",
+      "sha256": "886dc9e4654fc80f09c5079e45ac15a1f68533a76d1b3dd727f605f21b4de84e",
+      "bytes": 621
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/workspace/agent.md",
+      "sha256": "b770e7ce28380232e5c9cd6aa1222acb34f61ee809114ae62c1aeafdc6c1ce95",
+      "bytes": 127
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/workspace/python-len-4269b1ef/README.md",
+      "sha256": "bef6893b1c9d1f459ff8e8ac747494d6ba5b15aef91e2940c637a4c26e9624ee",
+      "bytes": 350
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/workspace/python-len-4269b1ef/learning-materials/6e1f3d28-40a5-4b53-9ede-70363f71fba9/Python 列表索引材料.md",
+      "sha256": "0d5cb7583d70c2bbfdbc8e746cad828006b396ba456418b763ce0d16e7452b54",
+      "bytes": 344
+    },
+    {
+      "path": "runtime/baseline/web-learning/2026-10-04T12-24-59-732Z-30428/environment/workspace/python-len-4269b1ef/main.py",
+      "sha256": "7830326144626e6309c0f99af7e8e0eaf5dfdb7a758df5dc6e46efd7e853187c",
+      "bytes": 1537
+    }
+  ],
+  "notVerified": [
+    "Browser click-through of the complete fresh 3101 flow; new-tab navigation was blocked by the client.",
+    "The new live run does not exercise required-prerequisite blocking, l2_query or l3_recall; existing baseline tests and earlier live evidence are preserved.",
+    "Explanation exposure events were not recorded in this live flow.",
+    "The archived L2 content is a model-written summary with a source path in its body, not a byte-identical original-file provenance chain."
+  ],
+  "browser": {
+    "url": "http://localhost:3100/",
+    "checked": [
+      "learning-mode navigation",
+      "goal input",
+      "existing wiki selection and preview",
+      "existing workspace selection",
+      "original learner profile",
+      "practice page and history selection",
+      "return to learning homepage"
+    ],
+    "screenshot": "docs/baseline/results/2026-10-04-web-learning.png"
+  }
+}

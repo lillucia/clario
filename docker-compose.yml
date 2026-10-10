@@ -1,0 +1,16 @@
+services:
+  clario:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      INNO_CONFIG_DIR: /etc/clario
+      INNO_DATA_DIR: /var/lib/clario/data
+      INNO_SKILLS_DIR: /var/lib/clario/skills
+      INNO_WORKSPACE_DIR: /srv/clario-workspace
+      INNO_PORT: 3000
+    volumes:
+      - ./runtime/config:/etc/clario
+      - ./runtime/data:/var/lib/clario/data
+      - ./runtime/skills:/var/lib/clario/skills
+      - ./workspace:/srv/clario-workspace

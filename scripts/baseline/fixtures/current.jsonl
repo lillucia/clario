@@ -1,0 +1,2 @@
+{"type":"session","version":3,"id":"baseline-current","timestamp":"2026-08-02T10:00:00.000Z","cwd":"/synthetic/baseline"}
+{"type":"message","id":"current-user","timestamp":"2026-08-02T10:00:01.000Z","message":{"role":"user","content":[{"type":"text","text":"现在的会话也在讨论机器学习，需要排除当前会话。"}]}}

@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-10-04T14:57:59.160110+00:00",
+  "status": "passed",
+  "upstream": {
+    "repository": "https://github.com/hhyqhh/inno-agent",
+    "commit": "663789c187e25f9efca97e9129701cc05702e24a",
+    "pullRequest": 243,
+    "lockfileSha256": "cff4bd270ff6e65c98c29ac2d6053a284d1918dce7a8bc484355484e49a05bc9",
+    "dependencyFingerprint": {
+      "externalPackageCount": 1618,
+      "externalPackagesSha256": "0ee852d94352ed86026c118e67a8a42f0ac0dfd9cb933d1ed392525512a0e067",
+      "dependencyDeclarationsSha256": "74f14d6cb284ea2af60c34fea186f83d18681ac1a5a44757bc52d9b61b2e1b1f"
+    }
+  },
+  "lockfileSha256": "9a25a017375e013bf86e532750411a3d054f5b66b68b167ddee5ccb7da607d1d",
+  "node": "v24.19.0",
+  "baseline": {
+    "report": "runtime/baseline/runs/2026-10-04T14-54-30-056Z-60593/report.json",
+    "reportSha256": "d489bcf906198344a4e32dc1b514e42413ac8d577147f5b72524c1e6337677fc",
+    "testFiles": 111,
+    "tests": {
+      "passed": true,
+      "total": 862,
+      "passedTests": 862,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "todoTests": 0,
+      "missing": [],
+      "incomplete": []
+    },
+    "harnessTests": 17,
+    "checks": [
+      {
+        "id": "node-engine",
+        "status": "passed"
+      },
+      {
+        "id": "sqlite-fts5",
+        "status": "passed"
+      },
+      {
+        "id": "dependency-upgrade-lineage",
+        "status": "passed"
+      },
+      {
+        "id": "lockfile-upgrade-pinned",
+        "status": "passed"
+      },
+      {
+        "id": "upstream-dependencies-matched",
+        "status": "passed"
+      },
+      {
+        "id": "migration-evidence-preserved",
+        "status": "passed"
+      },
+      {
+        "id": "historical-evidence-preserved",
+        "status": "passed"
+      },
+      {
+        "id": "key-dependency-versions",
+        "status": "passed"
+      },
+      {
+        "id": "harness-tests",
+        "status": "passed"
+      },
+      {
+        "id": "build",
+        "status": "passed"
+      },
+      {
+        "id": "tests",
+        "status": "passed"
+      },
+      {
+        "id": "l2-retrieval",
+        "status": "passed"
+      },
+      {
+        "id": "core-fixtures",
+        "status": "passed"
+      },
+      {
+        "id": "web-pty",
+        "status": "passed"
+      },
+      {
+        "id": "required-suites-executed",
+        "status": "passed"
+      }
+    ]
+  },
+  "web": {
+    "checkedAt": "2026-10-04T14:56:09.815Z",
+    "status": "passed",
+    "pid": 61327,
+    "url": "http://localhost:3200/",
+    "checks": [
+      "health",
+      "html-title",
+      "built-javascript",
+      "web-manifest",
+      "learning-profile",
+      "L1/L2/L3-enabled",
+      "extensions-disabled",
+      "mcp-disabled",
+      "channels-empty",
+      "application-config-unchanged"
+    ],
+    "hasConfiguredModelKey": false,
+    "realProviderAcceptance": "not_run"
+  },
+  "originalSource": {
+    "directory": "/Users/lili/Desktop/inno-agent",
+    "filesChecked": 611,
+    "unchanged": true
+  },
+  "rollback": {
+    "directory": "runtime/upgrades/pi-0.99.2-20261004/before",
+    "filesVerified": 629
+  },
+  "changedFiles": [
+    {
+      "path": "CLAUDE.md",
+      "beforeSha256": "f8f0588d620d397ef3f7e36e82fcc99e1a6158fd4a2e0125e4785971ed27a630",
+      "afterSha256": "f9c4ddbe415e588ac3ad250b2c04be761731d27cd469e1e7d21048caaf07d35e"
+    },
+    {
+      "path": "README.md",
+      "beforeSha256": "a3d4bb3626f0d624339bc912a18885191b41855d2a694401c917535ddf3984b1",
+      "afterSha256": "b8023135dc606c3576dabc432dff98e258bbefb81eb9847175574442a33c72b8"
+    },
+    {
+      "path": "apps/clario/package.json",
+      "beforeSha256": "af51d7885560fa1545e217497dd94d9dcb5b676ff1622dfc0804f44d127143b9",
+      "afterSha256": "a4bc50688f534a05e56a4f9962fef041cabcbb2560338f6b42c37411c8e1f4c2"
+    },
+    {
+      "path": "apps/clario/src/agent/context-usage.test.ts",
+      "beforeSha256": "a65b27f8e6b3618455f15ca58c58cdc975d20a03bd5ae09d31a1f3c7143ae930",
+      "afterSha256": "17e313c1c99e51939cfeb26655f70bb560bd3975c4c79826387227ba1d3bcc3f"
+    },
+    {
+      "path": "apps/clario/src/agent/context-usage.ts",
+      "beforeSha256": "9e2b9f8d9306a4f4c9ffb962d7dd816a8e155900c96359b3ff83449ee738e1b2",
+      "afterSha256": "954838c03df9d2244394ad4715d5c433467f4ad82fbe4d8ba250cb760dd94480"
+    },
+    {
+      "path": "apps/clario/src/agent/mcp-extension.ts",
+      "beforeSha256": "e08cadc9c07895201fa368521fff29cb1d94bdec64d3207469440103da31ece2",
+      "afterSha256": "6b4dd9c29b920d40ce56796cc6f01e4e3465216b9449914167e112dec613a295"
+    },
+    {
+      "path": "apps/clario/src/agent/pi-runner.ts",
+      "beforeSha256": "90fae18ca4a0cdfe8b71f1868ae04e5d6008b4b3f6333aa01d87e05eac3557ef",
+      "afterSha256": "8f0d459950e12e37ee850940378d41244399fed451a30b83c5763b95b4973b67"
+    },
+    {
+      "path": "apps/clario/src/agent/teaching-entry-agent.test.ts",
+      "beforeSha256": "d6ffb3e186b265fb336cc3fcddd32c24bb67d6845a76da23197a971a9bd16c69",
+      "afterSha256": "9a4242adbadeccb53fdf412698532690733a2026c5374577f53581c2d4974538"
+    },
+    {
+      "path": "apps/clario/src/cli.ts",
+      "beforeSha256": "ccb0861194e4be7a5751d9b8831f3e48141111ea1d44aef48321ac8ac3712913",
+      "afterSha256": "8428c8597560504b3a0581a240c2276648071d2f02a2b6719f5fb8491647e1a6"
+    },
+    {
+      "path": "apps/clario/src/config.ts",
+      "beforeSha256": "c8ddb31b0edfec156a235c68a4cc19e24ed6d7e21c5760161617778a259a4586",
+      "afterSha256": "1f3d9ede92de2b43ce5750519e342ba26eebb7794ef69c4b9bbd5989b3511161"
+    },
+    {
+      "path": "apps/clario/src/mcp/mcp-config-store.ts",
+      "beforeSha256": "9373759a723042fb71eb27d5dbefc90fb9f71725774adda86233e8bc357a3f44",
+      "afterSha256": "13204203cc0c704567fe3c36f32d41b71a013dfd90edea712484e682488003a6"
+    },
+    {
+      "path": "apps/clario/src/server.ts",
+      "beforeSha256": "522bf89edde46bd7ca90d6043e87b6f0a4f6ac673254ef2b0b8818442d5ed6f4",
+      "afterSha256": "928cc20efc35c395942ac76076b1f916af1368313db5883d9a2f79116249f2c4"
+    },
+    {
+      "path": "apps/clario/src/server/routes/settings.ts",
+      "beforeSha256": "64a691a0e4939ac5e77dcea8c081bf65b9ddbde53a31deb96a9cfb3d244d0ee9",
+      "afterSha256": "be80092306be03366d019cbf40b5608c7d694dfa961309030dba9ee95fd31c9a"
+    },
+    {
+      "path": "apps/clario/web/package.json",
+      "beforeSha256": "007d7f7ef08de4b039f939250b9ec07ba191019007f1092790109f2c3254d061",
+      "afterSha256": "23b3eb51103f6993edab72d9436cc4d6ddf5327265f5b1810c08c5ae5d5d1228"
+    },
+    {
+      "path": "package-lock.json",
+      "beforeSha256": "aed923df0d3cc1c4ff31ca010fe2b66ced34f71cfbc4be6def6da858f8483e07",
+      "afterSha256": "9a25a017375e013bf86e532750411a3d054f5b66b68b167ddee5ccb7da607d1d"
+    },
+    {
+      "path": "package.json",
+      "beforeSha256": "791e5804a18b25439919e0130fc7f173d044d2c2a85f1fb59d81b76c8708563f",
+      "afterSha256": "fc34519d314da7a941ba7e0e0ac415b977c200ca22be9eaa3c7f48203db0fcda"
+    },
+    {
+      "path": "scripts/baseline/cli.mjs",
+      "beforeSha256": "39140e5b5078c6aa6d8ebd5245180664f4c614962f71bb07ea16ad2574994e65",
+      "afterSha256": "6f7e22cb1825bc041e68dc1e0259e551b4855f968194f470892532e14de249f5"
+    },
+    {
+      "path": "scripts/baseline/common.mjs",
+      "beforeSha256": "42bb76a323f5cd3b5215fe6e540186704521926c11f4b3f310dd150df7fe4d88",
+      "afterSha256": "0830b5ac1b8f2516decc57902489962b77c6772f1be7d89d7b149bef261c940d"
+    },
+    {
+      "path": "scripts/baseline/common.test.mjs",
+      "beforeSha256": "895cee32b38d9491c074d51c5ea7bc075251e2258dcd8d5ab18a9ee2ac79f78c",
+      "afterSha256": "793b4059b995118d5c7161ad5d793963bd9c8f7481cc21ce58ed559d921bb0b5"
+    }
+  ],
+  "addedFiles": [
+    {
+      "path": "apps/clario/src/agent/pi-runner-context.test.ts",
+      "sha256": "4329cba10b981e2ee7d7411deeb92398af46a1dd21b7dc7053068ad5ff22ac84"
+    },
+    {
+      "path": "apps/clario/src/mcp/cli-mcp.test.ts",
+      "sha256": "195e20611b27231b1a5f8d6d564f2abfb40f2247d006b5ea97992b79037e2547"
+    },
+    {
+      "path": "apps/clario/src/mcp/mcp-config-store.test.ts",
+      "sha256": "df8f6f5b2d2084862da614f72a7dd90a44e8487def97314dccbb50fd18864ca9"
+    },
+    {
+      "path": "docs/upgrades/pi-0.99.2.json",
+      "sha256": "d6922c7c8ef64a5e8cb76be84eaec26f062178290f253ba7ca7cea5cd3a5d5a3"
+    },
+    {
+      "path": "docs/upgrades/pi-0.99.2.md",
+      "sha256": "1544389867cde964de237981e9f0f4b151e3808aecb6b359ce298a49886d0ce4"
+    }
+  ],
+  "realProviderAcceptance": "not_run: no configured model key in the Clario runtime",
+  "globalSkill": "unchanged; compatibility update proposal in pi-0.99.2.md"
+}

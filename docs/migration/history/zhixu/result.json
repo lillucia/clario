@@ -1,0 +1,3787 @@
+{
+  "schemaVersion": 1,
+  "name": "知序 / Zhixu",
+  "createdAt": "2026-10-04T13:34:02.957Z",
+  "status": "passed",
+  "root": "/Users/lili/Desktop/zhixu",
+  "source": "/Users/lili/Desktop/inno-agent",
+  "sourceFiles": 611,
+  "originalSourceUnchanged": true,
+  "independentRepository": true,
+  "branch": "codex/zhixu-import",
+  "hasRemote": false,
+  "dependencies": {
+    "copied": true,
+    "independentFiles": true,
+    "linksChecked": 111,
+    "linksToOriginal": [],
+    "brokenLinks": []
+  },
+  "licensePreserved": true,
+  "excluded": [
+    "original .git history/remotes",
+    "original runtime/config and credentials",
+    "original learner/chat/wiki/run data",
+    "original workspace files",
+    "compiled builds (rebuilt in the new project)"
+  ],
+  "baseline": {
+    "directory": "runtime/baseline/runs/2026-10-04T13-29-45-297Z-41202/report.json",
+    "checks": [
+      {
+        "id": "node-engine",
+        "status": "passed"
+      },
+      {
+        "id": "sqlite-fts5",
+        "status": "passed"
+      },
+      {
+        "id": "lockfile-migration-pinned",
+        "status": "passed"
+      },
+      {
+        "id": "external-dependencies-unchanged",
+        "status": "passed"
+      },
+      {
+        "id": "historical-evidence-preserved",
+        "status": "passed"
+      },
+      {
+        "id": "key-dependency-versions",
+        "status": "passed"
+      },
+      {
+        "id": "harness-tests",
+        "status": "passed"
+      },
+      {
+        "id": "build",
+        "status": "passed"
+      },
+      {
+        "id": "tests",
+        "status": "passed"
+      },
+      {
+        "id": "l2-retrieval",
+        "status": "passed"
+      },
+      {
+        "id": "core-fixtures",
+        "status": "passed"
+      },
+      {
+        "id": "web-pty",
+        "status": "passed"
+      },
+      {
+        "id": "required-suites-executed",
+        "status": "passed"
+      }
+    ],
+    "tests": {
+      "passed": true,
+      "total": 847,
+      "passedTests": 847,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "todoTests": 0,
+      "missing": [],
+      "incomplete": []
+    }
+  },
+  "startup": {
+    "at": "2026-10-04T13:33:00.709Z",
+    "status": "passed",
+    "url": "http://localhost:3200/",
+    "pid": 42259,
+    "title": "Zhixu",
+    "homepage": 200,
+    "asset": "/assets/index-BiUfAYpF.js",
+    "assetStatus": 200,
+    "experience": "learning",
+    "memory": {
+      "l1Enabled": true,
+      "l2Enabled": true,
+      "l3Enabled": true
+    },
+    "hasConfiguredKey": false,
+    "goals": 0,
+    "sessions": 0,
+    "channels": [],
+    "mcpEnabled": false,
+    "config": "/Users/lili/Desktop/zhixu/runtime/zhixu/config/config.json",
+    "data": "/Users/lili/Desktop/zhixu/runtime/zhixu/data",
+    "workspace": "/Users/lili/Desktop/zhixu/workspace"
+  },
+  "files": [
+    {
+      "sourcePath": "apps/inno-agent/src/agent/learning-experience.test.ts",
+      "targetPath": "apps/zhixu/src/agent/learning-experience.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "7544d51c2e682e37f8a91f235902264e4cae52883e78f600a3e4bc648eda08d9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/config.experience.test.ts",
+      "targetPath": "apps/zhixu/src/config.experience.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "47376b3472b99e23ecd1d545baf7eb18b97a14365cad2020aa94be5fca2a1d98"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/learner-tools.test.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/learner-tools.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f18b3817fc0861fe3a54f1980b0c74567f0965f4e023eeb9d374d2c80a0edeec"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/experience.test.ts",
+      "targetPath": "apps/zhixu/src/server/routes/experience.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1e53edc9cc7ed12bb4dcbd2ffb7d7febc6ef0171cd935daa3c239b33ed7c6cca"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/FeaturePage.learning.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/FeaturePage.learning.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "213d6d75319bac71c53515fd144ee192d3d84fe1cbaabbd1a0be2af0dde1841c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/PracticePage.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/PracticePage.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "b11d1370d5449a51586d1044c6ac31947d6032a8df0506eeddf730e344441a37"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/PracticePage.tsx",
+      "targetPath": "apps/zhixu/web/src/react/PracticePage.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "aea57deb4e2c236196bbc83d8e3eb8608beac3ae0965730aeeaae8809ff966ac"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/SessionSidebar.learning.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/SessionSidebar.learning.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "3d62d49fd980f5854cccfdaad9b588e1d55226d5310355c3423a34a6f84448b5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/LearningStart.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/LearningStart.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "20902435fe10cf9ab6047fbf465f27c5e060a61e846617a2f81aa27a77eb0b96"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/LearningStart.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/LearningStart.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "b6755e80bdb447ea8312af6444466846dc1449d8c3c9b27d6c65468b8ab32786"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/MessageBubble.learning.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/MessageBubble.learning.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "390b6db26963f94de89b96f17912bb416566d6ec85f0314266403b190478bb3c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/learning-start.css",
+      "targetPath": "apps/zhixu/web/src/react/chat/learning-start.css",
+      "sourceUnchanged": true,
+      "targetSha256": "936a5a8e19484f68739a3f597d0d853da0bd9d448fb8e24272d638bd91e58902"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/SettingsOverlay.learning.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/SettingsOverlay.learning.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "0dd8688ec3d94f102649d42608ad6e331ba4b3bcad1a7ae4a2225dbf237b4287"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/settings-store.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/settings-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a18edb6d5bb76c55a381f3c9f07f910453150a1fc85596df3db334deaf962988"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/learning-start.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/learning-start.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b3fe324de3100a03d2c2b4547f3e5828598b39d3bd49900ac5494b2b1f6be0be"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/learning-start.ts",
+      "targetPath": "apps/zhixu/web/src/utils/learning-start.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f54e5001f4748bcf84932232ae3552c7610cc2e16b3687fd443a58fbcda50dd2"
+    },
+    {
+      "sourcePath": "docs/baseline/KNOWN_ISSUES.md",
+      "targetPath": "docs/baseline/KNOWN_ISSUES.md",
+      "sourceUnchanged": true,
+      "targetSha256": "2e69f384bbfd9baa989ff1fe058e53538521ccf57cbcbf2c9c71d78be746b8ca"
+    },
+    {
+      "sourcePath": "docs/baseline/README.md",
+      "targetPath": "docs/baseline/README.md",
+      "sourceUnchanged": true,
+      "targetSha256": "c66b8a37347b36ccadb75f0a694f1534a474fcde70003ce2a9cf052b1a31ec67"
+    },
+    {
+      "sourcePath": "docs/baseline/acceptance.md",
+      "targetPath": "docs/baseline/acceptance.md",
+      "sourceUnchanged": true,
+      "targetSha256": "923bdcbbc59e72885fb8b42f771b73884e8180228dce3a7c92427078ba72098b"
+    },
+    {
+      "sourcePath": "docs/baseline/reference.json",
+      "targetPath": "docs/baseline/reference.json",
+      "sourceUnchanged": true,
+      "targetSha256": "64b857143ec00bd29bed4c7412b3f8efac7297bc19d22df373f8786a4faa8964"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-09-28.json",
+      "targetPath": "docs/baseline/results/2026-09-28.json",
+      "sourceUnchanged": true,
+      "targetSha256": "322fad71d4eaba7bc76caaa103fad38d41570eee09dfd0be63b7ca0d78eb1a62"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-09-28.md",
+      "targetPath": "docs/baseline/results/2026-09-28.md",
+      "sourceUnchanged": true,
+      "targetSha256": "6ae42f1a5351de61f859546ed61c6a25fe4ab41fda7478cabed27a271f40f474"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-03.json",
+      "targetPath": "docs/baseline/results/2026-10-03.json",
+      "sourceUnchanged": true,
+      "targetSha256": "62e24896b2e857a33a2ae44a718d826aad0711a28190e0ced553493ca7db0f14"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-03.md",
+      "targetPath": "docs/baseline/results/2026-10-03.md",
+      "sourceUnchanged": true,
+      "targetSha256": "23ffaa9e4baffee787482d9f90c852f6c78368992c820b92ae0b8641a0640de1"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-04-fixes.json",
+      "targetPath": "docs/baseline/results/2026-10-04-fixes.json",
+      "sourceUnchanged": true,
+      "targetSha256": "f958332aca1325a55c34e64f6b56cfc7fe9e488ae35f47eda9deedc34eee91eb"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-04-fixes.md",
+      "targetPath": "docs/baseline/results/2026-10-04-fixes.md",
+      "sourceUnchanged": true,
+      "targetSha256": "91f365e872cd5f4e015e3a57ed80a005bb3d8356c90ce4fc7b006038f448aca1"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-04-live-learning.json",
+      "targetPath": "docs/baseline/results/2026-10-04-live-learning.json",
+      "sourceUnchanged": true,
+      "targetSha256": "8225c3495ac03713353cbe264c8b659e03bcbf0274b527d9e6115d7c64aa3ea9"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-04-live-learning.md",
+      "targetPath": "docs/baseline/results/2026-10-04-live-learning.md",
+      "sourceUnchanged": true,
+      "targetSha256": "e12fc78ad01197137fbc8e73cba1ff84082a069975a4adf6ed8d0d6c1083a03f"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-04-live-learning.png",
+      "targetPath": "docs/baseline/results/2026-10-04-live-learning.png",
+      "sourceUnchanged": true,
+      "targetSha256": "516f229b34ab07fc5c9e92db486015ef4d11ecc244f1300ec4105f07cf231efc"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-04-web-learning.json",
+      "targetPath": "docs/baseline/results/2026-10-04-web-learning.json",
+      "sourceUnchanged": true,
+      "targetSha256": "a8e85494bf6da17284e29910fe194fc5c3f33f959f6263d495dd8caa6016aa6f"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-04-web-learning.md",
+      "targetPath": "docs/baseline/results/2026-10-04-web-learning.md",
+      "sourceUnchanged": true,
+      "targetSha256": "b1a2038e3f8a3325850c1922ef6ac2a689e696355a37f370ad6de4bca4af7f6d"
+    },
+    {
+      "sourcePath": "docs/baseline/results/2026-10-04-web-learning.png",
+      "targetPath": "docs/baseline/results/2026-10-04-web-learning.png",
+      "sourceUnchanged": true,
+      "targetSha256": "b79011a11dbbd69766abb02eb0d869d2200a974be69b0962322834f0ac10e3c4"
+    },
+    {
+      "sourcePath": "docs/web-learning.md",
+      "targetPath": "docs/web-learning.md",
+      "sourceUnchanged": true,
+      "targetSha256": "0301907eb2359adaec6045fe906059c5ecc7c1467436e626e057ce43ebbbd678"
+    },
+    {
+      "sourcePath": "scripts/baseline/cli.mjs",
+      "targetPath": "scripts/baseline/cli.mjs",
+      "sourceUnchanged": true,
+      "targetSha256": "782c4e058b5114cd9a58a136183c8b1c4d6a027f190afc12d895256f580099e2"
+    },
+    {
+      "sourcePath": "scripts/baseline/common.mjs",
+      "targetPath": "scripts/baseline/common.mjs",
+      "sourceUnchanged": true,
+      "targetSha256": "f0ba13d0a9dd8add7a524a6d6843c374221b170c6b1433b475912c7b9127a22a"
+    },
+    {
+      "sourcePath": "scripts/baseline/common.test.mjs",
+      "targetPath": "scripts/baseline/common.test.mjs",
+      "sourceUnchanged": true,
+      "targetSha256": "ab2e06237c2acfca4ddc7317328ff874fbcea27d4c3ffee4a197039a7c90b872"
+    },
+    {
+      "sourcePath": "scripts/baseline/fixtures/current.jsonl",
+      "targetPath": "scripts/baseline/fixtures/current.jsonl",
+      "sourceUnchanged": true,
+      "targetSha256": "1d9059c5a96c636803a19593be5820c0ce53d2e232b62703e2a0dae6c0d8e915"
+    },
+    {
+      "sourcePath": "scripts/baseline/fixtures/history.jsonl",
+      "targetPath": "scripts/baseline/fixtures/history.jsonl",
+      "sourceUnchanged": true,
+      "targetSha256": "96e3558bce49315c6f4d5177bace542d46ea7cdafae18139f144e863156ac5b8"
+    },
+    {
+      "sourcePath": "scripts/baseline/fixtures/learning-source.md",
+      "targetPath": "scripts/baseline/fixtures/learning-source.md",
+      "sourceUnchanged": true,
+      "targetSha256": "ea1f7f1a9d801163b9a82d747dde6163a34f4636d9647360b0b755b1898d0fe7"
+    },
+    {
+      "sourcePath": "scripts/baseline/fixtures/unrelated.jsonl",
+      "targetPath": "scripts/baseline/fixtures/unrelated.jsonl",
+      "sourceUnchanged": true,
+      "targetSha256": "7a5088d837e028802ad5eff5ed784df650d5a36ab032fe2ad0061af82b6acc97"
+    },
+    {
+      "sourcePath": "scripts/baseline/offline.mjs",
+      "targetPath": "scripts/baseline/offline.mjs",
+      "sourceUnchanged": true,
+      "targetSha256": "7b2f20ddd862310a6ca5d0f4d3771a5ebbaf2fe696a6d0e42c2d326379d0843b"
+    },
+    {
+      "sourcePath": "scripts/baseline/verify-core.ts",
+      "targetPath": "scripts/baseline/verify-core.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "fcf7e63bba5144551bb217639e3e9b488f14c7d756a4a36bb5a35a10576fa61e"
+    },
+    {
+      "sourcePath": "scripts/baseline/verify-web.mjs",
+      "targetPath": "scripts/baseline/verify-web.mjs",
+      "sourceUnchanged": true,
+      "targetSha256": "953c92de9d7ed36c7cdd59f8ed3521cf79e2898c5118ff03f3aad2fb2d150c9f"
+    },
+    {
+      "sourcePath": ".dockerignore",
+      "targetPath": ".dockerignore",
+      "sourceUnchanged": true,
+      "targetSha256": "5c6f37e81b0f80a7ca23fa9e1578c82fa8e02478da3333790204eb28b8dd2024"
+    },
+    {
+      "sourcePath": ".env.example",
+      "targetPath": ".env.example",
+      "sourceUnchanged": true,
+      "targetSha256": "a82db0da69315f480de01f8e9ccf605a006bf07a8e558102650a48d2cdc7198c"
+    },
+    {
+      "sourcePath": ".github/workflows/release-linux.yml",
+      "targetPath": ".github/workflows/release-linux.yml",
+      "sourceUnchanged": true,
+      "targetSha256": "266013c80dd268d089c95add3ce23b37cb8f58cdd5531fcab45f0c733971c9c7"
+    },
+    {
+      "sourcePath": ".github/workflows/release-mac.yml",
+      "targetPath": ".github/workflows/release-mac.yml",
+      "sourceUnchanged": true,
+      "targetSha256": "6696e4ec3f9c86d182f4a877b0543bd2b3415f2c10a3cf99b0145ccb6ac04628"
+    },
+    {
+      "sourcePath": ".github/workflows/release-win.yml",
+      "targetPath": ".github/workflows/release-win.yml",
+      "sourceUnchanged": true,
+      "targetSha256": "21219673eb715dd890d02528bdd6b15fe4d9064370093b15123e49b35fc08f45"
+    },
+    {
+      "sourcePath": ".gitignore",
+      "targetPath": ".gitignore",
+      "sourceUnchanged": true,
+      "targetSha256": "4ebbf0c731598495f93e4f4987590b9a692076fdefb50a27862087ec55eb9dab"
+    },
+    {
+      "sourcePath": ".npmrc",
+      "targetPath": ".npmrc",
+      "sourceUnchanged": true,
+      "targetSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourcePath": "CLAUDE.md",
+      "targetPath": "CLAUDE.md",
+      "sourceUnchanged": true,
+      "targetSha256": "2327e5dcf21c1f9d53bd4e4f4660f327668eff1a1e618baf36643e8abaa0aad2"
+    },
+    {
+      "sourcePath": "Dockerfile",
+      "targetPath": "Dockerfile",
+      "sourceUnchanged": true,
+      "targetSha256": "baae83fa4b9263f91b2b57a59f570644288912771194b3baee3e991595a1f155"
+    },
+    {
+      "sourcePath": "Dockerfile.base",
+      "targetPath": "Dockerfile.base",
+      "sourceUnchanged": true,
+      "targetSha256": "cefbc66a892222bc9d347c473df4b11e814fc0a26a77d5efe1c84be4a9467782"
+    },
+    {
+      "sourcePath": "ELECTRON_BUILD.md",
+      "targetPath": "ELECTRON_BUILD.md",
+      "sourceUnchanged": true,
+      "targetSha256": "56ea39455f8bc07ea8155f8deea1e5b196a15f8f45ab3c5631325c693e81941c"
+    },
+    {
+      "sourcePath": "LICENSE",
+      "targetPath": "LICENSE",
+      "sourceUnchanged": true,
+      "targetSha256": "f92c6c6a1cc8f0afdf87c0c1a35f9f549c5024efcedcf20d0ebbe464dadbd644"
+    },
+    {
+      "sourcePath": "QUICKSTART.md",
+      "targetPath": "QUICKSTART.md",
+      "sourceUnchanged": true,
+      "targetSha256": "26d02add96625beb1394d1e28128842ad184237f8a8311bdfcc289b021f5748f"
+    },
+    {
+      "sourcePath": "README.md",
+      "targetPath": "README.md",
+      "sourceUnchanged": true,
+      "targetSha256": "83a51f4b64a563a3e23b7b69f186055d242c95955a0eea6980aae7826572b23c"
+    },
+    {
+      "sourcePath": "README.zh-CN.md",
+      "targetPath": "README.zh-CN.md",
+      "sourceUnchanged": true,
+      "targetSha256": "83a51f4b64a563a3e23b7b69f186055d242c95955a0eea6980aae7826572b23c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/.gitignore",
+      "targetPath": "apps/zhixu/.gitignore",
+      "sourceUnchanged": true,
+      "targetSha256": "a0b01ca337d3bbf81a671a18792c12f0643f6660b75ec7a641c5a56b6b3c1198"
+    },
+    {
+      "sourcePath": "apps/inno-agent/README.md",
+      "targetPath": "apps/zhixu/README.md",
+      "sourceUnchanged": true,
+      "targetSha256": "a5427ab66fb9ef841671e55bab42da5658e021a638110906d6f9e5280fded2b0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/eval/l2-retrieval-v1.json",
+      "targetPath": "apps/zhixu/eval/l2-retrieval-v1.json",
+      "sourceUnchanged": true,
+      "targetSha256": "933cbc86145db90b4bb8e281d35e5af75609ba7d3d624ed3e2af576890cb1a5c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/package.json",
+      "targetPath": "apps/zhixu/package.json",
+      "sourceUnchanged": true,
+      "targetSha256": "93299783c2c861c2b4b625089fcf6148ad016b050def0146eff38d918d07ab29"
+    },
+    {
+      "sourcePath": "apps/inno-agent/presets/lesson-plan/agent.md",
+      "targetPath": "apps/zhixu/presets/lesson-plan/agent.md",
+      "sourceUnchanged": true,
+      "targetSha256": "0fd50357996f63cb199cab3c20acc1643b17daffbdd3f22532af08f967bb1d4c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/presets/lesson-plan/preset.json",
+      "targetPath": "apps/zhixu/presets/lesson-plan/preset.json",
+      "sourceUnchanged": true,
+      "targetSha256": "3b6a27472cecd65f89a894b6491fad7b4e42ac53e9f7dbd2eb3921a9b06015a0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/presets/ppt-creation/.skills/ppt-builder/SKILL.md",
+      "targetPath": "apps/zhixu/presets/ppt-creation/.skills/ppt-builder/SKILL.md",
+      "sourceUnchanged": true,
+      "targetSha256": "cc1d6933197d965cb4337adcfe2ae92246230ac7977b7edd5e5ec8d411132b3e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/presets/ppt-creation/agent.md",
+      "targetPath": "apps/zhixu/presets/ppt-creation/agent.md",
+      "sourceUnchanged": true,
+      "targetSha256": "f85fe1ee969e41c2e6d7890ee16534e435dd1b3a8278cfed582b4f4bc5087fd7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/presets/ppt-creation/preset.json",
+      "targetPath": "apps/zhixu/presets/ppt-creation/preset.json",
+      "sourceUnchanged": true,
+      "targetSha256": "8dc5a7fc53a88e7858df942e4ae7ea2cdf7951ad86906c63431a566e31f4c4fb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/presets/scenario-explain/agent.md",
+      "targetPath": "apps/zhixu/presets/scenario-explain/agent.md",
+      "sourceUnchanged": true,
+      "targetSha256": "b92787583dcd8317099c3f858bd223aaaf8d2e9b35188f1bf7cc374224d4911f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/presets/scenario-explain/preset.json",
+      "targetPath": "apps/zhixu/presets/scenario-explain/preset.json",
+      "sourceUnchanged": true,
+      "targetSha256": "753562ebd1931911a1ee2e38a8304a0ed41411a1dd3a5c07feb7468bd776a8a8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/README.md",
+      "targetPath": "apps/zhixu/scripts/README.md",
+      "sourceUnchanged": true,
+      "targetSha256": "76eb5aec49525a5c7a53e7915d3bbe224af6034bef4ecf5379e2a943297e51ff"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/__pycache__/console_encoding.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/__pycache__/console_encoding.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "7fcc8000166bce1cc1e2f425f43772fb3db440c2ab08f2a4b3a626eabe4cc107"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/console_encoding.py",
+      "targetPath": "apps/zhixu/scripts/console_encoding.py",
+      "sourceUnchanged": true,
+      "targetSha256": "71022e21fd89b91f0d96cb3ca128b140dbbe9a5b0dfbf2f46baf26404f20206b"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "3d7b32ae66c431fd869afb4da2cd2d2e20d7e936a2230e039b06a22595ddf204"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__init__.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__init__.py",
+      "sourceUnchanged": true,
+      "targetSha256": "c211622a57c9758c7d38a8fe69acd4692d634b8a730b8a610fb1836fce2ddabf"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/__init__.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/__init__.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "db482fcf1c7a8dc7a03e34bc60d596b78ab49cfa95a588bcfb95110bc8f3fe41"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/color_resolver.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/color_resolver.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "98a4bcf72f9d86f017c08f1fbe320ee1640ba26521af7ba1c89af1d2b5b9a187"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/converter.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/converter.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "c91d7f0e8d2219a50f686d91cf34a5291d7e7409e88bb6fb26463b27fb69959a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/custgeom_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/custgeom_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "1140dc580fe8b646db3d4ca6043fb960983a51a05a14dcd591d2f44636b3b954"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/effect_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/effect_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "990fb9a0936446dc6a0f01a95b5f889c41d5dd9fe85512246d34f5ea9453969c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/emu_units.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/emu_units.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "89c5e6fc449c85c5651a77b38161e56c2982082809704277ceff19ef39d1e0fb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/fill_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/fill_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "d8b832e99fc4004e7e755011b52ce056146194ffabf9df403beb36b441a617b9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/ln_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/ln_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "282549bcf19f43097794574034d629ab88ccf5f5b17b1357fe83b84b4e386e39"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/ooxml_loader.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/ooxml_loader.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "0348c302950e9f906457be3a156e0cc49c8a14651370536ac27264a3ea35ec3c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/pic_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/pic_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "55894047be6aa828764ee4198f311d9158b427f0e251033eed62288d6c6bca48"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/prstgeom_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/prstgeom_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "a2898e378638659ee5cbac9d3918fc0b6b6d3ba7be8dd637675e7ea7d9637c19"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/shape_walker.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/shape_walker.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "5d342949e058f0b251a8816adbb712a98df63642bd81361f7592949de361a1d6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/slide_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/slide_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "f9e3adb8a3a29dfac2b8ffc0f9d2c7f03afc5dc5a41b28d28f74577aed075585"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/tbl_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/tbl_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "4893bfb163166f06fcdcdd36c01181df632d4d3fa935ea51f4efa8368e5e47da"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/txbody_to_svg.cpython-313.pyc",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/__pycache__/txbody_to_svg.cpython-313.pyc",
+      "sourceUnchanged": true,
+      "targetSha256": "5dad39dfb471049a1f6820870aa2b6ea20f1d86fbd765a4ad11dc3f761decc5f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/color_resolver.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/color_resolver.py",
+      "sourceUnchanged": true,
+      "targetSha256": "69430e84ab3b25d152128a0a0e6a0f08a5c978eabfa4ae729e38aa5f1d344ff6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/converter.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/converter.py",
+      "sourceUnchanged": true,
+      "targetSha256": "1906bc44b7b09bdd9b441bb3f18783cf1652cf55b77d76d23cc09db22c715594"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/custgeom_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/custgeom_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "0da9171de195c9e566e02a70d9f10672f761e64185d3c10fb4ab35f395c33984"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/effect_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/effect_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "6168df9c57f4bd3acdc155c3e81d36afbc96996ba99647fdd2fc4ca621a93482"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/emu_units.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/emu_units.py",
+      "sourceUnchanged": true,
+      "targetSha256": "62d2ff108590e7e1b7c42171eb20869a67a266eaf4e50fa5e5cb9b374d3d3be1"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/fill_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/fill_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "580dc80c0a30153aba7523bf4b020d54773f953b6b31dae2453e43a9bfa8399a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/ln_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/ln_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "8df487a2953298f7e99b6181143396d4775e776646317f2ebe739caa3bf859e7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/ooxml_loader.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/ooxml_loader.py",
+      "sourceUnchanged": true,
+      "targetSha256": "bc888325367b40c1eb81db4035e7e43eea1942f2b2a7f1735054e62969dcb63c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/pic_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/pic_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "6d3393663b82142d60a8f967a6d3b5a84c2652f1096207f98c1c8ee08c4b8f1d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/prstgeom_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/prstgeom_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "d15b9ab11e25b6f3d5540597c10c0d6ba4ab13278ff320f4a2a2517c3fa8487d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/shape_walker.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/shape_walker.py",
+      "sourceUnchanged": true,
+      "targetSha256": "9b9a92377cb2104ecfa503eef1b47ebc1bd4e1af87060b31a2579872dd2f1de9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/slide_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/slide_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "3878cb5fbbfe4695b038d96b9f144fe7934d5b441803327170f38b3d1b7126c6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/tbl_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/tbl_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "5864da0cc323c276b4b5771a9bc8a46fc14a56ef4d576047953b1a1f9dc40a5a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/scripts/pptx_to_svg/txbody_to_svg.py",
+      "targetPath": "apps/zhixu/scripts/pptx_to_svg/txbody_to_svg.py",
+      "sourceUnchanged": true,
+      "targetSha256": "70c5fc460ed38af14be77c8365510b29fd22812a46d2a4bc3859096c6141e2c9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/computer-use-gate.test.ts",
+      "targetPath": "apps/zhixu/src/agent/computer-use-gate.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1052da8f2cae71fe28958479c599d6dc40558d225b198d1399b39c7dd645fe7d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/context-usage.test.ts",
+      "targetPath": "apps/zhixu/src/agent/context-usage.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a65b27f8e6b3618455f15ca58c58cdc975d20a03bd5ae09d31a1f3c7143ae930"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/context-usage.ts",
+      "targetPath": "apps/zhixu/src/agent/context-usage.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9e2b9f8d9306a4f4c9ffb962d7dd816a8e155900c96359b3ff83449ee738e1b2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/document-tools.test.ts",
+      "targetPath": "apps/zhixu/src/agent/document-tools.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4992c6535efba3b4f3395763ff0b6f5db32b8f0a00662d0a9eb16fc0300a05e0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/document-tools.ts",
+      "targetPath": "apps/zhixu/src/agent/document-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "19730595f9e576fdccc704bc74120d63f2199d4d8d6eac27be7437ee67d3ab2d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/inno-extension.ts",
+      "targetPath": "apps/zhixu/src/agent/inno-extension.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "20492707bd86bbee23cd2250a42ee387bb7d268c0f99f5f3454d8e2b6d2bd3e0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/inno-slash-commands.test.ts",
+      "targetPath": "apps/zhixu/src/agent/inno-slash-commands.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "91e01ccb593bcd77f46180d5f50888d136670835d977756357dc282abf543b87"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/mcp-extension.ts",
+      "targetPath": "apps/zhixu/src/agent/mcp-extension.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e08cadc9c07895201fa368521fff29cb1d94bdec64d3207469440103da31ece2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/model-probe.ts",
+      "targetPath": "apps/zhixu/src/agent/model-probe.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "3a1fd60d8a8f54f7272e8f6a71b4fe3b6c0ab3646c252c5120f3cfa1a1d77317"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/observability-extension.ts",
+      "targetPath": "apps/zhixu/src/agent/observability-extension.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "42f7e1e2d563af88ec87a182bb9c46271e5e1ae3d326f15087a72e1f0a0d82aa"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/ocr-tools.ts",
+      "targetPath": "apps/zhixu/src/agent/ocr-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "69a5e19ee0c4f82eb409945c0353d724cbd463f49db2174a8d5b87f7da2c8757"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/permission-bridge.test.ts",
+      "targetPath": "apps/zhixu/src/agent/permission-bridge.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8cd7bec618f321e870fa6e7ad367a697cd5779c62e77b72e86fd19f5b40cb85e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/permission-bridge.ts",
+      "targetPath": "apps/zhixu/src/agent/permission-bridge.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9947c78ba9e14a49cba2a08bdf6380d7232347ad9eee66ad72ce51938fd3caeb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/permission-system-config.test.ts",
+      "targetPath": "apps/zhixu/src/agent/permission-system-config.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1b74078f8c5d0c476b76658a3faefcf6cacf206ea41922e709e862647880f1a7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/permission-system-config.ts",
+      "targetPath": "apps/zhixu/src/agent/permission-system-config.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8391500f367f9505ed998037816c410440a124d2ba93ccc3df675632a5606307"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/pi-runner.test.ts",
+      "targetPath": "apps/zhixu/src/agent/pi-runner.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a5f0ce4dddff569d7df47e766e69752b807b2586b28a0151d82420f085f56eb2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/pi-runner.ts",
+      "targetPath": "apps/zhixu/src/agent/pi-runner.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "90fae18ca4a0cdfe8b71f1868ae04e5d6008b4b3f6333aa01d87e05eac3557ef"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/practice-tools.ts",
+      "targetPath": "apps/zhixu/src/agent/practice-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0a6039bb420adc75d0cf93f92a6d33c6bd7ecc30697a1e2a782bfd7865466cac"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/provider-sync.ts",
+      "targetPath": "apps/zhixu/src/agent/provider-sync.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "47bc56ab846dceda614880de81cec28023931f0f7d3e378fbf0645cdf9c63da9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/question-bridge.test.ts",
+      "targetPath": "apps/zhixu/src/agent/question-bridge.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "3bfb8c246e7b03e9749a53aef1b6ec52775e844c7f25eb1edf94370b1c5afb45"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/question-bridge.ts",
+      "targetPath": "apps/zhixu/src/agent/question-bridge.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "53b30a3cc3f86158f776f77674afab73f933dcc5aff6424a79009c92a8a452cc"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/system-prompt.ts",
+      "targetPath": "apps/zhixu/src/agent/system-prompt.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ee63bc9d1bd85c6cfe1b96879dc50bff81bd1dbaf28b0a2b472c1b7d7b462efc"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/tavily-tools.ts",
+      "targetPath": "apps/zhixu/src/agent/tavily-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8de5d632c31a71ced00241dcfe0a6eeee92edd4b845a24acbf4b073065d3151c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/teaching-entry-agent.test.ts",
+      "targetPath": "apps/zhixu/src/agent/teaching-entry-agent.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d6ffb3e186b265fb336cc3fcddd32c24bb67d6845a76da23197a971a9bd16c69"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/web-access-config.ts",
+      "targetPath": "apps/zhixu/src/agent/web-access-config.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "37c5b6ea42699cda8b90909bc7eb87b2c8a436c97e2b9b41fbd2951dde4158f8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/agent/workspace-path-guard.ts",
+      "targetPath": "apps/zhixu/src/agent/workspace-path-guard.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "df989ef1013a6765109cc59f23fc947066379e80e1374f9a4eefeb5c2274c07e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/bridge/bridge-channel.ts",
+      "targetPath": "apps/zhixu/src/channels/bridge/bridge-channel.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "03f7f899e0373784774c68175a3b8399d9c5093ba8ef7b2162f3e9add292e84e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/bridge/bridge-server.test.ts",
+      "targetPath": "apps/zhixu/src/channels/bridge/bridge-server.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "af56c9729c3428ef847d36a7bf697531abcddf6514f04e5c70d05d3fec1094d7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/bridge/bridge-server.ts",
+      "targetPath": "apps/zhixu/src/channels/bridge/bridge-server.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6849a3c82db6ac8ab99045aba08ea12b1642aa7d973ddc6f5fc0f44f66099379"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/bridge/types.ts",
+      "targetPath": "apps/zhixu/src/channels/bridge/types.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2379ce06958789a294d4d15f9ea651af15de829962db60ddc9dbc74f81281b41"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/channel-tools.ts",
+      "targetPath": "apps/zhixu/src/channels/channel-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a421f18c80840a5da3e1b43537c46afb99614f2fd7a0fb71f64e319b5ae21c7a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/channel.ts",
+      "targetPath": "apps/zhixu/src/channels/channel.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "af38f87091d0cf7f3d7582ae191e69fa4cb8d4695f21d67f646eaa72c1b615bb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/dedupe-store.test.ts",
+      "targetPath": "apps/zhixu/src/channels/dedupe-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8250b2b4799050e6a4dfc81d79afee8196e98cc5cc1c6cb237fa5b8f6195dea7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/dedupe-store.ts",
+      "targetPath": "apps/zhixu/src/channels/dedupe-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b2faa5896374cd19f15c87b99308c2d9f6370c496bfca3475c9506391f8a633d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/feishu/feishu-api.ts",
+      "targetPath": "apps/zhixu/src/channels/feishu/feishu-api.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2849852d4557fe45ce55e72ce869c5feafdbd41b91648580ba961bb360f81b89"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/feishu/feishu-channel.ts",
+      "targetPath": "apps/zhixu/src/channels/feishu/feishu-channel.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d631dac6e82c8b835f40c180be7b2cca39f3fdd4dd4949c1348806c29a980765"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/feishu/feishu-registration.ts",
+      "targetPath": "apps/zhixu/src/channels/feishu/feishu-registration.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d25617351e9be38dca152622bfd8fd7ddcd7ab60641a2edf5ad337800ef46148"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/feishu/streaming-card.ts",
+      "targetPath": "apps/zhixu/src/channels/feishu/streaming-card.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1b5da4c667112f2c923e6b59a11d693ce3bba9ac52bf992560424a716a9065de"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/personal-dispatcher.test.ts",
+      "targetPath": "apps/zhixu/src/channels/personal-dispatcher.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0d769a88bff20281579e5ec927b8f398c3469626d5cade634c3d0908975ff197"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/personal-dispatcher.ts",
+      "targetPath": "apps/zhixu/src/channels/personal-dispatcher.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "7e46eeff20e04e226141708fd368973c1d6089351d8feee3e83388e4ee08718e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/run-log.ts",
+      "targetPath": "apps/zhixu/src/channels/run-log.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "19a336f1282bf5b8e6c7394df41a70a704318658ffa6f289dd58c4b3028bffed"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/stubs.ts",
+      "targetPath": "apps/zhixu/src/channels/stubs.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f9170bb1015e43efa513c0ab05de9341084b02364d60f1bba8ffadd5c3319255"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/types.ts",
+      "targetPath": "apps/zhixu/src/channels/types.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1fdf90c82486225c976ae26111cac0e645ebe115aff2ee5df8a13586f86216d3"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/wechat/ilink-client.ts",
+      "targetPath": "apps/zhixu/src/channels/wechat/ilink-client.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "099352bd208a97b4427774b254f4780ff024490792ac88bc1edc07ed910d4a61"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/channels/wechat/wechat-channel.ts",
+      "targetPath": "apps/zhixu/src/channels/wechat/wechat-channel.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d9671811b56f7b3bbca56a7e9b2981ac0f52ab52f09295c89d938aca79131d90"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/chat/stream-registry.test.ts",
+      "targetPath": "apps/zhixu/src/chat/stream-registry.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d1510636f6556b8a8096845b739996d75e6f6a44f83cf9d0d3c8ba03d473d581"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/chat/stream-registry.ts",
+      "targetPath": "apps/zhixu/src/chat/stream-registry.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1444332eab82ad0f70f2a65fc1b365fc146ed9149fdb955093954ba33127b147"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/checkins/check-in-store.test.ts",
+      "targetPath": "apps/zhixu/src/checkins/check-in-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "085bc6dac518841399b546fadd88c6343310fc17b50db85b41de225f6125fb8a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/checkins/check-in-store.ts",
+      "targetPath": "apps/zhixu/src/checkins/check-in-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "64f844076d63b960321c01893e07d37a7c60fb549c62515386acea3dbd3b167e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/cli.ts",
+      "targetPath": "apps/zhixu/src/cli.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "7ee558e35134d83b8a04cc6bd60fb70ce361778073e3b1cc7b270e86739ad4e6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/config.ts",
+      "targetPath": "apps/zhixu/src/config.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "657879d98a7126d8796c005160a388300b43339d425db720bacc0e235b9280a9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/content-source/bundle-source.ts",
+      "targetPath": "apps/zhixu/src/content-source/bundle-source.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "34d9480305e92f0cb510109bd671583d76b43db5f83d4b4b9f3eab882daa4869"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/content-source/catalog-cache.ts",
+      "targetPath": "apps/zhixu/src/content-source/catalog-cache.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "56e07a36df86f378dde495882fbc6f7635523dc4ed9524b25958dfb1d8a75c27"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/content-source/catalog-service.ts",
+      "targetPath": "apps/zhixu/src/content-source/catalog-service.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1edafe9b1c8510e316033bcf8d4e4a66943aa62c6c71dfb5fc71cccc24436629"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/content-source/github-source.ts",
+      "targetPath": "apps/zhixu/src/content-source/github-source.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "141459025b41a0ea1bf9f65a6ddddca33ee16698149bca03bfb99d2eded3bfad"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/content-source/index.ts",
+      "targetPath": "apps/zhixu/src/content-source/index.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "29436c43fbdc77ca58bfe032d2a1af13b68b10f6574fe2f981d6b6b3342648cc"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/content-source/types.ts",
+      "targetPath": "apps/zhixu/src/content-source/types.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2a799709c71a1dd152aa23e16d2851c8663507dc9edcd47690de87c21283ca0c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/logger.ts",
+      "targetPath": "apps/zhixu/src/logger.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "bcbb1ac92cd31aee084ca8e8a19f5ba1750b11077a742ded7e721d0562009829"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/mcp/mcp-config-store.ts",
+      "targetPath": "apps/zhixu/src/mcp/mcp-config-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9373759a723042fb71eb27d5dbefc90fb9f71725774adda86233e8bc357a3f44"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/document-parser.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/document-parser.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "7395e3e5fda55e50451a3b7439241657bc1ad1a5a727a68809dd72ba6d7dfc6a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-index-store.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-index-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "976a58f9c28e701ea0238cd3e2d857fbdad749c22d067fbd91377a3332914e22"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-indexer.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-indexer.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9d6defe6c6db92a570fbbd07bf9089bd62089f0079ef168b339cbd62583d9d8d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-lint.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-lint.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2f3450224efd5ae4f69e7fe358bbae25ce8a086ea238ef614d134ee45c9943db"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-lint.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-lint.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d0ea11bbcb7fb669b143b2d8c892763c6cbb27c71c437a9d7452867c71420222"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-memory.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-memory.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "21dbd429e89f53c847f9ba90b85a13ac27b6dd4a5d2cede6e397d192309e5b92"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-search.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-search.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ca44a1cecc93d2ee8cff569e7665904c3fef812c1c9b9e6e744273ad081630e3"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-search.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-search.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "13bb40a345d13d2ab96dc59f7540a617432f99f5558844ad7df154110b107657"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-tools.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-tools.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c9f5c578bff473656d768ea5b07415974462e0f483251543de09a0a83ef39bf5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/l2-tools.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/l2-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9a916d4e930dcfad8594bbd355d376dc28ebc91d0ab477e021a56bea46ec9a32"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/manifest-store.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/manifest-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1007fdfde01ce34d53b0512617f2f754c320575eda4e439d5e1b99bf49fb6b37"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/overview.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/overview.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "522707e5ed9045fbeddbdb1e742f918f9935d0c8eead17cd2427b62020dc67a5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/overview.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/overview.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a4c4008d56bd63702d61da9a775bcb0adf54922a16089642582e79bd92f051be"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/raw-store.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/raw-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4cb6e03a1caf225dda488d51937bad6cabb56e3625aa6cd36b733abb1ca3c807"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/source-converter.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/source-converter.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6cfd63131f243d3861dcb6b2c8125ae1ecaeef23949effec9e0f5e12fb4b47f1"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/structural-chunker.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/structural-chunker.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "66afd7c863ecd14e77003c9a5f43fb99fef7d1a746a87a47f40c8553e209297c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/structural-chunker.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/structural-chunker.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "85080b49f68cf9eaa2568bf4ef949221f21a784ff9d7b55e82bd735b7283c162"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/summarizer.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/summarizer.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e31d30db21d21f4599d055e77b23036071ff3b1caeb9b0acd5ddc3baaf1b27ca"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/summarizer.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/summarizer.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "7acf3466097a687e1863ac5af904abaa684c0daad141654eac2eb8ad2f8b64a5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/types.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/types.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "834c3f37d02d41a883e24b7eecc4b6b0a25f0aeb344ee05d27c258e915dc1598"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-date.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-date.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c134ec674d9b6d1951cc837ffcac4e650012305e09d4bce56af431f4717a2a8e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-generator.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-generator.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "43ccc2ae1930b1fa17ca377f5333701d258fd26536a1abbbe78eee24100acc50"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-graph.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-graph.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "adbdf6f4d24936cc1768c5726f019f4a52b92457607326e1243b4091fdaaa07e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-graph.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-graph.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f9c0e18196d306c38a37e58ec89a0b29330027508351230928382c5e5c799a35"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-ingest-sanitize.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-ingest-sanitize.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "06f753def947a0dc293564817c5797ede4ad1fb92784d5cfd522135bc48c51d0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-linker.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-linker.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "66ed3423d46684d87f0de93ab1bea485c0046ffb86046933000f9b4f742f397d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-linker.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-linker.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "dc929a3bdebfeaf10a6ccddca4eac515e0d0d3941a7542c9b21f6db0dc128627"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-links.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-links.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "578dbdd9aef48f668f701ca529f5ee8ee3120042eb922692f17c503614aec8fe"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-llm-compat.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-llm-compat.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "61cef71380925be4a6fe328c26f0b4c2e96b7fa00b8689692c508e950051c680"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-maintainer.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-maintainer.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "fb27e17f01b20e861e2a1ec4d6dc17b65c9bb57590296f56568775af49b50e53"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-maintainer.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-maintainer.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8c60bf97bd11105aeef7c0adbb82570e31256e1ba40bd289631e9aab61cb1e5b"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-output-language.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-output-language.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "06c24d06e2c376a7da56c65f8108fc87349699366dee2fb8c8eca91bc1ceb2b5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-page-files.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-page-files.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1d543b4195f66226b5c0d3bf7413631b3e70b58458830b497186a0019ae7a96f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-page-merge.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-page-merge.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e13cbd391b7c44cbf967620c584111705c87699a52b4aeabb44a5553e477c916"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-page-model-view.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-page-model-view.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9237c032ce18b65a7f292aea8ab75b6fc593b7ebb0e30dbcf123a40db07bdf08"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-paths.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-paths.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "28586d9cc9ab31ec8572a45ad0206caacedd105648c0f9d6d7ad0c268caf917f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-paths.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-paths.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f9e74391284ed405fabec9afde1861e36291b5fad103581c4698534489503d69"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-query.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-query.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8593a8691a3fbc13603d1abff79c3e8ac6cde881bf5021f829dd9438333344f7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-query.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-query.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a7c103e97fb815e385ffc3f91b29c5279d48426bd35026495ce7b8a657b01172"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l2/wiki-schema-routing.ts",
+      "targetPath": "apps/zhixu/src/memory/l2/wiki-schema-routing.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0520ab8783c99dacf01eb08b96c2021906bba62aa8a01dd60cde1065ea3048a0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l3/indexer.ts",
+      "targetPath": "apps/zhixu/src/memory/l3/indexer.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a1684ffe63ec6dd0975b471bf6415a57b4fd31ac478c47329b95e008700a260a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l3/l3-tools.ts",
+      "targetPath": "apps/zhixu/src/memory/l3/l3-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9c0494f604fd5f3ad0bbc804f0efd8e2f78932d8e3bf138b1c55386bb062eba5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l3/l3.test.ts",
+      "targetPath": "apps/zhixu/src/memory/l3/l3.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d92ba966fec0c9c35dece9d35c1297efa371064318e2d2afdffb0910b2e80ae8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l3/recall.ts",
+      "targetPath": "apps/zhixu/src/memory/l3/recall.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "da117cbe63cfc7324872b278eefb20ce3b991da111ef1acf1f6c86aa26fda753"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/l3/sqlite-store.ts",
+      "targetPath": "apps/zhixu/src/memory/l3/sqlite-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "62b918f29b172bd25a77b4d6cd186507ff4838fdad32676442e4d0ab71fc66d9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/auto-profile.test.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/auto-profile.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "bb8900569ebc8f74717f778cecc14aeb255e345542d1f909d012d73342f60bb0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/auto-profile.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/auto-profile.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "fdb1112ded022110671ac091f3055f9844cf29a8ad349368bdb24e553ca26f8c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/context-pack.test.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/context-pack.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "acfa7106714ad71788cb136eea9c1219d4814ad77d956cf6e23d3a7fad842800"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/context-pack.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/context-pack.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2f75222db8ed2d050f82118a9f0ec7c864564d3e696f01267ef004ec5b2a5c61"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/evidence.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/evidence.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f6a9c57394a0773299bf6969019a839b9288dadaa333615ed0767473a84b302e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/learner-tools.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/learner-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "64cc3df1b1d33e3172308b6d9fa3e049e66ebb5881f51536863c525b1bef9338"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/prerequisite-resolver.test.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/prerequisite-resolver.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5d3031c2df45a8fab1fe1ac3980722b7720639be60f2f1d64eea59d7d248dffe"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/prerequisite-resolver.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/prerequisite-resolver.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "62bea1b80ae553b1674e90f7a80f2f3ee2612b831ce5c4bc21b4769fc1ef8ea1"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/prerequisite-store.test.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/prerequisite-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6543e8275b7d924a30c340949618749ee8b8df85e8088090731a2b80a4292d21"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/prerequisite-store.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/prerequisite-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "93ab58fbb126ccc10c9a99c0ffa4f5b6475860e5870aeee815f589e5bbfa73f2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/profile-store.test.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/profile-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e63c585d1d5ebd7cd1ae38c85d6ca998b7291df58d700954f871a304c0b1fb68"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/profile-store.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/profile-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "eef5508568cca4e1d774eea586da02eecca45ebdcc16527fe3dec968f612a646"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/profile-updater.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/profile-updater.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "827b11ecab1e3a12a91b54373da52699d052a1da2a96809248bc4cc27a5600de"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/rebuild-profile.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/rebuild-profile.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4d13b5f8d10daa50300079c67916fdbd925720eed6bab8e5631b208e8a940fc0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/state-engine.test.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/state-engine.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "64d36f790c2bfb8b1b009e3cdb7efebee438654f536be2047532d2cddc2792ee"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/state-engine.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/state-engine.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "535ef26a243cd26bc13552d2cc796f2762701f0f30aab629e86f004d39ab358e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/teaching-entry-gate.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/teaching-entry-gate.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "561ed938eaa301946adb6e858ede1885e0da09ac2d250b618e476f90b5223955"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/memory/learner/types.ts",
+      "targetPath": "apps/zhixu/src/memory/learner/types.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4033e59cb08ed4398505adc334ce20b10235ed89bc893a52966c14d37796bcf9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/presets/preset-store.ts",
+      "targetPath": "apps/zhixu/src/presets/preset-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "3d97bf5186be800c3a2867e3755debab3b1a6e289548d028f7067f09ff41f77d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/runtime.ts",
+      "targetPath": "apps/zhixu/src/runtime.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e8e30a2f8bd3fd875155682ca38dff861dc33be312cbacbad92bcc86520acd63"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/cron-scheduler.ts",
+      "targetPath": "apps/zhixu/src/scheduler/cron-scheduler.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6ff22586e55cd813d820a92fa1289b0631786f511c9ccea04e5646e7e88e5044"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/cron-utils.test.ts",
+      "targetPath": "apps/zhixu/src/scheduler/cron-utils.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a9d7bcfc271a49b1c17808a5fab6dba14d160a44b9d675b70e3c0b3332789f70"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/cron-utils.ts",
+      "targetPath": "apps/zhixu/src/scheduler/cron-utils.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a4c8bda70c862ae3d09b433b6e733707e5e081f3ae0edc05c171a03093b509f6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/deferred-runs.ts",
+      "targetPath": "apps/zhixu/src/scheduler/deferred-runs.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ec945a5172f54c374e996c67da0a927c411b66b534a67dbd29f298aaa383e667"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/job-runner.ts",
+      "targetPath": "apps/zhixu/src/scheduler/job-runner.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b74327076e10985d6ada2df57f318b58095644be0f8e3663e6b5c221ea28e1cc"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/job-store.test.ts",
+      "targetPath": "apps/zhixu/src/scheduler/job-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f6c1d699eec8abed2a5050fd923ec0dd8e347fab431cd71b36c7729ccef1110c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/job-store.ts",
+      "targetPath": "apps/zhixu/src/scheduler/job-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ec77f391bfe0fd2ebca998ba59b176bb7bf27a2cdea2d65b735f217db5165255"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/scheduler-tools.ts",
+      "targetPath": "apps/zhixu/src/scheduler/scheduler-tools.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1fb03530fd618cde1d348c50605f01a6c3532406925c3bdf0cadf94b05b369f0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/scheduler/types.ts",
+      "targetPath": "apps/zhixu/src/scheduler/types.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e2137d00374311bf4c39b951a067414af9d857023932bcebe43af36e01378944"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server.smoke.test.ts",
+      "targetPath": "apps/zhixu/src/server.smoke.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "77e4b7bcf63b29d4633ef341486827db0b7b9ea4c5d5171f2c731f807cbc1d58"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server.ts",
+      "targetPath": "apps/zhixu/src/server.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d7ab6e72cb44060bb2f680fa27a25c9e69f5d37cfbf190245aceff838ca5cd2d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/agent-command-store.test.ts",
+      "targetPath": "apps/zhixu/src/server/agent-command-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "cb94e633e138b4f9dea9d632acf6cafb397146709606327dfbb9a31dcf4debbb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/agent-command-store.ts",
+      "targetPath": "apps/zhixu/src/server/agent-command-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "139ed292bbf375986d5c2f418d5d48f1a0bf10b0d3278811c930aa69204ce02f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/attachments-store.ts",
+      "targetPath": "apps/zhixu/src/server/attachments-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "fa5bb7e5b8547740a246b3a310a20f9ca288d507cf0a9aba4f263d43fcadbaa0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/attachments.test.ts",
+      "targetPath": "apps/zhixu/src/server/attachments.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2d40ea063f5023462610483dbf5510a3005db56dcb36d30fa7a53d632564ef48"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/attachments.ts",
+      "targetPath": "apps/zhixu/src/server/attachments.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c075154bf418c333903a9410a873b9cf6b4e4659811e8f5a0730876d01cd2143"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/btw-store.test.ts",
+      "targetPath": "apps/zhixu/src/server/btw-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e466a07ed6d3d49b62e8a0c86e4b2e636fe3df59f222f1e7c1fc60dc8b883ea7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/btw-store.ts",
+      "targetPath": "apps/zhixu/src/server/btw-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9847043dec47026f405708e4af77bf66cf71614a7a70a1f6e69da17153a9db91"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/file-helpers.ts",
+      "targetPath": "apps/zhixu/src/server/file-helpers.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c72c3a04bfdf51cfcbe1aba45bac9533e4f7caa417b62ff2cbc62b742670e8d9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/http-helpers.test.ts",
+      "targetPath": "apps/zhixu/src/server/http-helpers.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "de20ced9533a83b83c58fdc343488e2ff108076bc55dd296d093bdb1384bba88"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/http-helpers.ts",
+      "targetPath": "apps/zhixu/src/server/http-helpers.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "32a9ebacfcbdb2a467f63dc156678dc83bcdf28ea927bc474344c8f5246eab2d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/btw.test.ts",
+      "targetPath": "apps/zhixu/src/server/routes/btw.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4f2ca0c4879ecf2de787a3484c6318310b1ab6e79840d9f38a026d0056030dc3"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/btw.ts",
+      "targetPath": "apps/zhixu/src/server/routes/btw.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "3df8bc82e2ddf37b79de8916863ae806c301d937a8e42420860766154d39aa06"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/channels.ts",
+      "targetPath": "apps/zhixu/src/server/routes/channels.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1f12aaeca5faf92d08970cf6ee00740d3cafe550cdac23c4c863fed189f90176"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/chat.ts",
+      "targetPath": "apps/zhixu/src/server/routes/chat.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "71e14be982c7494cccc485e6edeafd63ee2b5dd08115c78f2287bac889b012aa"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/checkins.test.ts",
+      "targetPath": "apps/zhixu/src/server/routes/checkins.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "02cfc5e866e2a7bb2cb8fb9680d5dc84cbefd6617585658c3a7f0f5ebba1e319"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/checkins.ts",
+      "targetPath": "apps/zhixu/src/server/routes/checkins.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "fcbaee1b75d755b4c8098b601c6431c4276541b3254f32ac0908e8c4ab60cb01"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/commands.ts",
+      "targetPath": "apps/zhixu/src/server/routes/commands.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b24e123c2ca7b80c38bdec5877ba83ea720db16e2766b1089ad74a43ece5eeae"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/jobs.stream.test.ts",
+      "targetPath": "apps/zhixu/src/server/routes/jobs.stream.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "bbfaa0cfb22f9507db981642e716ac29248b4f31db884619b9a5298ea00c4ee2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/jobs.ts",
+      "targetPath": "apps/zhixu/src/server/routes/jobs.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "dfe89388e8bdfb1369fb090bddcd33a2238caab4ade4da623bda91d823c8e390"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/learner.ts",
+      "targetPath": "apps/zhixu/src/server/routes/learner.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "abe42a2935f03a660494a81b7648ecced7bf8187ea54ae1b912e659d8ea0063d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/practice.ts",
+      "targetPath": "apps/zhixu/src/server/routes/practice.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "31dfb4abb6f23f68b053c883721b52603b6d258e0b0acc42eb40312b0d01c04c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/presets.ts",
+      "targetPath": "apps/zhixu/src/server/routes/presets.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "bf644a20039ba552865b7eed4f66c0c2b360c8e6252ac45389ad2ac9b4f44fee"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/sessions.context-usage.test.ts",
+      "targetPath": "apps/zhixu/src/server/routes/sessions.context-usage.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2ceeead40d414f30e750001a56b94106b262f3663beba27daf877572587381b8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/sessions.topic.test.ts",
+      "targetPath": "apps/zhixu/src/server/routes/sessions.topic.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2365ed8fb4cc3a6c8264f6aa10f89f86ab84108c0be52122526c8cc46eeac556"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/sessions.ts",
+      "targetPath": "apps/zhixu/src/server/routes/sessions.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4d4691f997ef08f3c68c83f88d0c2cf5496e93f59428594a8080dde1cb54a286"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/settings.ts",
+      "targetPath": "apps/zhixu/src/server/routes/settings.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "64a691a0e4939ac5e77dcea8c081bf65b9ddbde53a31deb96a9cfb3d244d0ee9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/skills.ts",
+      "targetPath": "apps/zhixu/src/server/routes/skills.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "72eafea7f99582ea2967d822a89b10634ae37ffa6208c778812b9b1f61018efa"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/wiki.ts",
+      "targetPath": "apps/zhixu/src/server/routes/wiki.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "92169de84bee7b70906f7eee9a94f76b4eab2f5e8be0404e1ddf3a680e747351"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/workspaces.switch.test.ts",
+      "targetPath": "apps/zhixu/src/server/routes/workspaces.switch.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "66335fdcf7e10dc69344522ff9228550fb1d55865ea1c106046e20be0b48abb8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/routes/workspaces.ts",
+      "targetPath": "apps/zhixu/src/server/routes/workspaces.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "226ceea9b043636e7878c3b3b6f52133d7d2bc561ca267b1a79f6f0ce55206ef"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/session-model.test.ts",
+      "targetPath": "apps/zhixu/src/server/session-model.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b4d8bb86e171107e8353328b0ca3f95c1c434ed370ddb8b39b26d85e7b68a5a9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/session-model.ts",
+      "targetPath": "apps/zhixu/src/server/session-model.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0035d8be402cf749015e12ff70004c9388e6c85b513b6aa042dde57caff0eebf"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/skill-frontmatter.ts",
+      "targetPath": "apps/zhixu/src/server/skill-frontmatter.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6b19bdf7075ec0477436de7eef58833f4dfdd8e785b778038d1dcc3b7b2a07db"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/trace-store.test.ts",
+      "targetPath": "apps/zhixu/src/server/trace-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b7511957fed387b72c3f480b40335c0d5c5f4308ebc1fef92b95228c541258c6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/trace-store.ts",
+      "targetPath": "apps/zhixu/src/server/trace-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0dc4a71aada5f15559cada947c8705f461d925b1ed23a7f9f37cd74040c594b8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/upload-prefix.test.ts",
+      "targetPath": "apps/zhixu/src/server/upload-prefix.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4a64283733003f86d12f76b34d537ff7ad2071a6c68f5fcb30d9099884ba5da6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/upload-prefix.ts",
+      "targetPath": "apps/zhixu/src/server/upload-prefix.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "195051913d3d2416929a1cc269d90d8acb09707fdeff79860370e0b1809b63f3"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/workspace-activity-store.test.ts",
+      "targetPath": "apps/zhixu/src/server/workspace-activity-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ed171b8b8f32a4e4a752b4a19df47df70b5a9c8b8eb34ef73b7983870dcc6f1b"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/workspace-activity-store.ts",
+      "targetPath": "apps/zhixu/src/server/workspace-activity-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0fd7a21b8848fa5f6337c8354363a7bfac0675e0c9f047f12255f83f2c13910a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/workspace-switch.test.ts",
+      "targetPath": "apps/zhixu/src/server/workspace-switch.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f5d42e743dd02f5e34db1cc9fa2b7dd1409528204042b85e63d19173580b984e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/server/workspace-switch.ts",
+      "targetPath": "apps/zhixu/src/server/workspace-switch.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e2aff370ebdf78914f4b620ddb31b0fca98925b9ce12b0ad1be5b92ab306b887"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/shared/context-usage.ts",
+      "targetPath": "apps/zhixu/src/shared/context-usage.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ee7b9760ed28c27ef3abfce145040669f522fb3e0925de4781f50abee8b0c1b0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/showcase/case-exporter.ts",
+      "targetPath": "apps/zhixu/src/showcase/case-exporter.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "de6c870baeb11ff11359468e46f11514fdad7674aa7451cd9242595cb3bc040c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/storage/file-store.test.ts",
+      "targetPath": "apps/zhixu/src/storage/file-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2b8f80309ab6302662696be8f38c5efdadcf980fbc5165996d608a8c871fa7c9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/storage/file-store.ts",
+      "targetPath": "apps/zhixu/src/storage/file-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "41a5156376fa348be136d82fe2464dca651bf3949f582505425cdd67ad933aec"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/terminal/command-resolver.test.ts",
+      "targetPath": "apps/zhixu/src/terminal/command-resolver.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5f7247babe4451b13d62c7290d890616c4c4c089c3930caa8a7019b54f466916"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/terminal/command-resolver.ts",
+      "targetPath": "apps/zhixu/src/terminal/command-resolver.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "aa4c88ca759d9ce505325c6fce9a919a59c36adac4402dba6c2c91749e22e003"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/terminal/local-pty-backend.ts",
+      "targetPath": "apps/zhixu/src/terminal/local-pty-backend.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6bd3ec3517943545bbf3d6b4e121e686940e3ecc44803a5592d7bda374f6166d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/terminal/run-file.test.ts",
+      "targetPath": "apps/zhixu/src/terminal/run-file.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "7a5e8e5835130bcae894381c0c09029b1b195771071ba98edfb919b1a3f6da3f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/terminal/run-file.ts",
+      "targetPath": "apps/zhixu/src/terminal/run-file.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b0e066b77859a9a2f3f62e0365916baeebec0c8013c80f3b97b03ea5056f37ba"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/terminal/run-record-store.ts",
+      "targetPath": "apps/zhixu/src/terminal/run-record-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d8e9fc21c7284bff862920852a5f97acebc2e748b7eed5c3dc74bf3c3d90784e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/terminal/terminal-session-manager.ts",
+      "targetPath": "apps/zhixu/src/terminal/terminal-session-manager.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f0f25f51ef22363ab4eb7c03ee8c348634972c249fdf90fdd1a1cece27e60550"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/terminal/terminal-types.ts",
+      "targetPath": "apps/zhixu/src/terminal/terminal-types.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1512a1ac11c5537df59325cfcbd5da97a3cdbbabef84a8f7c9b30bc488f46661"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/utils/fetch-logger.test.ts",
+      "targetPath": "apps/zhixu/src/utils/fetch-logger.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f755821d686e9eebef9b75ee40c888b66db4944149a3a6e22b2c1614b6fad1ac"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/utils/fetch-logger.ts",
+      "targetPath": "apps/zhixu/src/utils/fetch-logger.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "edadc04d1503c54aff94a1db0393e2f7e970dc5a9317cb83b753a853ce3abdb7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/utils/path-safety.ts",
+      "targetPath": "apps/zhixu/src/utils/path-safety.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "62c3d0f6ba81782f96f504ed59bafdf5f5d2aa28a5afd7b8262f5aea54275aed"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/utils/process-fallback.ts",
+      "targetPath": "apps/zhixu/src/utils/process-fallback.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d43558cfc4ef8dd850f9d55faef28bbe6e808b9e957f93f826e92be5ddc89f6c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/utils/proxy-bypass.ts",
+      "targetPath": "apps/zhixu/src/utils/proxy-bypass.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f458861ac509e907e95e416222be2f546fd7d1c3cb1af52f201a83342a908141"
+    },
+    {
+      "sourcePath": "apps/inno-agent/src/workspace/workspace-registry.ts",
+      "targetPath": "apps/zhixu/src/workspace/workspace-registry.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d29b45af52b5835beb0000d48ef5fae4e141a46f398b2763663e65db2492cddb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/tsconfig.json",
+      "targetPath": "apps/zhixu/tsconfig.json",
+      "sourceUnchanged": true,
+      "targetSha256": "ed9ed0707afa0b676911edf2bae4307042e25f7fa432cbdd828a1d9c4985659e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/.gitignore",
+      "targetPath": "apps/zhixu/web/.gitignore",
+      "sourceUnchanged": true,
+      "targetSha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/index.html",
+      "targetPath": "apps/zhixu/web/index.html",
+      "sourceUnchanged": true,
+      "targetSha256": "aeade509b47b61ff978be7f0dde5f667f7094428f22e74bb52478e97fc9bd010"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/package.json",
+      "targetPath": "apps/zhixu/web/package.json",
+      "sourceUnchanged": true,
+      "targetSha256": "71501b25ddace39c169db069ae6c51c1cde5bf2ef2a01fe20a83432ffac5d3eb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/icons/icon-192.png",
+      "targetPath": "apps/zhixu/web/public/icons/icon-192.png",
+      "sourceUnchanged": true,
+      "targetSha256": "7edde87db15deac9e6a9f0922807859bf668f25eaed242281240213014b45120"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/icons/icon-512.png",
+      "targetPath": "apps/zhixu/web/public/icons/icon-512.png",
+      "sourceUnchanged": true,
+      "targetSha256": "96dc2229398c5588e0a0b101ec50c58a50b8c124608eb2c169fd36f662aaf6e1"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/manifest.webmanifest",
+      "targetPath": "apps/zhixu/web/public/manifest.webmanifest",
+      "sourceUnchanged": true,
+      "targetSha256": "ba45cfb6a5d9ac8e6090ae9f0bbad9d205c73a49993d7d592f63a93c842c8035"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/provider-icons/README.md",
+      "targetPath": "apps/zhixu/web/public/provider-icons/README.md",
+      "sourceUnchanged": true,
+      "targetSha256": "e5dd0ed1d21c542530c3c9283268b351976ec11012052fec587e9fb7ec6a0eb6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/provider-icons/bailian.svg",
+      "targetPath": "apps/zhixu/web/public/provider-icons/bailian.svg",
+      "sourceUnchanged": true,
+      "targetSha256": "9fccc143fd0b920d1814d369550c5ea412ce02e37537d625caa45b01fdc834e8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/provider-icons/deepseek.png",
+      "targetPath": "apps/zhixu/web/public/provider-icons/deepseek.png",
+      "sourceUnchanged": true,
+      "targetSha256": "6342c2315c4b1754d867b9f16120c061b967d2a0a8d38138a27253018774589e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/provider-icons/kimi-rounded.png",
+      "targetPath": "apps/zhixu/web/public/provider-icons/kimi-rounded.png",
+      "sourceUnchanged": true,
+      "targetSha256": "4a9f295eb9c7d157fb62de38af6150dc88571b3e4098b9c2284ee38376e61177"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/provider-icons/minimax-user-icon.png",
+      "targetPath": "apps/zhixu/web/public/provider-icons/minimax-user-icon.png",
+      "sourceUnchanged": true,
+      "targetSha256": "4584ffa1be6ef3896cd4947ca8fb1169acb412e6fdcd79deb5622978092e79be"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/provider-icons/volcengine-icon.svg",
+      "targetPath": "apps/zhixu/web/public/provider-icons/volcengine-icon.svg",
+      "sourceUnchanged": true,
+      "targetSha256": "dc3edfa31da4604ad1124d597d642142d63a77463aadc638083174fd8eef3e3f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/public/provider-icons/xiaomi-mi.png",
+      "targetPath": "apps/zhixu/web/public/provider-icons/xiaomi-mi.png",
+      "sourceUnchanged": true,
+      "targetSha256": "cbd7602e878c987180cbb14e86aa241541e3523e85362e1ac0bc7b896f93ea65"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/agent-command-bubbles.css",
+      "targetPath": "apps/zhixu/web/src/agent-command-bubbles.css",
+      "sourceUnchanged": true,
+      "targetSha256": "e9b0ad59a51433bc495b9c974f09dc4c03bb2240f158692ed309d6f7db9f8d5d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/btw.ts",
+      "targetPath": "apps/zhixu/web/src/api/btw.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "eaf0e103418f87cd151bbf120765673c220872ea8841f9a8b06607c5a8e67f55"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/chat.ts",
+      "targetPath": "apps/zhixu/web/src/api/chat.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "734f7f2b704b5ed63d3d415fda09fa3730a3f96d8141681821bf28777ea5eec3"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/checkins.ts",
+      "targetPath": "apps/zhixu/web/src/api/checkins.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8207a937758668fe3c29b88b91df192d9dae18d909988bb552ef515adbe28899"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/client.ts",
+      "targetPath": "apps/zhixu/web/src/api/client.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "04384e091d74054c19f64bfd0282972bd374a8459614399c5622cebc277ad417"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/commands.ts",
+      "targetPath": "apps/zhixu/web/src/api/commands.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1c6afc2ccc3482fbffa5a9046ae1d6f8514045d3c32f00a6adf676fdd5f45d69"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/jobs.ts",
+      "targetPath": "apps/zhixu/web/src/api/jobs.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "73b6fd67e343e8561e5023cea51573f81b0b66b8cbbb322cb0be76dcfe09f4af"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/learner.ts",
+      "targetPath": "apps/zhixu/web/src/api/learner.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "68d1d9f55b8c18e9231face682bf5986cf2005d868956a44886998daeee3b354"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/mcp.ts",
+      "targetPath": "apps/zhixu/web/src/api/mcp.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "cbaf559d35739b9311a384ef65cc3c1374f3d59dc47f3ed7d812f4efcf5b3a05"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/presets.ts",
+      "targetPath": "apps/zhixu/web/src/api/presets.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0573827ee36502f57ba891b61cd89416460ed31d11c20ec7e1d2eec348f7e000"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/sessions.ts",
+      "targetPath": "apps/zhixu/web/src/api/sessions.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "eaccdcaf80a934b2baff40fd3d1c35e50566f8987c78947540f88608586c6dae"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/settings.ts",
+      "targetPath": "apps/zhixu/web/src/api/settings.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9d4fe5f2270cefc8146d4cc9b8123b991bb0b7329d03af02b45b1d5a0a719964"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/skills.ts",
+      "targetPath": "apps/zhixu/web/src/api/skills.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d27fd2bd640b29a1750dd6eba5dbad5901721d0fa8d5537dd59b6d104501a8cd"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/terminal.ts",
+      "targetPath": "apps/zhixu/web/src/api/terminal.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5f9821a835fa976ecfdfa5b736fdb5d0f7803c5e8cc475f1f960784750d0f769"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/uploads.ts",
+      "targetPath": "apps/zhixu/web/src/api/uploads.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9d946891403da5eff4a9df4a27ccd72e109db46cfdbd76c9da21b0a3aa3656a8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/wiki.ts",
+      "targetPath": "apps/zhixu/web/src/api/wiki.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5eac744aea218cf9c7127cc26b357161f598fac2a3b87d27d27a674edf0a4975"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/workspace.test.ts",
+      "targetPath": "apps/zhixu/web/src/api/workspace.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "36221e256c8bb6e2d7807d0a047fecde82497c92fe776e0c0757564b2bf524cd"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/workspace.ts",
+      "targetPath": "apps/zhixu/web/src/api/workspace.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "bfae410b06151503214dfa2b22f757c2d3ec87d4ef7f146d17377289c9ed6fb8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/api/workspaces.ts",
+      "targetPath": "apps/zhixu/web/src/api/workspaces.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6cdaa73b9cec7cd83b32f04562ef7fc377b92c892dc4c4dc806e5ce8a90a68c5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/app.css",
+      "targetPath": "apps/zhixu/web/src/app.css",
+      "sourceUnchanged": true,
+      "targetSha256": "80c14a7b409d423d95e517288862ed16b719d790b95684b580d20a9657784314"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/custom-elements.d.ts",
+      "targetPath": "apps/zhixu/web/src/custom-elements.d.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "819e55474a79e7d7628c3f78cfb5b6761de5085b356f37e0bfb591eb597f269c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/i18n/index.ts",
+      "targetPath": "apps/zhixu/web/src/i18n/index.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0aa49103837c205b34a2993f194a6636b4e082c592a3aafe7415d6eb306a6a48"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/i18n/locales/en.json",
+      "targetPath": "apps/zhixu/web/src/i18n/locales/en.json",
+      "sourceUnchanged": true,
+      "targetSha256": "a7baa6c48c189d89c51f5ba0f1a6b3704fdf5a0030304eee851f52c77fbb0ac3"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/i18n/locales/zh-CN.json",
+      "targetPath": "apps/zhixu/web/src/i18n/locales/zh-CN.json",
+      "sourceUnchanged": true,
+      "targetSha256": "c6c16d69c345e513867b042e23195889f42d470c0e5c6531c80567afaf8e7025"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/lib/schedule.ts",
+      "targetPath": "apps/zhixu/web/src/lib/schedule.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2d27b927c9f2205f98c7610eb344140e0ea7c96de25702e9aabff461cfaea26d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/main.tsx",
+      "targetPath": "apps/zhixu/web/src/main.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "80c8d184f459e266a24f158619bf1725b9128cd649e0f1872c053278ba9b9055"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/App.tsx",
+      "targetPath": "apps/zhixu/web/src/react/App.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "b75cf9ea7b2eafddb0c152ab39e0d4bcc4a6081928d1666cd6f6795e963f1214"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/BtwPanel.tsx",
+      "targetPath": "apps/zhixu/web/src/react/BtwPanel.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "019579a9a4bdcdabc23d08880e6e190fd5642acf5d4838c790d064fb5342e6ed"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ChatCenter.tsx",
+      "targetPath": "apps/zhixu/web/src/react/ChatCenter.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "27ac379da71b48b8e55a380f46dbecd76af39423948e0c1e34981b1ae5f34dda"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ConversationMinimap.tsx",
+      "targetPath": "apps/zhixu/web/src/react/ConversationMinimap.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "90808fc83a51372285d96dfdb07e978ad3ccbed9e2097eb849b28e78fa100765"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/DesktopWindowChrome.tsx",
+      "targetPath": "apps/zhixu/web/src/react/DesktopWindowChrome.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "5c75744ce4a269f2ce7748d230f99b44eb08d787a5b634e022daad48343812ca"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/EChartsPreview.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/EChartsPreview.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "323dd39af080b8c38bd5cacf9a5ffa492bdb7e69ba4feb8d0648245981225a04"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/EnhancedCodeRenderer.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/EnhancedCodeRenderer.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "6dcabae78a6741487bd4855c80f750e0a852c62503fbda838875c8f121d57a4e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/FeaturePage.tsx",
+      "targetPath": "apps/zhixu/web/src/react/FeaturePage.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "85f965551125513f55feee4eaa573f5e122a924bd72a4f830cc05ce52e957ee4"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/FileName.tsx",
+      "targetPath": "apps/zhixu/web/src/react/FileName.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "eb352a3646abee09f72c307848efdc0572a1f13ccae0df50dd3e627b1b0e4089"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/FileTypeIcon.tsx",
+      "targetPath": "apps/zhixu/web/src/react/FileTypeIcon.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "cb00154dabfd14a491d1d7c14cee7ae1d5a4cb87a078a169548be19ef324f965"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/JobsPanel.tsx",
+      "targetPath": "apps/zhixu/web/src/react/JobsPanel.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "ae59481ab9a9b689bec6965d21f651f5112a1d124cca649f16e9802377308578"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/LazyCodeEditor.tsx",
+      "targetPath": "apps/zhixu/web/src/react/LazyCodeEditor.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "50c956069049b5f50660790e9e5b05679ceb1f75f866234c1ab5c64dea9d02c1"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/LazyMarkdownEditor.tsx",
+      "targetPath": "apps/zhixu/web/src/react/LazyMarkdownEditor.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "73d8cf3b2f7e51d322092eca5f786784fb1d34d4cb3c4f7408bc5e4ecd541474"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/LearnerProfilePanel.tsx",
+      "targetPath": "apps/zhixu/web/src/react/LearnerProfilePanel.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "85197aacaebaf1bab680bf1a3276e3f5c3e13e3f9f2b930f2989d1738eda44b5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/MarkdownArtifact.error-boundary.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/MarkdownArtifact.error-boundary.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "f37f329a4390941274f16851e5c4afa497a2c5cd80120823e01f56d0941805ad"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/MarkdownArtifact.streaming.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/MarkdownArtifact.streaming.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "01e01c59a785d12ad8ce4aecbd90981b3e29ee32d51f9b9896f7d77dbbb0c4ae"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/MarkdownArtifact.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/MarkdownArtifact.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "f87a2e07ee882067b39ee359750e31f617c499f594d26209bb307b0c7048d440"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/MarkdownArtifact.tsx",
+      "targetPath": "apps/zhixu/web/src/react/MarkdownArtifact.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "94bd241635cf47efe0095ef7146beabafb32498c25fce7dca0504eadc9e0f6a2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/MarkdownRuntime.tsx",
+      "targetPath": "apps/zhixu/web/src/react/MarkdownRuntime.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "9c066684e83ce21709d057f81a13b7e6a9487f892e1f133b6ced3ef0da7721f6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/MermaidMarkdownRuntime.tsx",
+      "targetPath": "apps/zhixu/web/src/react/MermaidMarkdownRuntime.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "00a9cb5b071f5797829d2ac2952a689ac1d9ad2504f7156f9e45954b947eae34"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/Notebook.tsx",
+      "targetPath": "apps/zhixu/web/src/react/Notebook.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "1f8308ad11d5fb51ffea2b22890f812b213424eaac6e74259c102ed7276a34c2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/PermissionDialog.tsx",
+      "targetPath": "apps/zhixu/web/src/react/PermissionDialog.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "6987933c2fc8732d61e6600482ddbad29050cde5d4693ac7ad993531b0d2aa08"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/QuestionDialog.tsx",
+      "targetPath": "apps/zhixu/web/src/react/QuestionDialog.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "1c6b18d48a30ec2033248b1c818d55c8778565721472cf652cfce88cd376c57c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/SessionSidebar.tsx",
+      "targetPath": "apps/zhixu/web/src/react/SessionSidebar.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "c9f31429259d65339884ee586abdcfaace9d935b7ff40419f5145b69e1cfd6e7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/SkillsPanel.tsx",
+      "targetPath": "apps/zhixu/web/src/react/SkillsPanel.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "beaf51a457b8e0e755f1cf767983883fb78bf1e3141b59b993fe63a9ca9f1451"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/WorkspaceBrowser.tsx",
+      "targetPath": "apps/zhixu/web/src/react/WorkspaceBrowser.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "17a763aa1cafdfe773b763eee543f35b3ab1b73822d6f1319b0b9a8aeb468238"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/WorkspacePanel.tsx",
+      "targetPath": "apps/zhixu/web/src/react/WorkspacePanel.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "0e3f2795659c5db6bf215b42f8e10dce3f0f24490c242164e41c5cbe147c708d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/WorkspaceSwitcher.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/WorkspaceSwitcher.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "acc7397fc5f88ba2b9b5d822769cae38dcf35af817423e21cfcf854f7cde7c8c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/WorkspaceSwitcher.tsx",
+      "targetPath": "apps/zhixu/web/src/react/WorkspaceSwitcher.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "38b555f86b2a428ad122f87d37a7a3b93760ae891aaa9d8092c0e98fd287a0a4"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/AgentTraceTimeline.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/AgentTraceTimeline.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "a2dcf130c37b9e5ec63f45f8a1f48ad99aa4b7f55687c6794bb1287973f0af3e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/AgentTraceTimeline.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/AgentTraceTimeline.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "ed16b9b218767fb65522b8c6f3085d2bbb9aa0bcea4be1b2ec78b5f2fb9c5fed"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/AnsweredQuestionCard.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/AnsweredQuestionCard.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "e7fb818fdaa5c03ae401e499e17f7cace4ed79ce77ede52246dafe2aac3cc7e2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ChatComposer.model-menu.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ChatComposer.model-menu.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "8eb01ad88f07f11a6d23f5e078fcd8bbefb923b8daf59f12d1f738131be2d1f5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ChatComposer.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ChatComposer.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "f0c829e3aaf16d912ecdebfdfae779d7848bed2bfe9961de2f8edc0667761771"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ChatComposer.workspace-control.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ChatComposer.workspace-control.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "560de8d7b5f8f673ae9bbee455c3601c419e3a1234e8a2c500e6e395edb9fcca"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ChatConversation.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ChatConversation.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "80dab13a7d4e408deac7b8bf5bcb2d99ef4fc7b561b3ac394752a4b87aaf801e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ChatStatusBanners.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ChatStatusBanners.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "2da6c2394d8b14c0312bac80c3dc01f50aabcd076d79032ba7715906beacae3f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ChatUploadChips.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ChatUploadChips.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "1834f5bf130e25dd0e26ffd0b84990972d131332b6b526ce4fa1224f4e7816c8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ChatUploadChips.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ChatUploadChips.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "a27c69fe4a7690eeb2484ec0ffbe744b629d480600169c2b2b51cdd6d3e9a626"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ChatWelcome.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ChatWelcome.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "616300d92e2dfb416e19bfe12b5a69d03d3e20a51d36c27d1ddbead2691a3b6d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ContextUsage.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ContextUsage.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "d4349895f3fb43e9aad66d126f82711398cfcf1d3d875a7f72972735a6afa595"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ContextUsage.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ContextUsage.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "9d8f57a73935dc5d51aa41025f5dad9ed8055e4ba313bb359510319d3a997fd7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/JobStreamBubbles.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/JobStreamBubbles.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "09cdd997ccc90541e0eea6c8f062d2356d428ed210337c4746b38ec635120e7e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/MessageBubble.agent-command.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/MessageBubble.agent-command.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "63cf4f3413e1a13d0f3e8b7b204ff263786f2df8b789b293359fb6172967928c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/MessageBubble.edit.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/MessageBubble.edit.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "15aaf092101bf15c4becc0c2a0cf3e9c4b151d844215a528264e602cae4c3dca"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/MessageBubble.follow.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/MessageBubble.follow.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "b7488782d69add458a7fe8376c3a8816f604845f720eb7f19de194ae7727f027"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/MessageBubble.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/MessageBubble.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "ec2e1cdff289d6f11d4874da0c68c2cfe74e1fe043b740ddee81774a7a88652c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ModelProviderIcon.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ModelProviderIcon.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "8a6435a8594255c77c40c9e592139f54a2a5f0e092d56b28e8e535a63ea26250"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/PermissionModeControl.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/PermissionModeControl.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "d7e9552c2646a8a8e4e6a0cb812c555834ec732185d6bb458f2b51073c71235f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/ScheduledRunBanner.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/ScheduledRunBanner.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "5aa830c9b6182d314401953bff3cc19766750a94c5aa666f7ecd79f06fa99820"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/SlashCommandPalette.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/SlashCommandPalette.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "b7a4f7928916afdd94f40b3580ecd1889f04625333cafe6915c8c6d3943887f5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/StreamingBubbles.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/StreamingBubbles.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "0a367fa3253df22d313e9e368448916eca4b952791f60b77d68c6fc8124b7724"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/TodoWidget.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/TodoWidget.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "c68047d87fb054e3f3604828285609df91e433f372edb38415bd3e1cfa997e21"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/WorkspaceSwitchConfirm.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/WorkspaceSwitchConfirm.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "0cb598c3fa6b221d74cd74425c101ba9ba72261eca2a504ebe3cc8bffdf7cc60"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/WorkspaceSwitchConfirm.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/WorkspaceSwitchConfirm.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "0beed9247cfd4d5196fabc8cd5038e7492b8c414908335d5ea1b09a8ff44fd4c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/agent-command-message.test.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/agent-command-message.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0c83cafc15621f97ad8d4fc277d376daea798487e95be161ca9157a5c9e2acc9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/agent-command-message.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/agent-command-message.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "072ca83106bb6b1503a7c5da8497e6a43da44e9cd8986520a6702e400e94f90a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/composer-utils.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/composer-utils.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9c98155e206f12b1175810a481a1af41b574ffb7bc3935e71c9dd31a9f5a1a37"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/context-usage.css",
+      "targetPath": "apps/zhixu/web/src/react/chat/context-usage.css",
+      "sourceUnchanged": true,
+      "targetSha256": "be69802d337f023f90f0d309ab5b5f747f64b5ca05fac33da0955fff59ee50c6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/model-menu-position.test.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/model-menu-position.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e4228539ed2b0dbbe63bccd73b07101709fb1bdc0dae124beff40b4bf075e0fe"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/model-menu-position.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/model-menu-position.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0bd67ed4b9a692b41f07940d91ec6f0feac9ba5bd708285f6056fee314289807"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/skill-message-collapse.test.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/skill-message-collapse.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "3d28ea3d2fc86e6b44f2d2c209b871e7632eceb4568a82b3145afcc47878b141"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/skill-message-collapse.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/skill-message-collapse.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0a35297e9170e8e1681989808e8e5fc931e499dac5dd1b91beda00eb04ee0b27"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/slash-palette-utils.test.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/slash-palette-utils.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f57ca52b1e8d67a1cdefa7492043807ef86063a7abaf63112ceb246658a4695b"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/slash-palette-utils.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/slash-palette-utils.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2a534c1f2932d11e5191cabc3707d18066f34e95cb1084f9696d70360893c306"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/SmartInputOverlay.tsx",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/SmartInputOverlay.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "a60d1588ca0fd3db5e239ea2bbf5e3a7a86a219edceea276aa95b922392ff7d7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/clipboard.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/clipboard.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "dabb9e1bdbd9ab80299cbdad967f6a1c420701aa8c0597f1a1765d655128bb3a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/drag-utils.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/drag-utils.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2c8b99a9c6f1221f6d378a873c10e2376fc9dbfe44776c62c6c20c983e2881e6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/engine.test.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/engine.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "bed7028168dd978cecc8ca4cc87f2b29120879daff18d47a2f1af26468aaa195"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/engine.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/engine.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a013e3e57a36d3657f9519d6ee6002155d3b763f94d61773e00a66817898a011"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/kinds.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/kinds.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2e31442fe90c2623052f7f3bac09adcdd9b5b74b3b46ab245e78bea6ee9586af"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/rules.test.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/rules.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "073c925b98e2acc0289f3e9e341ee28a23e8d69c5757a063ec542d6bfa4fefb9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/rules.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/rules.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4d784ef1f3a814a5edb321cb32fec7d4b462e9091728424e9de59947a81c2616"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/smart-input/useSmartInput.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/smart-input/useSmartInput.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f6bd001901926f708807b3563e32cd2b4078e19204f5125ce9cbee6ab986045e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/chat/useContextUsage.ts",
+      "targetPath": "apps/zhixu/web/src/react/chat/useContextUsage.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6b9afdf2293495f62e5d7c72e016c26931075032e8c2206d13bca52676f15e71"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/hooks.ts",
+      "targetPath": "apps/zhixu/web/src/react/hooks.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f2402c3208e0133d980a3e58dde0208db173b1345fd0aebce79613b7860ebde5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/jobs/CheckInCard.tsx",
+      "targetPath": "apps/zhixu/web/src/react/jobs/CheckInCard.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "9a43fd7643188f9e7f477da4b58cd5bc0a15729a3d21b8eb8a879a74c512a630"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/jobs/ScheduleEditor.tsx",
+      "targetPath": "apps/zhixu/web/src/react/jobs/ScheduleEditor.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "73a1a2c375fcefe1a3b5e547baa002882902f8e1dbb4481e57170962131a76f7"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/jobs/runJobInConversation.ts",
+      "targetPath": "apps/zhixu/web/src/react/jobs/runJobInConversation.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d79449f894f29403771d48ecdea711aff1de099fb51486b46fd8d4270a89c72b"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/markdown/ArtifactRenderers.tsx",
+      "targetPath": "apps/zhixu/web/src/react/markdown/ArtifactRenderers.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "b9c6cd6e3dbcea1f861f8622beb19624e79687fa38deb2465e370f2aea2e9655"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/markdown/EnhancedCodeRenderer.tsx",
+      "targetPath": "apps/zhixu/web/src/react/markdown/EnhancedCodeRenderer.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "b0688bd0949d0e4f76aa28fcd79a4c69182de31e2c9c2fd7412fa2b04f12cbce"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/markdown/EnhancedLink.tsx",
+      "targetPath": "apps/zhixu/web/src/react/markdown/EnhancedLink.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "723b5b83812a6bc32a6d39432f019ce0519f3bec7c4497b64990f4b1f2adb015"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/markdown/EnhancedTable.tsx",
+      "targetPath": "apps/zhixu/web/src/react/markdown/EnhancedTable.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "849c9144d0eba3c95df7f881c6a1c17926d953acd9f540a2554d68c4b5d13b09"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/markdown/MermaidArtifactRenderer.tsx",
+      "targetPath": "apps/zhixu/web/src/react/markdown/MermaidArtifactRenderer.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "354be51dacc5f6b4929c4948b6e650d3c2b2a0ebda08f4d92930388b6b28dd28"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/markdown/shared.tsx",
+      "targetPath": "apps/zhixu/web/src/react/markdown/shared.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "be2eab022d4ab3f9d39bea77e18613a6671a7a80b5a9512e6163e430bfecb01f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/markdown/special-renderers.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/markdown/special-renderers.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "98f9062e2a2a8b671b415a9097631356e0e508321d222b8bb56b597bd69eb0b0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/markdown/special-renderers.tsx",
+      "targetPath": "apps/zhixu/web/src/react/markdown/special-renderers.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "a72c649ffa9099aed05f2c946019dd3d5418782e558ca77e31eace890b2ba817"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/notebook/GraphView.tsx",
+      "targetPath": "apps/zhixu/web/src/react/notebook/GraphView.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "9e60b1f386e24a956a230816a9faac213991b37dac188ad902cfb418c84586ea"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/notebook/NodeInspector.tsx",
+      "targetPath": "apps/zhixu/web/src/react/notebook/NodeInspector.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "2cee1fd04638fc67038d1c3ccadbf8550e00512dc754c39d656e4310f5908e42"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/notebook/PageView.tsx",
+      "targetPath": "apps/zhixu/web/src/react/notebook/PageView.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "6638f2b6b719b9af4b4ff12d96174253dfa535aa6f3257cdefc6887355c49657"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/notebook/ReviewView.tsx",
+      "targetPath": "apps/zhixu/web/src/react/notebook/ReviewView.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "c8f82b085fb7952e0f670a15aa1d90ed2c531f8cc4e698392785fdebd51a3740"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/notebook/force-simulation.ts",
+      "targetPath": "apps/zhixu/web/src/react/notebook/force-simulation.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9f8f234ffca00fede8f8eeee7ab68f9477b288902b97581fc187c93dfb283024"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/office/DocxPreview.tsx",
+      "targetPath": "apps/zhixu/web/src/react/office/DocxPreview.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "eca812037158923a4d31f24a35d0c03023a14fb6389aa3129174aa5915101827"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/office/PptxPreview.tsx",
+      "targetPath": "apps/zhixu/web/src/react/office/PptxPreview.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "4f2ee95ece7b8c899f430daec4cf5b7606f63cdf3de8bd2045a3a605b848f031"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/office/XlsxPreview.tsx",
+      "targetPath": "apps/zhixu/web/src/react/office/XlsxPreview.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "542cd0e4f7b1c410c343aa881b4041b68cb9c7e75e6a665d2d8613a2b54db566"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/AboutSettings.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/AboutSettings.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "9da5b2ca32da12ebdd96334ca1c8cadcbbcb79da9d9e652c98e0a77e12c00997"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/AddProviderWizard.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/AddProviderWizard.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "77398cc0179816ccf46d30c99038f52a4c92a02879c26d0ff1b7d79d3857665f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/ChannelsSettings.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/ChannelsSettings.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "f5054ad864f97417bbafe46fe2f3d4a4dcba11dd17fa18abd9d537cce9285d69"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/GeneralSettings.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/GeneralSettings.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "9f23f9247cad3dcbadcd175b6c562de49d064f2e615b612cd9391ffaffa32e62"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/IntegrationsSettings.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/IntegrationsSettings.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "059ed297b90ca0d0ff98519a30524a07c0cba4dbb85956b47c2d837dceaae412"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/McpSettings.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/McpSettings.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "300d61b48e5e3f5b623f028f82abbe5837ff662b582b17c2105c6f7dc5a843b1"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/MemorySettings.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/MemorySettings.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "a5a1c0a7067d915ad1e2f156c176a01781259063a06f92313885e1900acf2cf4"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/ModelsSettings.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/ModelsSettings.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "3ddba9abf6816acee82ac04cb74708065e92ecd55ff35a24db0316a0d19ad01b"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/SettingsOverlay.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/SettingsOverlay.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "e54a40d847f97c6506b3cee2194e39f6f4128f39bc02efa82791bbbf56fe6355"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/SmartInputSettings.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/SmartInputSettings.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "513c8149cc96c9089d0c53f0e19243dcc52553fafd2fba55abb85b1a3af926b4"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/model-metadata.ts",
+      "targetPath": "apps/zhixu/web/src/react/settings/model-metadata.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8f66b10713abe680e029574dad8ce8f099fb4c3f5b9eb13fe290e3bb986a52bb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/primitives.tsx",
+      "targetPath": "apps/zhixu/web/src/react/settings/primitives.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "1e0a523bdf231f9897882f5fb5187b69f51670169a0761994687a1d0abb77cd6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/provider-presets.ts",
+      "targetPath": "apps/zhixu/web/src/react/settings/provider-presets.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "944662b629aa252501f4dba66c2aeb31fb730327965f194d110938cd59d49105"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/settings/shared.ts",
+      "targetPath": "apps/zhixu/web/src/react/settings/shared.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d3ee3403256360e816b3ebc429deead44793cce2ca6c4f3613fe4785aa09f22e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/terminal/RunButton.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/terminal/RunButton.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "c6966a217c7322173bf4237ca4dfcf0f01bc5f3841db9c2184bffc36e743e97f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/terminal/RunButton.tsx",
+      "targetPath": "apps/zhixu/web/src/react/terminal/RunButton.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "132c1013cd7c5afdbdad32769d91f490f76612711df3b25f16f6ed64b0eb31b6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/terminal/RunsPanel.tsx",
+      "targetPath": "apps/zhixu/web/src/react/terminal/RunsPanel.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "c58f7a5f70fad723829c110cd327ba4bb707ebb3ce790389dc887314b595d93c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/terminal/TerminalDrawer.tsx",
+      "targetPath": "apps/zhixu/web/src/react/terminal/TerminalDrawer.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "8c67848cae7d5241c41dcd0ce40b38cca12e63b171767419223e2339782de7f5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/terminal/TerminalView.tsx",
+      "targetPath": "apps/zhixu/web/src/react/terminal/TerminalView.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "da9d538c15620599e26d118f2d483d429d9157a97fa78d9ae3f1169440346537"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/ContextMenu.tsx",
+      "targetPath": "apps/zhixu/web/src/react/ui/ContextMenu.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "75c57ef4bd73faea370abc5efab5265abc83c7d1c86628537a95ac9ecdf7c0da"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/PopoverSurface.tsx",
+      "targetPath": "apps/zhixu/web/src/react/ui/PopoverSurface.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "07e38b689802d1fc9a492417ba53968c6510170d9c809de556b5f5296b6c8398"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/Spinner.tsx",
+      "targetPath": "apps/zhixu/web/src/react/ui/Spinner.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "68e8f1c53adf7f53b663ad1132d900088c71e1270aa745b691e32fc5d4cc75f1"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/Switch.test.tsx",
+      "targetPath": "apps/zhixu/web/src/react/ui/Switch.test.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "1f3b56317090fd09cff4a5bac90afdbc242968d94760d27ae30fca096acd2ba0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/Switch.tsx",
+      "targetPath": "apps/zhixu/web/src/react/ui/Switch.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "d9fed120fbe76116f1c54931f58b8baf503ecc78126883b7d10eb493d4810d31"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/checkbox.ts",
+      "targetPath": "apps/zhixu/web/src/react/ui/checkbox.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "295a18aea28eb224c2203dc8a9c0fa4bca834a8b8f71c1257876899fc0822b62"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/dnd-backend.tsx",
+      "targetPath": "apps/zhixu/web/src/react/ui/dnd-backend.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "ebf8e65faab36dc043c623dcc31d529a9e229bb3d24dfeca4209fea1345399c0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/input.ts",
+      "targetPath": "apps/zhixu/web/src/react/ui/input.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1801cd5e10ee9e794bbb4c74e5c7e53ab66dc5c49b48b6ccb433adbe9514d441"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/react/ui/long-press.ts",
+      "targetPath": "apps/zhixu/web/src/react/ui/long-press.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b8540375b2cbed275909d1b14a94aa67cec6dec499840880c7d88a9cfd97759a"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/app-layout.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/app-layout.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5a975756c13cbb5cb2338ac57b8ec1f38e3dc4cddc2d5075c5e52f0431c6586d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/app-layout.ts",
+      "targetPath": "apps/zhixu/web/src/stores/app-layout.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "cb729b21bacac60c52c0050e9e884d55c1bdb487fa56b248118b95702fac0405"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/app-store.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/app-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "60b3c2ed78d80ad7a442366e5ef7987e60faf3a34233e5c1e25f7add2b503d1e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/app-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/app-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d7f7a739a5a5ca67b4588c0861978b958018213d388f279b4b3594d9109284fe"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/btw-store.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/btw-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ea103a326b48bf11b28c634d5a880dc44156013323e65bc15b43409ebe926a72"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/btw-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/btw-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e939a644ede26849686a3facb7ea474a58e8e5ec58b0a8cf458902d2a9779fd6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/chat-store.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/chat-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "4be571a47a67950f05c12e398645af114cf08bf0b3a49867a3090851f29768a9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/chat-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/chat-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a5170b198b3eddde54a16f7aa9024eafaa3544fa5db060211753d23ea9e34b87"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/event-emitter.ts",
+      "targetPath": "apps/zhixu/web/src/stores/event-emitter.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "690161429a29f22792e66b28899e813ad2e6a4be351f38141f6143ea2017af18"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/jobs-store.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/jobs-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "07d1e257155c4fa758ca742838fb67c2e776982ea62f8830809d5a14e9bc372f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/jobs-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/jobs-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2f074e55e0e2570b86bbd4037763e9e2e371b344b0ae81fd217e45056ada7d99"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/learner-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/learner-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8be7231303486f7c644e16f1df6a62fa2cf3cc5f56b50cdee6212ae6cbd2cdb4"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/mcp-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/mcp-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "af88fae9bb06816792db2751309da2b957f0074a982ab6d2194e6e346a6ced14"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/notebook-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/notebook-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "8f86f1f3c5d36d62b55c1e3f01eb65a474b9b03c7ed46c027b6d9e34ddd19f2f"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/sessions-store.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/sessions-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "fadad67a2520a8ad05301c7b7ae79949a367be69924f497a967748c80f04d7cd"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/sessions-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/sessions-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9f20f742140f8b0319a84ff1cba8dbc3d7af7cadfe1e039fc7e2da32373869da"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/settings-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/settings-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "806ddada3f82a8d7164cfa167b929bcec68ab1f96e1b5e225681caa348795511"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/skills-store.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/skills-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a175d32889e9733a4a2b4c92f882d1dd0681738f00be8db5a30539c112489d7d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/skills-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/skills-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "fe52b90a84ccfbedd20f68a692ff1f5cd114f57c5b13f80a86fbb70cc535e9cb"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/terminal-store.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/terminal-store.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ca25f15585e4181634b2db0caaee2f33c28aa3ea81e81f0d475ee80852d3b9a5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/terminal-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/terminal-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "332b38094919b528acd696d16c4c53553b50a27b033101c86d9c69305f3e8ab9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/theme-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/theme-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "989fcea673adc77ce1179611d14f80d4846daaa18a4fa4f1d6bd022b377577f4"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/window-expansion.test.ts",
+      "targetPath": "apps/zhixu/web/src/stores/window-expansion.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c05f3b31caaf082cf7a914a2651b8cd0074cdabb1a15bcfee974739c131dc2e0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/window-expansion.ts",
+      "targetPath": "apps/zhixu/web/src/stores/window-expansion.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "447319e46936d80377c2b9d441b4aab5956748d5e283b9982cca0981cf9c74be"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/workspace-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/workspace-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "63b89fea4c92aea0fc966c1432becf8689b5d21aea54dac5ea48abbf7b598f57"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/stores/workspaces-store.ts",
+      "targetPath": "apps/zhixu/web/src/stores/workspaces-store.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f4064a3c0b119cef537efb676799541ffaf08b00772593e39daf351a12f1f9ff"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/themes.css",
+      "targetPath": "apps/zhixu/web/src/themes.css",
+      "sourceUnchanged": true,
+      "targetSha256": "f16cd47c208c4dbcb33bd3a632a675737c33922c8fc0f0773f01e8f8d3621ade"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/btw.ts",
+      "targetPath": "apps/zhixu/web/src/types/btw.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5eb39c1fc5007cd2758f85bd2924df115a046b5747a10f110ca73e87cb450e4c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/chat.ts",
+      "targetPath": "apps/zhixu/web/src/types/chat.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "3d99396dee5551197e6b80e7809dae4b52d7f0bd6f708f317681f85760afa266"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/checkins.ts",
+      "targetPath": "apps/zhixu/web/src/types/checkins.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5a50bf4ffd2fe80ba416bcce8229c65dd8ed76b93fa2caa3f3ecbf88fa1c47d6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/jobs.ts",
+      "targetPath": "apps/zhixu/web/src/types/jobs.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "78079d947cbc6ac708814cdd3618af05c260c001dda22413a97aeec1c7ae24c6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/learner.ts",
+      "targetPath": "apps/zhixu/web/src/types/learner.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1b8ccbf7d7008d292929ec695d3aeb5122fa5b48b8be95dafb4167c37dc12b76"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/mcp.ts",
+      "targetPath": "apps/zhixu/web/src/types/mcp.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1df24e972e6105452ebd62bf48077a5e623cec165d41276100249866efd63b0c"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/presets.ts",
+      "targetPath": "apps/zhixu/web/src/types/presets.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c3ef05a28ece0f47113dbaff0f01a6ba3f38e1870ff748e5e2da28b959464c44"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/settings.ts",
+      "targetPath": "apps/zhixu/web/src/types/settings.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5c3eca9d5b0a817b51a01cbab8cbdf29aa196da951fd558696d5e1c7989eab81"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/skills.ts",
+      "targetPath": "apps/zhixu/web/src/types/skills.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "905b0d242b876b6aea5ff0f2e6c95dd3ec73bba827af9044731c57535b94d68e"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/terminal.ts",
+      "targetPath": "apps/zhixu/web/src/types/terminal.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "6f12bdd079e99d200647ef48b289c1a28dd89676cd158c8d03e02cb23114aa09"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/wiki.ts",
+      "targetPath": "apps/zhixu/web/src/types/wiki.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b295c4aab2cf4bef1f34c517fd3bb924c49bfb8e842b4c9347e8aa9e036c82ad"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/types/workspace.ts",
+      "targetPath": "apps/zhixu/web/src/types/workspace.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b9e3889079feb9772f6519ce3167a27ad32eea75e08eb3ad283dc1a05faed4b8"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/attachment-render.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/attachment-render.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b23f6056dc746056ec0879c53e26f7117c7f6a10f0aee0dd4a3de111b42150b9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/attachment-render.ts",
+      "targetPath": "apps/zhixu/web/src/utils/attachment-render.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ab7ac8629a5c1bc719f898ab4822735c4f958290114ddf8363a815350a1b0aa0"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/btw-window.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/btw-window.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "0e570d95fa4a47bb5a269e6e06549a7af06f7611e8ef2e3f38da56489bfb5b74"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/btw-window.ts",
+      "targetPath": "apps/zhixu/web/src/utils/btw-window.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5dc7ac58f8d98ece51824041ba639409802fdfed70cfbe65f89e89ea9d59f00d"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/category-grouping.ts",
+      "targetPath": "apps/zhixu/web/src/utils/category-grouping.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c78b96d43742bab4956c1597467ade8d7e79232c11cce31b955721ebc505eef6"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/chat-trace.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/chat-trace.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "186c5efbe8786668e09f6c6c3d9ecc953a42ba4e23a794075b35180b099bd899"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/chat-trace.ts",
+      "targetPath": "apps/zhixu/web/src/utils/chat-trace.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "ab75005a972c7e3f0ec11d72edc60552e886fead196869742473a20bbb94de23"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/dynamic-import-recovery.ts",
+      "targetPath": "apps/zhixu/web/src/utils/dynamic-import-recovery.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b31be8b403c7eb23b7af1e3e98938567879648b38422f83d5ee35790a97d0690"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/frontmatter.ts",
+      "targetPath": "apps/zhixu/web/src/utils/frontmatter.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c8ec7533e55ce2db637150547b9bfcd24ded8af75a987eb399b35959d4fd39a3"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/graph-layout.ts",
+      "targetPath": "apps/zhixu/web/src/utils/graph-layout.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "d2599d2ed7203383f07169cbe35606c0edbe4e6ce4c20431bb8d996632d11ae2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/markdown-math.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/markdown-math.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "a5d1a2704ab7e692c16a94e08b8ef7d422dca60b08ce79f37534a3cf8c2cf064"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/markdown-math.ts",
+      "targetPath": "apps/zhixu/web/src/utils/markdown-math.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f0994b6f36b8fc2ed8272b3ab13db0df88d5ff026ecc4ecc8c5bdf8a5d231d06"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/markdown-svg.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/markdown-svg.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "3845fe92d98bbc578fd72cc13c6600f836e5e83cfc1a3002d51e61b9407fc390"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/markdown-svg.ts",
+      "targetPath": "apps/zhixu/web/src/utils/markdown-svg.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "82842ccc4cda2fd4e0ec13b796b6d73e845b441762e2484c53c114649579c1e5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/mermaid-runtime.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/mermaid-runtime.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2da0ee5010d412ff1c98e49e29c6a3c237c067c62816ea7a4d4a04b3709f44ea"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/mermaid-runtime.ts",
+      "targetPath": "apps/zhixu/web/src/utils/mermaid-runtime.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "35636c19f1208bcfa829415ff30424f3190ab0776c5bb4f12ea9111d371e8fc9"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/preset-cache.ts",
+      "targetPath": "apps/zhixu/web/src/utils/preset-cache.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5fcb27c3ea49aa3985f63c8e8d6aa1306775614a67e37e4090fb3448a2c04d94"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/questionnaire.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/questionnaire.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "2fad633db501368c681c08bbe38c089d3ffb39357a63c4d73b3a4e92a7c39469"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/questionnaire.ts",
+      "targetPath": "apps/zhixu/web/src/utils/questionnaire.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "9a73bffe4bf3bf158850a83eb928809cbeba58ad6f970904da6898e8671e578b"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/upload-limits.test.ts",
+      "targetPath": "apps/zhixu/web/src/utils/upload-limits.test.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5df5fa66a7e0df4ece0be6af90b9b62d77990c0d6b3a5c0afd57b5b2e4594b29"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/utils/upload-limits.ts",
+      "targetPath": "apps/zhixu/web/src/utils/upload-limits.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f9732d1520b0d63e0df874ed4c33c498423b4dc3dccd495d14e1f69cba2d99f2"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/src/vite-env.d.ts",
+      "targetPath": "apps/zhixu/web/src/vite-env.d.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/tsconfig.json",
+      "targetPath": "apps/zhixu/web/tsconfig.json",
+      "sourceUnchanged": true,
+      "targetSha256": "398b1e680dc497cf8c15f002e377e6a4e29b352019f2d4d659ac4631f5ea4915"
+    },
+    {
+      "sourcePath": "apps/inno-agent/web/vite.config.ts",
+      "targetPath": "apps/zhixu/web/vite.config.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "e2fc6fcfbd7b44d812bd983c6ef0c9b116ee0edfc9aad277758a45adc461cde9"
+    },
+    {
+      "sourcePath": "apps/showcase/EXPORTING.md",
+      "targetPath": "apps/showcase/EXPORTING.md",
+      "sourceUnchanged": true,
+      "targetSha256": "baa61250b08933698dd707a96b68fbb42ee2e36ccf6f89d02f6e1092e55047a7"
+    },
+    {
+      "sourcePath": "apps/showcase/README.md",
+      "targetPath": "apps/showcase/README.md",
+      "sourceUnchanged": true,
+      "targetSha256": "b35f053b807f3d724d82af39698d06173066596e1abd4f08a2ba3d8502c869e6"
+    },
+    {
+      "sourcePath": "apps/showcase/index.html",
+      "targetPath": "apps/showcase/index.html",
+      "sourceUnchanged": true,
+      "targetSha256": "92b06cc4029cad8918a65ccf15d0804e9b43ed820fc0d13daba868402d2e6e68"
+    },
+    {
+      "sourcePath": "apps/showcase/package.json",
+      "targetPath": "apps/showcase/package.json",
+      "sourceUnchanged": true,
+      "targetSha256": "b7840bd1abd27d98f24c059344b4eb4ddf438b41f3e1427b1f83dce9a859ed69"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/gaokao-geometry.json",
+      "targetPath": "apps/showcase/public/cases/gaokao-geometry.json",
+      "sourceUnchanged": true,
+      "targetSha256": "9a5a6f2cb1c0b3bf5253704e891d6e0ae8274c674ddda20789077648d7480ca1"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/index.json",
+      "targetPath": "apps/showcase/public/cases/index.json",
+      "sourceUnchanged": true,
+      "targetSha256": "4e447e53fe6e74282cd4375f3f7fb226ad31924ababb0aa244198e75ef756da6"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/l2-wiki-autoresearch.json",
+      "targetPath": "apps/showcase/public/cases/l2-wiki-autoresearch.json",
+      "sourceUnchanged": true,
+      "targetSha256": "ec80a0d62043773745e5df76570e65350f2acdef6553884f172c9247911ce72a"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/paper-explain.json",
+      "targetPath": "apps/showcase/public/cases/paper-explain.json",
+      "sourceUnchanged": true,
+      "targetSha256": "2cd8e25565a03d10367f6d61978c0b67257f191c9868e288972637df2632152a"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/paper-explain/assets/2606.21228v2.pdf",
+      "targetPath": "apps/showcase/public/cases/paper-explain/assets/2606.21228v2.pdf",
+      "sourceUnchanged": true,
+      "targetSha256": "c65ad2edbf98b6f4f0d1e7c1c1d520246113cadcf6d32064cfcaf0e34d151e24"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/problem-explain.json",
+      "targetPath": "apps/showcase/public/cases/problem-explain.json",
+      "sourceUnchanged": true,
+      "targetSha256": "384df3951b80d6bc59eae87583ec1a78094d69562f8595c49ffafb4342d5a6c5"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/trig-handout.json",
+      "targetPath": "apps/showcase/public/cases/trig-handout.json",
+      "sourceUnchanged": true,
+      "targetSha256": "1927fddc1cc23d1243e27fffc6a4b13b6290d6312f8c8583f86589a0bd710119"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/trig-handout/assets/work/final.pdf",
+      "targetPath": "apps/showcase/public/cases/trig-handout/assets/work/final.pdf",
+      "sourceUnchanged": true,
+      "targetSha256": "0c8e95a793b05824268bcdb843ae59c1aa4325667dce3273206615c9a37c2f77"
+    },
+    {
+      "sourcePath": "apps/showcase/public/cases/trig-handout/assets/work/materials/ppt/ppt.pptx",
+      "targetPath": "apps/showcase/public/cases/trig-handout/assets/work/materials/ppt/ppt.pptx",
+      "sourceUnchanged": true,
+      "targetSha256": "c93d30c693a6bd9adf052d67b6804a5de01df9da2656e03559eef2ff1d4607a1"
+    },
+    {
+      "sourcePath": "apps/showcase/src/App.tsx",
+      "targetPath": "apps/showcase/src/App.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "391ba87c44c1f815554e9b73681ad39346a88cf40d64fddac4165e16b1953035"
+    },
+    {
+      "sourcePath": "apps/showcase/src/cases.ts",
+      "targetPath": "apps/showcase/src/cases.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "79c43e5f690493fcb06267ecbf64daa2237a54e92b860601a253e9bf872a62ac"
+    },
+    {
+      "sourcePath": "apps/showcase/src/desktop-bridge.d.ts",
+      "targetPath": "apps/showcase/src/desktop-bridge.d.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "dd7e906815022194654bfb5d3acf4f0adf6a308a1075f6dcdd199ea9803d58ff"
+    },
+    {
+      "sourcePath": "apps/showcase/src/i18n.ts",
+      "targetPath": "apps/showcase/src/i18n.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "197cc5eae6b2b47a11d472bcdf41e9db840adc2941bef31efc95840fdadca051"
+    },
+    {
+      "sourcePath": "apps/showcase/src/main.tsx",
+      "targetPath": "apps/showcase/src/main.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "71fd009fdfc95d1dbda6014d03dea173339b1d8bec82ebdc85d42ad3e7895926"
+    },
+    {
+      "sourcePath": "apps/showcase/src/mock/runtime.ts",
+      "targetPath": "apps/showcase/src/mock/runtime.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "cdc7108344034bc619f4d0be3b22ccd72161199dd0b29a8851ef5bc2d07875bc"
+    },
+    {
+      "sourcePath": "apps/showcase/src/mock/streaming.ts",
+      "targetPath": "apps/showcase/src/mock/streaming.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "b55aaffd507463bb347b72cf290e9687af273f986608de18c3fd878952c2f4c1"
+    },
+    {
+      "sourcePath": "apps/showcase/src/replay/Transport.tsx",
+      "targetPath": "apps/showcase/src/replay/Transport.tsx",
+      "sourceUnchanged": true,
+      "targetSha256": "9bd565ac05efdb5e40a7cf22b0b9bf34f378a7f639ab89ce06f50e1fe29cbdcc"
+    },
+    {
+      "sourcePath": "apps/showcase/src/replay/driver.ts",
+      "targetPath": "apps/showcase/src/replay/driver.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "5ccd7dcc7cfe31cf5423a66566721c21c8061a48d827a1be798ddba7cceb531e"
+    },
+    {
+      "sourcePath": "apps/showcase/src/showcase.css",
+      "targetPath": "apps/showcase/src/showcase.css",
+      "sourceUnchanged": true,
+      "targetSha256": "48c11b03c8fbad42e666aba92bf1ab7e72c9b487a7e7de8fbbc7dc1919c6572d"
+    },
+    {
+      "sourcePath": "apps/showcase/src/vite-env.d.ts",
+      "targetPath": "apps/showcase/src/vite-env.d.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "sourcePath": "apps/showcase/tsconfig.json",
+      "targetPath": "apps/showcase/tsconfig.json",
+      "sourceUnchanged": true,
+      "targetSha256": "5fe8e672a48223e240d9d142f516538605cb00277d767f796fa0afd4a47888d9"
+    },
+    {
+      "sourcePath": "apps/showcase/vite.config.ts",
+      "targetPath": "apps/showcase/vite.config.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "c6d6f83b2b44b40d7d80b3cf76ca66ebf9cc5de580655d61c066c7ab57525114"
+    },
+    {
+      "sourcePath": "build/electron-builder.mac-signed.cjs",
+      "targetPath": "build/electron-builder.mac-signed.cjs",
+      "sourceUnchanged": true,
+      "targetSha256": "1ed65c4ba83204a5caa1c3bd7721c723ad82d066f0dbe12e8a3c0dc39840f21e"
+    },
+    {
+      "sourcePath": "build/icon.icns",
+      "targetPath": "build/icon.icns",
+      "sourceUnchanged": true,
+      "targetSha256": "393f33629c57de096aa770cf2db9bf12620b18772867fa23dad933e4a413043e"
+    },
+    {
+      "sourcePath": "build/icon.png",
+      "targetPath": "build/icon.png",
+      "sourceUnchanged": true,
+      "targetSha256": "96dc2229398c5588e0a0b101ec50c58a50b8c124608eb2c169fd36f662aaf6e1"
+    },
+    {
+      "sourcePath": "build/icon.svg",
+      "targetPath": "build/icon.svg",
+      "sourceUnchanged": true,
+      "targetSha256": "3c8a3a846e4b9927320f69f24dd6c301ae3bae53d31079e1ed740aaaa1d735c5"
+    },
+    {
+      "sourcePath": "config.example.json",
+      "targetPath": "config.example.json",
+      "sourceUnchanged": true,
+      "targetSha256": "7d5d6c55f5298a855adb3246084076e02cf84f5bbcb439aec566f7a50ca22f4b"
+    },
+    {
+      "sourcePath": "docker-compose.yml",
+      "targetPath": "docker-compose.yml",
+      "sourceUnchanged": true,
+      "targetSha256": "d546118e904d7f787fd976f5b02aba02ee687739c232578646780ed259b7cb39"
+    },
+    {
+      "sourcePath": "docs/PERMISSIONS_AND_SANDBOX.md",
+      "targetPath": "docs/PERMISSIONS_AND_SANDBOX.md",
+      "sourceUnchanged": true,
+      "targetSha256": "13054e96d64f84cc9fbbba9edd4b01eb10b9d1b6cd468a91e10536c40f3ada80"
+    },
+    {
+      "sourcePath": "docs/SYSTEM_DEPENDENCIES.md",
+      "targetPath": "docs/SYSTEM_DEPENDENCIES.md",
+      "sourceUnchanged": true,
+      "targetSha256": "c14d503abe476ac49f7368ffb0448a38469cd174619302030df0e3caf53bf8be"
+    },
+    {
+      "sourcePath": "docs/assets/app-overview-2026-09-13-v2.png",
+      "targetPath": "docs/assets/app-overview-2026-09-13-v2.png",
+      "sourceUnchanged": true,
+      "targetSha256": "d1418ed5442d4bb2e5c8ca0d9f3e57d41e3340350fb67ddcafe11dc844713ee1"
+    },
+    {
+      "sourcePath": "docs/assets/l2-wiki.png",
+      "targetPath": "docs/assets/l2-wiki.png",
+      "sourceUnchanged": true,
+      "targetSha256": "dc68ab0d8dbb88f2eae3d6831bedea4cc648ada4ad771c1e9b2ebc022878955a"
+    },
+    {
+      "sourcePath": "docs/assets/wechat-community-qr-2026-09-22.jpg",
+      "targetPath": "docs/assets/wechat-community-qr-2026-09-22.jpg",
+      "sourceUnchanged": true,
+      "targetSha256": "2dc41380c71fdc25fc103132d2f5d0e7cc1b326d776536db1d43ef3b8a19b295"
+    },
+    {
+      "sourcePath": "docs/features/context-usage.md",
+      "targetPath": "docs/features/context-usage.md",
+      "sourceUnchanged": true,
+      "targetSha256": "32bfd580cf210f0bb886c7c1b0a8c7ae3d59f2c5896205ddc8b0b504a8fd7182"
+    },
+    {
+      "sourcePath": "docs/inno-agent.pdf",
+      "targetPath": "docs/inno-agent.pdf",
+      "sourceUnchanged": true,
+      "targetSha256": "b17d58f5936549b31fbe4b7038c5ea983618ec09df053e73ab20416e248e5a97"
+    },
+    {
+      "sourcePath": "docs/learner-state-engine-design.md",
+      "targetPath": "docs/learner-state-engine-design.md",
+      "sourceUnchanged": true,
+      "targetSha256": "509d834a82b5bcce1b23c4048ea5125cbfe0d605d87aedd81e713bba2caa48b1"
+    },
+    {
+      "sourcePath": "docs/mac-app-packaging.md",
+      "targetPath": "docs/mac-app-packaging.md",
+      "sourceUnchanged": true,
+      "targetSha256": "276925dabca2192567f2df118976baab6ff573e8f057b985572de30374de2634"
+    },
+    {
+      "sourcePath": "docs/mobile-layout-review-2026-09-14.md",
+      "targetPath": "docs/mobile-layout-review-2026-09-14.md",
+      "sourceUnchanged": true,
+      "targetSha256": "d87cf38278773a7105299d2e7f76d1924e5ed1bfc74a7c1a111e4caed6318beb"
+    },
+    {
+      "sourcePath": "docs/pr231-review.md",
+      "targetPath": "docs/pr231-review.md",
+      "sourceUnchanged": true,
+      "targetSha256": "bfe73dcb4d5aeeb05a059b50a05cdbb84b10aa1396953670842b5db8df0e2e35"
+    },
+    {
+      "sourcePath": "docs/quality-remediation-plan.md",
+      "targetPath": "docs/quality-remediation-plan.md",
+      "sourceUnchanged": true,
+      "targetSha256": "e6f5dbbc34c82cbeb976a42cde760279feb833447e202c10dfc34c9d316087d4"
+    },
+    {
+      "sourcePath": "docs/screenshots/l2-wiki-graph.jpg",
+      "targetPath": "docs/screenshots/l2-wiki-graph.jpg",
+      "sourceUnchanged": true,
+      "targetSha256": "ae6509907bd49d426d1ede78e1b7abed905d0e7dc86b5a72f2937cb1d220f0fd"
+    },
+    {
+      "sourcePath": "docs/screenshots/l2-wiki-review.jpg",
+      "targetPath": "docs/screenshots/l2-wiki-review.jpg",
+      "sourceUnchanged": true,
+      "targetSha256": "d8fa03f8f530a8afcef4f11fc568b467a18c80d3ca26d5a6e4ab7fb0f8076e8b"
+    },
+    {
+      "sourcePath": "docs/screenshots/markdown-code-actions.png",
+      "targetPath": "docs/screenshots/markdown-code-actions.png",
+      "sourceUnchanged": true,
+      "targetSha256": "80d7aebc2911f788eeb36f5eb4be0c7fc3b283c12cbd79336bc1dfe8c1285683"
+    },
+    {
+      "sourcePath": "docs/screenshots/markdown-diagram-test.png",
+      "targetPath": "docs/screenshots/markdown-diagram-test.png",
+      "sourceUnchanged": true,
+      "targetSha256": "29e38e036b6fe819567ee37181a6e010edc0ed8fe834dc66b0b6a363986c57f5"
+    },
+    {
+      "sourcePath": "docs/screenshots/markdown-echarts-test.png",
+      "targetPath": "docs/screenshots/markdown-echarts-test.png",
+      "sourceUnchanged": true,
+      "targetSha256": "1390de77c40f465f46a39fd6cca56c358da4ffbdcdeafacd4af4a96fd1fb8525"
+    },
+    {
+      "sourcePath": "docs/screenshots/markdown-table-actions.png",
+      "targetPath": "docs/screenshots/markdown-table-actions.png",
+      "sourceUnchanged": true,
+      "targetSha256": "45785fce6a491f71a0537016ffe48e322c6df792297847b30bcbe242885b3e3c"
+    },
+    {
+      "sourcePath": "docs/use-cases/assets/01_new_workspace.png",
+      "targetPath": "docs/use-cases/assets/01_new_workspace.png",
+      "sourceUnchanged": true,
+      "targetSha256": "38bb740d002b5036ebee3f212aa8215aea8b2b4945cae7b5f25533f518e86a1a"
+    },
+    {
+      "sourcePath": "docs/use-cases/assets/02_agent_create.png",
+      "targetPath": "docs/use-cases/assets/02_agent_create.png",
+      "sourceUnchanged": true,
+      "targetSha256": "33af9d7ab26ce08cdff03e6d41db81d83ef8303a028fa400498e6b2acf9c72d2"
+    },
+    {
+      "sourcePath": "docs/use-cases/assets/03_skill_uploaded.png",
+      "targetPath": "docs/use-cases/assets/03_skill_uploaded.png",
+      "sourceUnchanged": true,
+      "targetSha256": "b62964ff582ca9ed46bd8022c8f4e1833bc69e0d11e744bd9c569c8ac76a3081"
+    },
+    {
+      "sourcePath": "docs/use-cases/assets/04_vocab_explain.png",
+      "targetPath": "docs/use-cases/assets/04_vocab_explain.png",
+      "sourceUnchanged": true,
+      "targetSha256": "3f2406474b097af35a605b746aa55d0abb2df516d0a9105c5d7bec48acfd968c"
+    },
+    {
+      "sourcePath": "docs/use-cases/assets/05_cards_result.png",
+      "targetPath": "docs/use-cases/assets/05_cards_result.png",
+      "sourceUnchanged": true,
+      "targetSha256": "c6ac35438eb716f1f720847b96771e8bc6d29a90c774435d93e3e0d7516d95d4"
+    },
+    {
+      "sourcePath": "docs/use-cases/assets/06_skills_panel.png",
+      "targetPath": "docs/use-cases/assets/06_skills_panel.png",
+      "sourceUnchanged": true,
+      "targetSha256": "409bff323dab587aa70187337a4fa8d3d2e696e810680d72a718e51cca5bfa64"
+    },
+    {
+      "sourcePath": "docs/use-cases/skill-tutorial.md",
+      "targetPath": "docs/use-cases/skill-tutorial.md",
+      "sourceUnchanged": true,
+      "targetSha256": "fe4708ac33e41bd2530b9274e7b081300440a220b219f692999bc6b18a6ca8d0"
+    },
+    {
+      "sourcePath": "electron/loading.html",
+      "targetPath": "electron/loading.html",
+      "sourceUnchanged": true,
+      "targetSha256": "cd236f53e35eafc883930eb12094e743144c93fb807109db2ffdb3252bbf65f2"
+    },
+    {
+      "sourcePath": "electron/main.js",
+      "targetPath": "electron/main.js",
+      "sourceUnchanged": true,
+      "targetSha256": "0c77673d23b27ec8c1c0eac441bc477a98b3d8673dfd637cc4e6aed90a5f6f58"
+    },
+    {
+      "sourcePath": "electron/preload.cjs",
+      "targetPath": "electron/preload.cjs",
+      "sourceUnchanged": true,
+      "targetSha256": "1e2c7eff1f1c23d7f73658db1a9a10e8831df730be49434991c5a0255c8b84de"
+    },
+    {
+      "sourcePath": "package-lock.json",
+      "targetPath": "package-lock.json",
+      "sourceUnchanged": true,
+      "targetSha256": "478865857b557124f476138134a3f3ce4e9edb607f692ef2a20ddd733e427690"
+    },
+    {
+      "sourcePath": "package.json",
+      "targetPath": "package.json",
+      "sourceUnchanged": true,
+      "targetSha256": "9ac9e2cc1171e758b38b918695a1f40d580fb6d3366b40b3c9adcd2c33f01ade"
+    },
+    {
+      "sourcePath": "restart-dev.sh",
+      "targetPath": "restart-dev.sh",
+      "sourceUnchanged": true,
+      "targetSha256": "cb31113a9d370b2825f44bf4295e1e998836900175d67361c65c0298024d7b87"
+    },
+    {
+      "sourcePath": "scripts/after-pack.cjs",
+      "targetPath": "scripts/after-pack.cjs",
+      "sourceUnchanged": true,
+      "targetSha256": "c3fb231815ee8970ee715b9b84d65bc42a4899fa7b52226b279c4fda91984eda"
+    },
+    {
+      "sourcePath": "scripts/build-linux.sh",
+      "targetPath": "scripts/build-linux.sh",
+      "sourceUnchanged": true,
+      "targetSha256": "b8cc27f4418f3fb5898dc81771dc7d76b2013e0cf992fe5fe067d7dede27e297"
+    },
+    {
+      "sourcePath": "scripts/build-mac-signed.sh",
+      "targetPath": "scripts/build-mac-signed.sh",
+      "sourceUnchanged": true,
+      "targetSha256": "0dbf480c896027006375b53c185b98ea4abdc62fa39dd1a617898b5d41f1e24c"
+    },
+    {
+      "sourcePath": "scripts/build-mac.sh",
+      "targetPath": "scripts/build-mac.sh",
+      "sourceUnchanged": true,
+      "targetSha256": "836d7e9114214eb69f40d89d71125ae1790d22cb895f8f1e159b9ef8aaad32b9"
+    },
+    {
+      "sourcePath": "scripts/check-mac-signing.cjs",
+      "targetPath": "scripts/check-mac-signing.cjs",
+      "sourceUnchanged": true,
+      "targetSha256": "b6cbf2cf4c859e7e89173ea06104f66e2008a4541c5e74f1a95c24f3e852f2f0"
+    },
+    {
+      "sourcePath": "scripts/check-mac-signing.test.cjs",
+      "targetPath": "scripts/check-mac-signing.test.cjs",
+      "sourceUnchanged": true,
+      "targetSha256": "233f8a400f2d0945a45b73048f23e0a817d22ad3be507f0c76f1233b69b586ff"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/.gitignore",
+      "targetPath": "scripts/content-hub-server/.gitignore",
+      "sourceUnchanged": true,
+      "targetSha256": "f31bd0261c249a30055b7ba54958aad4e748aff8d2628613a6c39a7a00840d19"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/Dockerfile",
+      "targetPath": "scripts/content-hub-server/Dockerfile",
+      "sourceUnchanged": true,
+      "targetSha256": "23f2987409990be3269a28bd3e50ca69cfaa6fda1c5ca69e11b196eb770e36db"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/README.md",
+      "targetPath": "scripts/content-hub-server/README.md",
+      "sourceUnchanged": true,
+      "targetSha256": "b811475364635df76008106d086a6193bfb27bbb1d63569011837543fae3b420"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/content-example/skill-library/demo-skill/SKILL.md",
+      "targetPath": "scripts/content-hub-server/content-example/skill-library/demo-skill/SKILL.md",
+      "sourceUnchanged": true,
+      "targetSha256": "ad6fe1378df0b386bc5d152efd316111146b1481654508309d5c2fb1821e8351"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/content-example/workspace-templates/demo-template/agent.md",
+      "targetPath": "scripts/content-hub-server/content-example/workspace-templates/demo-template/agent.md",
+      "sourceUnchanged": true,
+      "targetSha256": "00da7a06b1114cc8efbf807bd36d60a4e584a7d5d5d267ad3ca37afb4f071cb6"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/content-example/workspace-templates/demo-template/preset.json",
+      "targetPath": "scripts/content-hub-server/content-example/workspace-templates/demo-template/preset.json",
+      "sourceUnchanged": true,
+      "targetSha256": "badb9cf23dcaa9ad0c1974e728b9b04826e299b93ff4c2ca87f174c0115307de"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/content-example/workspace-templates/zhishidian/agent.md",
+      "targetPath": "scripts/content-hub-server/content-example/workspace-templates/zhishidian/agent.md",
+      "sourceUnchanged": true,
+      "targetSha256": "00da7a06b1114cc8efbf807bd36d60a4e584a7d5d5d267ad3ca37afb4f071cb6"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/content-example/workspace-templates/zhishidian/preset.json",
+      "targetPath": "scripts/content-hub-server/content-example/workspace-templates/zhishidian/preset.json",
+      "sourceUnchanged": true,
+      "targetSha256": "2d6439e299d8240a64c101d17a9aa26e7a2bab6070c4b1a5750498ac50736566"
+    },
+    {
+      "sourcePath": "scripts/content-hub-server/server.mjs",
+      "targetPath": "scripts/content-hub-server/server.mjs",
+      "sourceUnchanged": true,
+      "targetSha256": "39e4920de778237d55fcb468144d3d4d279ec1ff4f1b504b678e7ba1f2e7d5f7"
+    },
+    {
+      "sourcePath": "scripts/eval-l2-retrieval.ts",
+      "targetPath": "scripts/eval-l2-retrieval.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "386ce32a4d15638cc2d0d639eb9fa9880e76d25d964aeb8da9ee1eaebc651d2a"
+    },
+    {
+      "sourcePath": "scripts/export-showcase-cases.ts",
+      "targetPath": "scripts/export-showcase-cases.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "34f2d181eb16904ac2af073b3e009f515454fc10be6239fc90758045dac49bab"
+    },
+    {
+      "sourcePath": "scripts/mobile-layout-smoke.cjs",
+      "targetPath": "scripts/mobile-layout-smoke.cjs",
+      "sourceUnchanged": true,
+      "targetSha256": "ccfd779501b737299c0c7c6ae7d19d7ff5ec977e586f4913040fc9fddca7e205"
+    },
+    {
+      "sourcePath": "scripts/smoke-plugins.ts",
+      "targetPath": "scripts/smoke-plugins.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "1820596f541063781ffc5b6ca827b21f070c44cf060bdf5c0c6c4528708fc2fa"
+    },
+    {
+      "sourcePath": "scripts/verify-mac-release.sh",
+      "targetPath": "scripts/verify-mac-release.sh",
+      "sourceUnchanged": true,
+      "targetSha256": "d0d2fbe6cade2e7aa7fd0328a437970c54ee091e25520055d87f012e18231500"
+    },
+    {
+      "sourcePath": "scripts/view-showcase-export.mjs",
+      "targetPath": "scripts/view-showcase-export.mjs",
+      "sourceUnchanged": true,
+      "targetSha256": "3f4d7db7efadfb1699c84d07981c497f33e4643a514570c4496b8802a2b56361"
+    },
+    {
+      "sourcePath": "tsconfig.base.json",
+      "targetPath": "tsconfig.base.json",
+      "sourceUnchanged": true,
+      "targetSha256": "478a425fe9f8f39dee52d1e3485e612e892113278e8f4430545600ad30a01bac"
+    },
+    {
+      "sourcePath": "vendor/xlsx-0.20.3.tgz",
+      "targetPath": "vendor/xlsx-0.20.3.tgz",
+      "sourceUnchanged": true,
+      "targetSha256": "8dc73fc3b00203e72d176e85b50938627c7b086e607c682e8d3c22c02bb99fe8"
+    },
+    {
+      "sourcePath": "vitest.config.ts",
+      "targetPath": "vitest.config.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "f929af72ae4876b397b7f298a2b3bca1c35ea853a7f044cadd1ae1079f93f052"
+    },
+    {
+      "sourcePath": "vitest.setup.ts",
+      "targetPath": "vitest.setup.ts",
+      "sourceUnchanged": true,
+      "targetSha256": "abb703173733f0ad5020bf178a2fc3745367ce64230c323e1d0fc52bc974a9ad"
+    }
+  ]
+}

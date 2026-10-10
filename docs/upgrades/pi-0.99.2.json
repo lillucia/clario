@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "pi-0.99.2",
+  "createdAt": "2026-10-04T14:39:13.591Z",
+  "previousLockfileSha256": "aed923df0d3cc1c4ff31ca010fe2b66ced34f71cfbc4be6def6da858f8483e07",
+  "targetLockfileSha256": "9a25a017375e013bf86e532750411a3d054f5b66b68b167ddee5ccb7da607d1d",
+  "pathMappings": [
+    {
+      "from": "apps/inno-agent",
+      "to": "apps/clario"
+    }
+  ],
+  "upstream": {
+    "repository": "https://github.com/hhyqhh/inno-agent",
+    "commit": "663789c187e25f9efca97e9129701cc05702e24a",
+    "pullRequest": 243,
+    "lockfileSha256": "cff4bd270ff6e65c98c29ac2d6053a284d1918dce7a8bc484355484e49a05bc9",
+    "dependencyFingerprint": {
+      "externalPackageCount": 1618,
+      "externalPackagesSha256": "0ee852d94352ed86026c118e67a8a42f0ac0dfd9cb933d1ed392525512a0e067",
+      "dependencyDeclarationsSha256": "74f14d6cb284ea2af60c34fea186f83d18681ac1a5a44757bc52d9b61b2e1b1f"
+    }
+  },
+  "preservedEvidence": [
+    {
+      "path": "docs/migration/source-manifest.json",
+      "sha256": "222878e01b97c59057e8f37ebfe9db7091163f3a1a72c8ab76b46ce6acc11732"
+    },
+    {
+      "path": "docs/migration/dependency-lock-reference.json",
+      "sha256": "6cd36e563f1a39dbdc884e485e983a698cca6f923af3f189a25ff53d526456d3"
+    }
+  ],
+  "policy": "Sync the upstream locked dependency graph with Clario workspace naming; preserve historical migration evidence and learning-mode restrictions.",
+  "rollbackDirectory": "runtime/upgrades/pi-0.99.2-20261004/before",
+  "localMetadataChanges": [
+    "Workspace names and paths are Clario-specific.",
+    "Root and backend Node engine minimum raised to >=22.19.0 to match Pi 0.99.2; baseline testing still requires a supported jsdom runtime (recommended Node 24.15+)."
+  ]
+}

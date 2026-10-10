@@ -1,0 +1,712 @@
+{
+  "schemaVersion": 1,
+  "recordType": "archived-baseline-run",
+  "date": "2026-10-03",
+  "originalRunDirectory": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802",
+  "referenceManifestSha256": "64b857143ec00bd29bed4c7412b3f8efac7297bc19d22df373f8786a4faa8964",
+  "originalSourceArchive": {
+    "path": "runtime/baseline/reference/source-fc74cd6a283e.tar.gz",
+    "sha256": "b754e1bba7b282da9ab8f4a5e8d5a87e69e05781f4bed8f88962c83a4b1cc59d"
+  },
+  "report": {
+    "schemaVersion": 1,
+    "id": "2026-10-03T10-21-03-231Z-48802",
+    "startedAt": "2026-10-03T10:21:03.234Z",
+    "status": "passed",
+    "referenceCommit": "fc74cd6a283e8226a4307ea8c3046c715cb6e5f3",
+    "currentCommit": "fc74cd6a283e8226a4307ea8c3046c715cb6e5f3",
+    "environment": {
+      "node": "v24.19.0",
+      "executable": "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "platform": "darwin",
+      "arch": "arm64",
+      "timezone": "Asia/Shanghai",
+      "npm": "11.6.2"
+    },
+    "source": {
+      "originalTree": "0013aeb66c2f08df0784d182844fda34d6d12510",
+      "changedReferenceFiles": [
+        "CLAUDE.md",
+        "package.json"
+      ],
+      "changedSourceFiles": [],
+      "missingReferenceFiles": [],
+      "addedApplicationFiles": [],
+      "referenceApplicationUnchanged": true
+    },
+    "checks": [
+      {
+        "id": "node-engine",
+        "status": "passed",
+        "actual": "v24.19.0",
+        "required": "^22.22.2 || ^24.15.0 || >=26 (locked jsdom test dependency); verified on Node 24.19.0"
+      },
+      {
+        "id": "sqlite-fts5",
+        "status": "passed"
+      },
+      {
+        "id": "lockfile-unchanged",
+        "status": "passed",
+        "expected": "ead17fccdb63f734b71b0b7fc032aad99bae9bbc6716bb8b627e865c3c703a24",
+        "actual": "ead17fccdb63f734b71b0b7fc032aad99bae9bbc6716bb8b627e865c3c703a24"
+      },
+      {
+        "id": "key-dependency-versions",
+        "status": "passed",
+        "packages": [
+          {
+            "name": "@earendil-works/pi-coding-agent",
+            "locked": "0.84.2",
+            "installed": "0.84.2"
+          },
+          {
+            "name": "@earendil-works/pi-ai",
+            "locked": "0.75.5",
+            "installed": "0.75.5"
+          },
+          {
+            "name": "typescript",
+            "locked": "5.9.3",
+            "installed": "5.9.3"
+          },
+          {
+            "name": "vite",
+            "locked": "6.4.2",
+            "installed": "6.4.2"
+          },
+          {
+            "name": "vitest",
+            "locked": "3.2.4",
+            "installed": "3.2.4"
+          },
+          {
+            "name": "jsdom",
+            "locked": "30.0.1",
+            "installed": "30.0.1"
+          },
+          {
+            "name": "node-pty",
+            "locked": "1.1.0",
+            "installed": "1.1.0"
+          }
+        ]
+      },
+      {
+        "id": "harness-tests",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "--test",
+          "scripts/baseline/common.test.mjs"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 115,
+        "log": "harness-tests.log"
+      },
+      {
+        "id": "build",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 82493,
+        "log": "build.log"
+      },
+      {
+        "id": "tests",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+          "test",
+          "--",
+          "--reporter=default",
+          "--reporter=json",
+          "--outputFile=<repo>/runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/vitest.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 23312,
+        "log": "tests.log"
+      },
+      {
+        "id": "l2-retrieval",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "eval:l2-retrieval"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 474,
+        "log": "l2-retrieval.log"
+      },
+      {
+        "id": "core-fixtures",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "--import",
+          "tsx",
+          "scripts/baseline/verify-core.ts",
+          "--output",
+          "<repo>/runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/core-fixtures.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 1524,
+        "log": "core-fixtures.log"
+      },
+      {
+        "id": "web-pty",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "scripts/baseline/verify-web.mjs",
+          "--output",
+          "<repo>/runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/web-pty.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 2707,
+        "log": "web-pty.log"
+      },
+      {
+        "id": "required-suites-executed",
+        "status": "passed",
+        "passed": true,
+        "total": 721,
+        "passedTests": 721,
+        "failedTests": 0,
+        "skippedTests": 0,
+        "todoTests": 0,
+        "missing": [],
+        "incomplete": []
+      }
+    ],
+    "manualAcceptance": {
+      "status": "not_run",
+      "reason": "No real provider configured; see docs/baseline/acceptance.md."
+    },
+    "harness": [
+      {
+        "path": "scripts/baseline/cli.mjs",
+        "sha256": "32298048c7c1f5677b46c5619cd64491e8189df09df89f026f9f2a5d5c06f6f6"
+      },
+      {
+        "path": "scripts/baseline/common.mjs",
+        "sha256": "1a82606a918a6e2aeadb827c7f4ae8aa5c269bc2b1589d0faa1a630b02e79973"
+      },
+      {
+        "path": "scripts/baseline/common.test.mjs",
+        "sha256": "be469d3e7d49afc326aace6439055fdb366a6f36bcce376af637730a49c9bbf6"
+      },
+      {
+        "path": "scripts/baseline/fixtures/current.jsonl",
+        "sha256": "1d9059c5a96c636803a19593be5820c0ce53d2e232b62703e2a0dae6c0d8e915"
+      },
+      {
+        "path": "scripts/baseline/fixtures/history.jsonl",
+        "sha256": "96e3558bce49315c6f4d5177bace542d46ea7cdafae18139f144e863156ac5b8"
+      },
+      {
+        "path": "scripts/baseline/fixtures/learning-source.md",
+        "sha256": "ea1f7f1a9d801163b9a82d747dde6163a34f4636d9647360b0b755b1898d0fe7"
+      },
+      {
+        "path": "scripts/baseline/fixtures/unrelated.jsonl",
+        "sha256": "7a5088d837e028802ad5eff5ed784df650d5a36ab032fe2ad0061af82b6acc97"
+      },
+      {
+        "path": "scripts/baseline/offline.mjs",
+        "sha256": "7b2f20ddd862310a6ca5d0f4d3771a5ebbaf2fe696a6d0e42c2d326379d0843b"
+      },
+      {
+        "path": "scripts/baseline/verify-core.ts",
+        "sha256": "1c5a6793354b14156e8c04b440a35be903d28c29b1dd94cd81c31adc8c256c06"
+      },
+      {
+        "path": "scripts/baseline/verify-web.mjs",
+        "sha256": "72188b2ca11ea5d2901b5078311d1a5d772273c2fe9bcdf8898cda6199c9957e"
+      }
+    ],
+    "tests": {
+      "passed": true,
+      "total": 721,
+      "passedTests": 721,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "todoTests": 0,
+      "missing": [],
+      "incomplete": []
+    },
+    "finishedAt": "2026-10-03T10:22:54.127Z"
+  },
+  "vitest": {
+    "success": true,
+    "numTotalTests": 721,
+    "numPassedTests": 721,
+    "numFailedTests": 0,
+    "numPendingTests": 0,
+    "numTodoTests": 0,
+    "testFiles": 96
+  },
+  "harnessTests": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "coreFixtures": {
+    "schemaVersion": 1,
+    "kind": "inno-offline-core-baseline",
+    "generatedAt": "2026-10-03T10:22:51.396Z",
+    "status": "pass",
+    "runtime": {
+      "node": "v24.19.0",
+      "platform": "darwin",
+      "arch": "arm64"
+    },
+    "scope": {
+      "implementation": "existing source modules; no business-code changes or SDK mocks",
+      "l2": "existing no-model Markdown archive branch; no LLM quality evaluation",
+      "data": "synthetic fixtures in an isolated temporary directory",
+      "sqlitePolicy": "node:sqlite plus a real FTS5 CREATE/MATCH probe required; never skip"
+    },
+    "summary": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "checks": [
+      {
+        "id": "runtime.sqlite_fts5",
+        "status": "pass",
+        "details": {
+          "sqlite": true,
+          "fts5CreateAndMatch": true
+        }
+      },
+      {
+        "id": "l1.exposure_does_not_increase_mastery",
+        "status": "pass",
+        "details": {
+          "initialMastery": 0.05,
+          "afterExposure": 0.05,
+          "exposureCount": 1,
+          "state": "learning"
+        }
+      },
+      {
+        "id": "l1.evidence_tool_deduplicates_retries",
+        "status": "pass",
+        "details": {
+          "eventCount": 1,
+          "duplicateReported": true,
+          "profileUnchanged": true,
+          "retrievalCount": 1
+        }
+      },
+      {
+        "id": "l1.persisted_projection_is_idempotent_and_decays",
+        "status": "pass",
+        "details": {
+          "mastery": 0.33262499999999995,
+          "replayUnchanged": true,
+          "immediateRetrievability": 1,
+          "laterRetrievability": 0.04549997485899945,
+          "laterState": "review_due"
+        }
+      },
+      {
+        "id": "l2.archive_preserves_raw_and_source_chain",
+        "status": "pass",
+        "details": {
+          "mode": "production-no-model-markdown-ingest",
+          "rawPayloadPreserved": true,
+          "sha256": "ea1f7f1a9d801163b9a82d747dde6163a34f4636d9647360b0b755b1898d0fe7",
+          "sourceCount": 1,
+          "wikiPageCount": 3,
+          "allPagesTraceable": true
+        }
+      },
+      {
+        "id": "l2.query_uses_index_and_returns_provenance",
+        "status": "pass",
+        "details": {
+          "mode": "indexed",
+          "hitCount": 3,
+          "sourceIdResolved": true,
+          "retrievalPaths": [
+            {
+              "path": "wiki/sources/learning-source.md",
+              "via": [
+                "lexical",
+                "graph"
+              ]
+            },
+            {
+              "path": "wiki/concepts/间隔重复.md",
+              "via": [
+                "lexical",
+                "graph"
+              ]
+            },
+            {
+              "path": "wiki/concepts/主动回忆.md",
+              "via": [
+                "lexical",
+                "graph"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "l2.repeated_archive_is_deduplicated",
+        "status": "pass",
+        "details": {
+          "sourceCount": 1,
+          "duplicateReported": true,
+          "manifestUnchanged": true
+        }
+      },
+      {
+        "id": "l3.cross_session_recall_excludes_current",
+        "status": "pass",
+        "details": {
+          "hitCount": 2,
+          "sessionIds": [
+            "history.jsonl"
+          ],
+          "activeSessionExcluded": true
+        }
+      },
+      {
+        "id": "l3.unrelated_and_below_threshold_queries_are_filtered",
+        "status": "pass",
+        "details": {
+          "partialOverlapCandidateCount": 3,
+          "afterCoverageFilter": 0,
+          "unrelatedHitCount": 0,
+          "injectedText": ""
+        }
+      },
+      {
+        "id": "l3.index_ignores_tool_noise_and_is_idempotent",
+        "status": "pass",
+        "details": {
+          "chunkCount": 4,
+          "unchangedFileReindexedChunks": 0,
+          "toolAndThinkingNoiseExcluded": true
+        }
+      },
+      {
+        "id": "isolation.no_fetch_requests",
+        "status": "pass",
+        "details": {
+          "fetchAttempts": 0,
+          "inputData": "committed synthetic fixtures only"
+        }
+      }
+    ]
+  },
+  "webPty": {
+    "schemaVersion": 1,
+    "startedAt": "2026-10-03T10:22:51.478Z",
+    "status": "passed",
+    "environment": {
+      "node": "v24.19.0",
+      "executable": "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "platform": "darwin",
+      "arch": "arm64"
+    },
+    "scope": "Built HTTP server, web assets, session/workspace, real PTY and persisted run record; no real model or teaching-quality evaluation.",
+    "checks": [
+      {
+        "id": "built-artifacts",
+        "status": "passed",
+        "durationMs": 0
+      },
+      {
+        "id": "local-fixture",
+        "status": "passed",
+        "durationMs": 5,
+        "details": "http://127.0.0.1:59253"
+      },
+      {
+        "id": "http-health",
+        "status": "passed",
+        "durationMs": 1239,
+        "details": {
+          "status": "ok"
+        }
+      },
+      {
+        "id": "built-web-assets",
+        "status": "passed",
+        "durationMs": 36,
+        "details": {
+          "asset": "/assets/index-CVrKliIx.js"
+        }
+      },
+      {
+        "id": "api-bootstrap",
+        "status": "passed",
+        "durationMs": 492,
+        "details": {
+          "provider": "baseline-dummy",
+          "keyRedacted": true
+        }
+      },
+      {
+        "id": "session-workspace",
+        "status": "passed",
+        "durationMs": 344,
+        "details": {
+          "id": "2026-10-03T10-22-53-274Z_01a10149-c15a-7a2a-89e6-3cdfbb0f6ae7.jsonl",
+          "active": true,
+          "workspaceId": "tmp"
+        }
+      },
+      {
+        "id": "pty-create",
+        "status": "passed",
+        "durationMs": 39,
+        "details": {
+          "id": "pty_mus8u2zy_0",
+          "sessionId": "2026-10-03T10-22-53-274Z_01a10149-c15a-7a2a-89e6-3cdfbb0f6ae7.jsonl",
+          "workspaceId": "tmp",
+          "cwd": "/var/folders/2s/hrky9ddx03jc2gh40v293gpc0000gn/T/inno-baseline-web-Eh347O/environment/workspace/.tmp",
+          "status": "ready"
+        }
+      },
+      {
+        "id": "pty-command",
+        "status": "passed",
+        "durationMs": 441,
+        "details": {
+          "runId": "run_97e999a2a0d7",
+          "exitCode": 0,
+          "marker": "INNO_BASELINE_OK_49821"
+        }
+      },
+      {
+        "id": "run-record",
+        "status": "passed",
+        "durationMs": 5,
+        "details": {
+          "runId": "run_97e999a2a0d7",
+          "outputTail": "\nThe default interactive shell is now zsh.\nTo update your account to use zsh, please run `chsh -s /bin/zsh`.\nFor more details, please visit https://support.apple.com/kb/HT208050.\nbash-3.2$ ( printf '%s%s\\n' 'INNO_BASELINE_OK_' '49821' ) ; printf '\\n%s %d\\n' \"__INNO_RUN _DONE_run_97e999a2a0d7\" \"$?\"\nINNO_BASELINE_OK_49821\n\nbash-3.2$"
+        }
+      },
+      {
+        "id": "content-hub-local",
+        "status": "passed",
+        "durationMs": 0,
+        "details": {
+          "requests": 1
+        }
+      },
+      {
+        "id": "no-model-calls",
+        "status": "passed",
+        "durationMs": 0,
+        "details": {
+          "modelRequests": 0,
+          "chatPromptsSubmitted": 0
+        }
+      },
+      {
+        "id": "terminal-cleanup",
+        "status": "passed",
+        "durationMs": 3,
+        "details": {
+          "closed": true
+        }
+      },
+      {
+        "id": "server-cleanup",
+        "status": "passed",
+        "durationMs": 26,
+        "details": {
+          "code": null,
+          "signal": "SIGTERM"
+        }
+      },
+      {
+        "id": "fixture-cleanup",
+        "status": "passed",
+        "durationMs": 0,
+        "details": {
+          "closed": true
+        }
+      },
+      {
+        "id": "temporary-files-cleanup",
+        "status": "passed",
+        "durationMs": 4,
+        "details": {
+          "removed": true
+        }
+      }
+    ],
+    "finishedAt": "2026-10-03T10:22:54.121Z",
+    "fixtureRequests": [
+      {
+        "method": "GET",
+        "path": "/hub/index.json"
+      }
+    ]
+  },
+  "l2Retrieval": {
+    "fixtureVersion": 1,
+    "pages": 12,
+    "queries": 15,
+    "metrics": {
+      "recallAt5": 1,
+      "mrr": 0.9,
+      "noResultRate": 0,
+      "p95SelectedCharacters": 451,
+      "maxSelectedCharacters": 451
+    },
+    "decisions": {
+      "embeddingRecommended": false,
+      "progressiveDisclosureRecommended": false
+    },
+    "passed": true
+  },
+  "focusedCommandCleanup": {
+    "status": "passed",
+    "cases": [
+      {
+        "id": "normal",
+        "commandStatus": "passed",
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 48
+      },
+      {
+        "id": "missing",
+        "commandStatus": "failed",
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 2
+      },
+      {
+        "id": "timeout",
+        "commandStatus": "failed",
+        "timedOut": true,
+        "interrupted": false,
+        "forcedKill": true,
+        "durationMs": 5803
+      },
+      {
+        "id": "SIGINT",
+        "commandStatus": "failed",
+        "timedOut": false,
+        "interrupted": true,
+        "interruptSignal": "SIGINT",
+        "forcedKill": true,
+        "durationMs": 5110
+      },
+      {
+        "id": "SIGTERM",
+        "commandStatus": "failed",
+        "timedOut": false,
+        "interrupted": true,
+        "interruptSignal": "SIGTERM",
+        "forcedKill": true,
+        "durationMs": 5122
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/report.json",
+      "sha256": "b12ae327e88cb26dd377e34a00b15f370a0d6c0df26d93527b188309720b0bda"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/vitest.json",
+      "sha256": "de3082b27638771249dba750d72379703d232c3f0abe2ca03469228d3c0cea11"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/core-fixtures.json",
+      "sha256": "e43e3e3a69c23b6155f287a23895a4f273f013e4372c08934bac39a91cc05ba4"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/web-pty.json",
+      "sha256": "418ab607a088be2d8768b81b0919c35d796cc5f47f1636d54c8503d15eec9202"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/command-cleanup.json",
+      "sha256": "120bff07cd35200dd0434f476c80c16a55c3f0bbdbdb7ef3ec190cbdcfd2a25b"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/harness-tests.log",
+      "sha256": "33c1a35767354ab500b962bcd0073a5d18dacd5a2afe78af069bd68020e567d0"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/build.log",
+      "sha256": "bac25ef1f2460b6ca70c0110c80c6a16821df12cdb5519ac3b10fa0df23343eb"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/tests.log",
+      "sha256": "5e02e9cf18c7f6d75703c8c528b7f76e8d809fead2c7984c91041ed686c30256"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/l2-retrieval.log",
+      "sha256": "b0f8031c0217316336c8d4a512b7350fd9f9d619250a4bb031061b8c775f523e"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/core-fixtures.log",
+      "sha256": "a3ea1d67347cc679b06e81d83f659558bac592d41b136ac3b381431d669d69fd"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/web-pty.log",
+      "sha256": "8c5fa67fe8a06ae8bfc726927b557cc39b41d93ac1d2158d47641deef6dc1182"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-03T10-21-03-231Z-48802/working-tree-status.txt",
+      "sha256": "250a1ab01b0ac74e57194a2e584e02a8dac4100d65bf364eb4edb6d8c2b2ac9e"
+    }
+  ],
+  "manualEnvironmentPreparation": {
+    "status": "passed",
+    "command": "npm run baseline:prepare",
+    "environment": "runtime/baseline/environments/2026-10-03T10-18-37-551Z-47994"
+  },
+  "notes": [
+    "Repository absolute paths normalized as <repo>; full original logs remain under originalRunDirectory.",
+    "Real-provider teaching and browser acceptance were not executed. HTTP/PTY temporary environments were cleaned after successful checks."
+  ]
+}

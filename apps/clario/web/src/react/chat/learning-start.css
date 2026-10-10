@@ -1,0 +1,49 @@
+.learning-start { height:100%; min-width:0; overflow:auto; background:var(--inno-chat-bg); color:var(--inno-text); }
+.learning-start-inner { width:min(100%, 800px); margin:0 auto; padding:46px 32px 30px; }
+.learning-start-heading { margin-bottom:24px; }
+.learning-start-eyebrow { display:flex; align-items:center; gap:8px; color:var(--inno-accent); font-size:11px; font-weight:600; letter-spacing:.09em; }
+.learning-start-heading h1 { margin:12px 0 8px; font-size:30px; font-weight:600; letter-spacing:-.035em; line-height:1.3; }
+.learning-start-heading p { margin:0; font-size:13px; line-height:1.7; color:var(--inno-text-muted); }
+.learning-start-steps { display:flex; align-items:center; gap:16px; margin-bottom:25px; font-size:12px; color:var(--inno-text-subtle); }
+.learning-start-steps span { display:flex; align-items:center; gap:7px; color:var(--inno-text-muted); }
+.learning-start-steps b { display:inline-flex; align-items:center; justify-content:center; border:1px solid var(--inno-border); border-radius:50%; width:21px; height:21px; font-size:10px; font-weight:500; }
+.learning-start-card { min-width:0; margin:0 0 20px; padding:18px 20px 20px; border:1px solid var(--inno-border); border-radius:16px; background:var(--inno-card-bg); }
+.learning-start-card legend { padding:0 7px; font-size:13px; font-weight:600; }
+.learning-start-card legend>span { font-size:10px; letter-spacing:.05em; color:var(--inno-accent); margin-right:7px; }
+.learning-start :is(textarea,select) { width:100%; border:1px solid var(--inno-border); border-radius:9px; background:var(--inno-surface); color:var(--inno-text); font:inherit; font-size:13px; line-height:1.7; padding:10px 12px; }
+.learning-start textarea { resize:vertical; min-height:70px; }
+.learning-start :is(textarea,select,button,input):focus-visible { outline:2px solid var(--inno-accent); outline-offset:3px; }
+.learning-start textarea::placeholder { color:var(--inno-text-subtle); }
+.learning-start button { cursor:pointer; }
+.learning-start button:disabled { cursor:not-allowed; opacity:.5; }
+.learning-start-goals { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-top:10px; font-size:11px; }
+.learning-start-goals>span { color:var(--inno-text-subtle); margin-right:4px; }
+.learning-start-goals button { display:inline-flex; align-items:center; gap:4px; max-width:100%; text-align:left; padding:4px 8px; border:1px solid var(--inno-border); border-radius:7px; color:var(--inno-text-muted); overflow-wrap:anywhere; }
+.learning-start-goals button.selected { background:var(--inno-accent-soft); color:var(--inno-accent); }
+.learning-material-options { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:18px; }
+.learning-material-options button { display:flex; align-items:center; justify-content:center; gap:6px; padding:8px 10px; border-radius:8px; font-size:12px; color:var(--inno-text-muted); border:1px solid transparent; }
+.learning-material-options button[aria-pressed=true] { background:var(--inno-accent-soft); color:var(--inno-accent); border-color:var(--inno-border); }
+.learning-material-options button:hover:not(:disabled) { background:var(--inno-surface-muted); }
+.learning-material-body>label:not(.learning-file-picker) { display:block; font-size:12px; margin-bottom:8px; color:var(--inno-text-muted); }
+.learning-start-hint { display:flex; gap:5px; align-items:center; font-size:11px; line-height:1.7; color:var(--inno-text-subtle); margin:10px 0 0; overflow-wrap:anywhere; }
+.learning-material-empty,.learning-file-picker { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:9px; padding:22px 15px; border:1px dashed var(--inno-border-strong); border-radius:10px; text-align:center; color:var(--inno-text-muted); }
+.learning-material-empty strong,.learning-file-picker strong { font-size:13px; font-weight:500; max-width:100%; overflow-wrap:anywhere; }
+.learning-material-empty p,.learning-file-picker span { font-size:11px; line-height:1.6; margin:0; color:var(--inno-text-subtle); }
+.learning-material-empty button { display:flex; align-items:center; gap:5px; font-size:12px; color:var(--inno-accent); margin-top:3px; }
+.learning-file-picker input { width:min(100%, 245px); font-size:11px; margin-top:5px; }
+.learning-file-picker input::file-selector-button { background:var(--inno-surface); border:1px solid var(--inno-border); border-radius:6px; color:var(--inno-text); padding:5px 10px; margin-right:7px; cursor:pointer; }
+.learning-start-destination { display:flex; align-items:center; gap:8px; font-size:12px; color:var(--inno-text-muted); margin:0 2px 19px; }
+.learning-start-destination label { white-space:nowrap; }
+.learning-start-destination select { width:auto; flex:1; min-width:0; font-size:12px; padding:6px 9px; }
+.learning-start-submit { display:flex; align-items:center; justify-content:space-between; gap:15px; }
+.learning-start-submit>div { display:flex; flex-direction:column; gap:4px; }
+.learning-start-submit strong { font-size:12px; font-weight:500; }
+.learning-start-submit span { font-size:11px; color:var(--inno-text-subtle); }
+.learning-start-submit>button { display:flex; align-items:center; gap:10px; flex-shrink:0; border-radius:11px; padding:12px 21px; font-size:13px; color:#fff; }
+.learning-start-footer { display:flex; align-items:center; flex-wrap:wrap; justify-content:center; gap:16px; margin-top:25px; font-size:11px; color:var(--inno-text-subtle); }
+.learning-start-footer button { display:flex; align-items:center; gap:5px; color:var(--inno-text-muted); }
+.learning-start-error { border-radius:9px; padding:11px 13px; font-size:12px; line-height:1.6; background:var(--inno-danger-bg); color:var(--inno-danger); margin:10px 0; }
+.learning-start-error button { text-decoration:underline; margin-left:8px; }
+.learning-start-notice { display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; font-size:12px; line-height:1.6; padding:12px; border:1px solid var(--inno-border); border-radius:9px; margin-bottom:20px; }
+.learning-start-notice button { display:flex; align-items:center; gap:5px; color:var(--inno-accent); }
+@media(max-width:700px) { .learning-start-inner { padding:33px 20px 24px; } .learning-start-heading h1 { font-size:26px; } .learning-start-card { padding:15px 14px; } .learning-start-steps { gap:10px; font-size:11px; } }

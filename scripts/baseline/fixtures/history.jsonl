@@ -1,0 +1,4 @@
+{"type":"session","version":3,"id":"baseline-history","timestamp":"2026-08-01T10:00:00.000Z","cwd":"/synthetic/baseline"}
+{"type":"message","id":"historical-user","timestamp":"2026-08-01T10:00:01.000Z","message":{"role":"user","content":[{"type":"text","text":"我们上次讨论机器学习，并制定了周末复习计划。"}]}}
+{"type":"message","id":"historical-assistant","timestamp":"2026-08-01T10:00:02.000Z","message":{"role":"assistant","content":[{"type":"thinking","thinking":"baseline_thinking_only_sentinel"},{"type":"text","text":"机器学习复习计划包括线性回归和模型评估。"},{"type":"toolCall","id":"synthetic-call","name":"synthetic_tool","arguments":{"text":"baseline_tool_only_sentinel"}}],"stopReason":"toolUse"}}
+{"type":"message","id":"historical-tool","timestamp":"2026-08-01T10:00:03.000Z","message":{"role":"toolResult","toolCallId":"synthetic-call","toolName":"synthetic_tool","content":[{"type":"text","text":"baseline_tool_only_sentinel"}],"isError":false}}

@@ -1,0 +1,2288 @@
+{
+  "schemaVersion": 1,
+  "name": "inno-web-original",
+  "commit": "fc74cd6a283e8226a4307ea8c3046c715cb6e5f3",
+  "tree": "0013aeb66c2f08df0784d182844fda34d6d12510",
+  "capturedAt": "2026-09-28T06:51:54.693683+00:00",
+  "appVersion": "0.6.2",
+  "piCodingAgentVersion": "0.84.2",
+  "lockfileSha256": "ead17fccdb63f734b71b0b7fc032aad99bae9bbc6716bb8b627e865c3c703a24",
+  "archive": {
+    "path": "runtime/baseline/reference/source-fc74cd6a283e.tar.gz",
+    "sha256": "b754e1bba7b282da9ab8f4a5e8d5a87e69e05781f4bed8f88962c83a4b1cc59d"
+  },
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "ad5b8b370be2e94a5ff5277c6a37edc036d5b4cb35ee6f0b9284eb2faf9edaf0"
+    },
+    {
+      "path": ".env.example",
+      "sha256": "a82db0da69315f480de01f8e9ccf605a006bf07a8e558102650a48d2cdc7198c"
+    },
+    {
+      "path": ".github/workflows/release-linux.yml",
+      "sha256": "30e604efcc803f8b34a6ab59b0c33a75fc6cd58adab801ed3009db40cfd18861"
+    },
+    {
+      "path": ".github/workflows/release-mac.yml",
+      "sha256": "98b9d279f145a586262cd72dc6de8b2607859ee4854050173d2361220d00efbb"
+    },
+    {
+      "path": ".github/workflows/release-win.yml",
+      "sha256": "88542361c73add8bb8b28465954cd318cdeeb19ed73fbe8c7ea50606eefa1d9a"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "849ee2bd4702bd8a7628531461b0fbba0a948019e3ce5902bd7417fdca55acef"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "4eeb4dd8126b57131b0cd10ae67c8b4f9a832530356482b9f536f9bbc1348bdc"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "2af01da1c53a31911805b9e09c82ce4180c2967c2ce88a6783b802c91d362c3e"
+    },
+    {
+      "path": "Dockerfile.base",
+      "sha256": "fc66f1bf29423c8c25b350709364234c63f753ae7ee1430a33bfbba319521ba9"
+    },
+    {
+      "path": "ELECTRON_BUILD.md",
+      "sha256": "ae5fd6e884493403b2cabb2a2050c09d70550053a7e96f2d6e7c62aea7a72aad"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "f92c6c6a1cc8f0afdf87c0c1a35f9f549c5024efcedcf20d0ebbe464dadbd644"
+    },
+    {
+      "path": "QUICKSTART.md",
+      "sha256": "a1a9e552b019a9d156a6261e106e4e0fb746198f72cbad40bc229c9b5293f5fa"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1670f760b456292177012737bac8318fc42346a295d80f819af2d0aa0c90f160"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha256": "9c1a7532290a68a4e30ddfa279777d4b18a79e4e140e5afa2c9e021dc3d42026"
+    },
+    {
+      "path": "apps/inno-agent/.gitignore",
+      "sha256": "a0b01ca337d3bbf81a671a18792c12f0643f6660b75ec7a641c5a56b6b3c1198"
+    },
+    {
+      "path": "apps/inno-agent/README.md",
+      "sha256": "8a77e51b8a5e38bd759200a44eb50f4637311c0a79bddd3211bae5bfc4774e49"
+    },
+    {
+      "path": "apps/inno-agent/eval/l2-retrieval-v1.json",
+      "sha256": "933cbc86145db90b4bb8e281d35e5af75609ba7d3d624ed3e2af576890cb1a5c"
+    },
+    {
+      "path": "apps/inno-agent/package.json",
+      "sha256": "8d88b536f191bfe52cf461b76dfc135ebea25cbc1b2a60b52cf3b128d1ee05ce"
+    },
+    {
+      "path": "apps/inno-agent/presets/lesson-plan/agent.md",
+      "sha256": "0fd50357996f63cb199cab3c20acc1643b17daffbdd3f22532af08f967bb1d4c"
+    },
+    {
+      "path": "apps/inno-agent/presets/lesson-plan/preset.json",
+      "sha256": "3b6a27472cecd65f89a894b6491fad7b4e42ac53e9f7dbd2eb3921a9b06015a0"
+    },
+    {
+      "path": "apps/inno-agent/presets/ppt-creation/.skills/ppt-builder/SKILL.md",
+      "sha256": "cc1d6933197d965cb4337adcfe2ae92246230ac7977b7edd5e5ec8d411132b3e"
+    },
+    {
+      "path": "apps/inno-agent/presets/ppt-creation/agent.md",
+      "sha256": "f85fe1ee969e41c2e6d7890ee16534e435dd1b3a8278cfed582b4f4bc5087fd7"
+    },
+    {
+      "path": "apps/inno-agent/presets/ppt-creation/preset.json",
+      "sha256": "8dc5a7fc53a88e7858df942e4ae7ea2cdf7951ad86906c63431a566e31f4c4fb"
+    },
+    {
+      "path": "apps/inno-agent/presets/scenario-explain/agent.md",
+      "sha256": "b92787583dcd8317099c3f858bd223aaaf8d2e9b35188f1bf7cc374224d4911f"
+    },
+    {
+      "path": "apps/inno-agent/presets/scenario-explain/preset.json",
+      "sha256": "753562ebd1931911a1ee2e38a8304a0ed41411a1dd3a5c07feb7468bd776a8a8"
+    },
+    {
+      "path": "apps/inno-agent/scripts/README.md",
+      "sha256": "76eb5aec49525a5c7a53e7915d3bbe224af6034bef4ecf5379e2a943297e51ff"
+    },
+    {
+      "path": "apps/inno-agent/scripts/__pycache__/console_encoding.cpython-313.pyc",
+      "sha256": "7fcc8000166bce1cc1e2f425f43772fb3db440c2ab08f2a4b3a626eabe4cc107"
+    },
+    {
+      "path": "apps/inno-agent/scripts/console_encoding.py",
+      "sha256": "71022e21fd89b91f0d96cb3ca128b140dbbe9a5b0dfbf2f46baf26404f20206b"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg.py",
+      "sha256": "3d7b32ae66c431fd869afb4da2cd2d2e20d7e936a2230e039b06a22595ddf204"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__init__.py",
+      "sha256": "c211622a57c9758c7d38a8fe69acd4692d634b8a730b8a610fb1836fce2ddabf"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/__init__.cpython-313.pyc",
+      "sha256": "db482fcf1c7a8dc7a03e34bc60d596b78ab49cfa95a588bcfb95110bc8f3fe41"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/color_resolver.cpython-313.pyc",
+      "sha256": "98a4bcf72f9d86f017c08f1fbe320ee1640ba26521af7ba1c89af1d2b5b9a187"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/converter.cpython-313.pyc",
+      "sha256": "c91d7f0e8d2219a50f686d91cf34a5291d7e7409e88bb6fb26463b27fb69959a"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/custgeom_to_svg.cpython-313.pyc",
+      "sha256": "1140dc580fe8b646db3d4ca6043fb960983a51a05a14dcd591d2f44636b3b954"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/effect_to_svg.cpython-313.pyc",
+      "sha256": "990fb9a0936446dc6a0f01a95b5f889c41d5dd9fe85512246d34f5ea9453969c"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/emu_units.cpython-313.pyc",
+      "sha256": "89c5e6fc449c85c5651a77b38161e56c2982082809704277ceff19ef39d1e0fb"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/fill_to_svg.cpython-313.pyc",
+      "sha256": "d8b832e99fc4004e7e755011b52ce056146194ffabf9df403beb36b441a617b9"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/ln_to_svg.cpython-313.pyc",
+      "sha256": "282549bcf19f43097794574034d629ab88ccf5f5b17b1357fe83b84b4e386e39"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/ooxml_loader.cpython-313.pyc",
+      "sha256": "0348c302950e9f906457be3a156e0cc49c8a14651370536ac27264a3ea35ec3c"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/pic_to_svg.cpython-313.pyc",
+      "sha256": "55894047be6aa828764ee4198f311d9158b427f0e251033eed62288d6c6bca48"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/prstgeom_to_svg.cpython-313.pyc",
+      "sha256": "a2898e378638659ee5cbac9d3918fc0b6b6d3ba7be8dd637675e7ea7d9637c19"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/shape_walker.cpython-313.pyc",
+      "sha256": "5d342949e058f0b251a8816adbb712a98df63642bd81361f7592949de361a1d6"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/slide_to_svg.cpython-313.pyc",
+      "sha256": "f9e3adb8a3a29dfac2b8ffc0f9d2c7f03afc5dc5a41b28d28f74577aed075585"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/tbl_to_svg.cpython-313.pyc",
+      "sha256": "4893bfb163166f06fcdcdd36c01181df632d4d3fa935ea51f4efa8368e5e47da"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/__pycache__/txbody_to_svg.cpython-313.pyc",
+      "sha256": "5dad39dfb471049a1f6820870aa2b6ea20f1d86fbd765a4ad11dc3f761decc5f"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/color_resolver.py",
+      "sha256": "69430e84ab3b25d152128a0a0e6a0f08a5c978eabfa4ae729e38aa5f1d344ff6"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/converter.py",
+      "sha256": "1906bc44b7b09bdd9b441bb3f18783cf1652cf55b77d76d23cc09db22c715594"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/custgeom_to_svg.py",
+      "sha256": "0da9171de195c9e566e02a70d9f10672f761e64185d3c10fb4ab35f395c33984"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/effect_to_svg.py",
+      "sha256": "6168df9c57f4bd3acdc155c3e81d36afbc96996ba99647fdd2fc4ca621a93482"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/emu_units.py",
+      "sha256": "62d2ff108590e7e1b7c42171eb20869a67a266eaf4e50fa5e5cb9b374d3d3be1"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/fill_to_svg.py",
+      "sha256": "580dc80c0a30153aba7523bf4b020d54773f953b6b31dae2453e43a9bfa8399a"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/ln_to_svg.py",
+      "sha256": "8df487a2953298f7e99b6181143396d4775e776646317f2ebe739caa3bf859e7"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/ooxml_loader.py",
+      "sha256": "bc888325367b40c1eb81db4035e7e43eea1942f2b2a7f1735054e62969dcb63c"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/pic_to_svg.py",
+      "sha256": "6d3393663b82142d60a8f967a6d3b5a84c2652f1096207f98c1c8ee08c4b8f1d"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/prstgeom_to_svg.py",
+      "sha256": "d15b9ab11e25b6f3d5540597c10c0d6ba4ab13278ff320f4a2a2517c3fa8487d"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/shape_walker.py",
+      "sha256": "9b9a92377cb2104ecfa503eef1b47ebc1bd4e1af87060b31a2579872dd2f1de9"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/slide_to_svg.py",
+      "sha256": "3878cb5fbbfe4695b038d96b9f144fe7934d5b441803327170f38b3d1b7126c6"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/tbl_to_svg.py",
+      "sha256": "5864da0cc323c276b4b5771a9bc8a46fc14a56ef4d576047953b1a1f9dc40a5a"
+    },
+    {
+      "path": "apps/inno-agent/scripts/pptx_to_svg/txbody_to_svg.py",
+      "sha256": "70c5fc460ed38af14be77c8365510b29fd22812a46d2a4bc3859096c6141e2c9"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/computer-use-gate.test.ts",
+      "sha256": "1052da8f2cae71fe28958479c599d6dc40558d225b198d1399b39c7dd645fe7d"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/context-usage.test.ts",
+      "sha256": "a65b27f8e6b3618455f15ca58c58cdc975d20a03bd5ae09d31a1f3c7143ae930"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/context-usage.ts",
+      "sha256": "9e2b9f8d9306a4f4c9ffb962d7dd816a8e155900c96359b3ff83449ee738e1b2"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/document-tools.test.ts",
+      "sha256": "4992c6535efba3b4f3395763ff0b6f5db32b8f0a00662d0a9eb16fc0300a05e0"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/document-tools.ts",
+      "sha256": "8b837ea0c1ed07d81d172117ef1c963b06b82b7a0368d5e0da1bfed2ba774bf9"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/inno-extension.ts",
+      "sha256": "54293d4ddd53e100b4d9bc5e06b8888f15add1c1cb58d6b58cddaaf870a40a86"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/inno-slash-commands.test.ts",
+      "sha256": "91e01ccb593bcd77f46180d5f50888d136670835d977756357dc282abf543b87"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/mcp-extension.ts",
+      "sha256": "91176cd2dbe2ff3d8628b36864e9bb147a195fbf65cbe6f31e385706931d0b62"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/model-probe.ts",
+      "sha256": "3a1fd60d8a8f54f7272e8f6a71b4fe3b6c0ab3646c252c5120f3cfa1a1d77317"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/observability-extension.ts",
+      "sha256": "3cbe6139f182f02a6878b7cbe2b729a0fbe74342afee79dfdc43dc5460ca10c5"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/ocr-tools.ts",
+      "sha256": "622b1cbaba0322369c0604a660678e579135db2a5b8a746bf6518c462320f457"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/permission-bridge.test.ts",
+      "sha256": "8cd7bec618f321e870fa6e7ad367a697cd5779c62e77b72e86fd19f5b40cb85e"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/permission-bridge.ts",
+      "sha256": "9947c78ba9e14a49cba2a08bdf6380d7232347ad9eee66ad72ce51938fd3caeb"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/permission-system-config.test.ts",
+      "sha256": "1b74078f8c5d0c476b76658a3faefcf6cacf206ea41922e709e862647880f1a7"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/permission-system-config.ts",
+      "sha256": "8391500f367f9505ed998037816c410440a124d2ba93ccc3df675632a5606307"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/pi-runner.test.ts",
+      "sha256": "a5f0ce4dddff569d7df47e766e69752b807b2586b28a0151d82420f085f56eb2"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/pi-runner.ts",
+      "sha256": "90fae18ca4a0cdfe8b71f1868ae04e5d6008b4b3f6333aa01d87e05eac3557ef"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/practice-tools.ts",
+      "sha256": "0a6039bb420adc75d0cf93f92a6d33c6bd7ecc30697a1e2a782bfd7865466cac"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/provider-sync.ts",
+      "sha256": "47bc56ab846dceda614880de81cec28023931f0f7d3e378fbf0645cdf9c63da9"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/question-bridge.test.ts",
+      "sha256": "3bfb8c246e7b03e9749a53aef1b6ec52775e844c7f25eb1edf94370b1c5afb45"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/question-bridge.ts",
+      "sha256": "53b30a3cc3f86158f776f77674afab73f933dcc5aff6424a79009c92a8a452cc"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/system-prompt.ts",
+      "sha256": "7d79c11df984013519fe6b4fda1b3fda663abdadab018b70694dd683dc4f0125"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/tavily-tools.ts",
+      "sha256": "8de5d632c31a71ced00241dcfe0a6eeee92edd4b845a24acbf4b073065d3151c"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/teaching-entry-agent.test.ts",
+      "sha256": "94a52ae87094338f85f11a7fc31c881a4c2630dc37e6a21d596f9caa3ff99265"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/web-access-config.ts",
+      "sha256": "37c5b6ea42699cda8b90909bc7eb87b2c8a436c97e2b9b41fbd2951dde4158f8"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/workspace-path-guard.ts",
+      "sha256": "df989ef1013a6765109cc59f23fc947066379e80e1374f9a4eefeb5c2274c07e"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/bridge/bridge-channel.ts",
+      "sha256": "03f7f899e0373784774c68175a3b8399d9c5093ba8ef7b2162f3e9add292e84e"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/bridge/bridge-server.test.ts",
+      "sha256": "af56c9729c3428ef847d36a7bf697531abcddf6514f04e5c70d05d3fec1094d7"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/bridge/bridge-server.ts",
+      "sha256": "6849a3c82db6ac8ab99045aba08ea12b1642aa7d973ddc6f5fc0f44f66099379"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/bridge/types.ts",
+      "sha256": "2379ce06958789a294d4d15f9ea651af15de829962db60ddc9dbc74f81281b41"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/channel-tools.ts",
+      "sha256": "a421f18c80840a5da3e1b43537c46afb99614f2fd7a0fb71f64e319b5ae21c7a"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/channel.ts",
+      "sha256": "af38f87091d0cf7f3d7582ae191e69fa4cb8d4695f21d67f646eaa72c1b615bb"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/dedupe-store.test.ts",
+      "sha256": "8250b2b4799050e6a4dfc81d79afee8196e98cc5cc1c6cb237fa5b8f6195dea7"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/dedupe-store.ts",
+      "sha256": "b2faa5896374cd19f15c87b99308c2d9f6370c496bfca3475c9506391f8a633d"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/feishu/feishu-api.ts",
+      "sha256": "121b0f9d82a94ccacb9cba4e1091122800a3a4dbd54ee14c26a89b58ed23c928"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/feishu/feishu-channel.ts",
+      "sha256": "d631dac6e82c8b835f40c180be7b2cca39f3fdd4dd4949c1348806c29a980765"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/feishu/feishu-registration.ts",
+      "sha256": "d25617351e9be38dca152622bfd8fd7ddcd7ab60641a2edf5ad337800ef46148"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/feishu/streaming-card.ts",
+      "sha256": "1b5da4c667112f2c923e6b59a11d693ce3bba9ac52bf992560424a716a9065de"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/personal-dispatcher.test.ts",
+      "sha256": "0d769a88bff20281579e5ec927b8f398c3469626d5cade634c3d0908975ff197"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/personal-dispatcher.ts",
+      "sha256": "7e46eeff20e04e226141708fd368973c1d6089351d8feee3e83388e4ee08718e"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/run-log.ts",
+      "sha256": "19a336f1282bf5b8e6c7394df41a70a704318658ffa6f289dd58c4b3028bffed"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/stubs.ts",
+      "sha256": "f9170bb1015e43efa513c0ab05de9341084b02364d60f1bba8ffadd5c3319255"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/types.ts",
+      "sha256": "1fdf90c82486225c976ae26111cac0e645ebe115aff2ee5df8a13586f86216d3"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/wechat/ilink-client.ts",
+      "sha256": "099352bd208a97b4427774b254f4780ff024490792ac88bc1edc07ed910d4a61"
+    },
+    {
+      "path": "apps/inno-agent/src/channels/wechat/wechat-channel.ts",
+      "sha256": "d9671811b56f7b3bbca56a7e9b2981ac0f52ab52f09295c89d938aca79131d90"
+    },
+    {
+      "path": "apps/inno-agent/src/chat/stream-registry.test.ts",
+      "sha256": "d1510636f6556b8a8096845b739996d75e6f6a44f83cf9d0d3c8ba03d473d581"
+    },
+    {
+      "path": "apps/inno-agent/src/chat/stream-registry.ts",
+      "sha256": "1444332eab82ad0f70f2a65fc1b365fc146ed9149fdb955093954ba33127b147"
+    },
+    {
+      "path": "apps/inno-agent/src/checkins/check-in-store.test.ts",
+      "sha256": "085bc6dac518841399b546fadd88c6343310fc17b50db85b41de225f6125fb8a"
+    },
+    {
+      "path": "apps/inno-agent/src/checkins/check-in-store.ts",
+      "sha256": "64f844076d63b960321c01893e07d37a7c60fb549c62515386acea3dbd3b167e"
+    },
+    {
+      "path": "apps/inno-agent/src/cli.ts",
+      "sha256": "1b8395d881d9fc87382e878bc35580fc057512c77eea81dce21ca65961ad6e9f"
+    },
+    {
+      "path": "apps/inno-agent/src/config.ts",
+      "sha256": "dca0d8cd6390f5b9e094e9390068c9deee841039553f127afb5a4ee7cd3bcda8"
+    },
+    {
+      "path": "apps/inno-agent/src/content-source/bundle-source.ts",
+      "sha256": "214a5a1dda9087f72d598b6f24653b498a747e54f63dbe1b42e6ada50842c6c5"
+    },
+    {
+      "path": "apps/inno-agent/src/content-source/catalog-cache.ts",
+      "sha256": "56e07a36df86f378dde495882fbc6f7635523dc4ed9524b25958dfb1d8a75c27"
+    },
+    {
+      "path": "apps/inno-agent/src/content-source/catalog-service.ts",
+      "sha256": "1edafe9b1c8510e316033bcf8d4e4a66943aa62c6c71dfb5fc71cccc24436629"
+    },
+    {
+      "path": "apps/inno-agent/src/content-source/github-source.ts",
+      "sha256": "f98aaadabfaebaac479009dc66241de7e9d77dd2734c66b49ce7b5479c357db7"
+    },
+    {
+      "path": "apps/inno-agent/src/content-source/index.ts",
+      "sha256": "29436c43fbdc77ca58bfe032d2a1af13b68b10f6574fe2f981d6b6b3342648cc"
+    },
+    {
+      "path": "apps/inno-agent/src/content-source/types.ts",
+      "sha256": "2a799709c71a1dd152aa23e16d2851c8663507dc9edcd47690de87c21283ca0c"
+    },
+    {
+      "path": "apps/inno-agent/src/logger.ts",
+      "sha256": "85bd14a8b373fb01539b2a4255462d3f659180e2149c79ef9595caf6822ed987"
+    },
+    {
+      "path": "apps/inno-agent/src/mcp/mcp-config-store.ts",
+      "sha256": "ee27e12b77f43a2598ed116141192604f7af7a23ea24a9f9fc5481de7de288ab"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/document-parser.ts",
+      "sha256": "7395e3e5fda55e50451a3b7439241657bc1ad1a5a727a68809dd72ba6d7dfc6a"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-index-store.ts",
+      "sha256": "976a58f9c28e701ea0238cd3e2d857fbdad749c22d067fbd91377a3332914e22"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-indexer.ts",
+      "sha256": "9d6defe6c6db92a570fbbd07bf9089bd62089f0079ef168b339cbd62583d9d8d"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-lint.test.ts",
+      "sha256": "2f3450224efd5ae4f69e7fe358bbae25ce8a086ea238ef614d134ee45c9943db"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-lint.ts",
+      "sha256": "d0ea11bbcb7fb669b143b2d8c892763c6cbb27c71c437a9d7452867c71420222"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-memory.ts",
+      "sha256": "21dbd429e89f53c847f9ba90b85a13ac27b6dd4a5d2cede6e397d192309e5b92"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-search.test.ts",
+      "sha256": "ca44a1cecc93d2ee8cff569e7665904c3fef812c1c9b9e6e744273ad081630e3"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-search.ts",
+      "sha256": "13bb40a345d13d2ab96dc59f7540a617432f99f5558844ad7df154110b107657"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-tools.test.ts",
+      "sha256": "1edfa851297bf5a6859637c18fe8377b42adf0deb508a124615b431077d0d00f"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-tools.ts",
+      "sha256": "8a9a2ba8be61b018292b49ff5365f811b384d052a6aaad6aba2fae696ee31a94"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/manifest-store.ts",
+      "sha256": "1007fdfde01ce34d53b0512617f2f754c320575eda4e439d5e1b99bf49fb6b37"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/overview.test.ts",
+      "sha256": "522707e5ed9045fbeddbdb1e742f918f9935d0c8eead17cd2427b62020dc67a5"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/overview.ts",
+      "sha256": "a4c4008d56bd63702d61da9a775bcb0adf54922a16089642582e79bd92f051be"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/raw-store.ts",
+      "sha256": "4cb6e03a1caf225dda488d51937bad6cabb56e3625aa6cd36b733abb1ca3c807"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/source-converter.ts",
+      "sha256": "6cfd63131f243d3861dcb6b2c8125ae1ecaeef23949effec9e0f5e12fb4b47f1"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/structural-chunker.test.ts",
+      "sha256": "66afd7c863ecd14e77003c9a5f43fb99fef7d1a746a87a47f40c8553e209297c"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/structural-chunker.ts",
+      "sha256": "85080b49f68cf9eaa2568bf4ef949221f21a784ff9d7b55e82bd735b7283c162"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/summarizer.test.ts",
+      "sha256": "e31d30db21d21f4599d055e77b23036071ff3b1caeb9b0acd5ddc3baaf1b27ca"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/summarizer.ts",
+      "sha256": "7acf3466097a687e1863ac5af904abaa684c0daad141654eac2eb8ad2f8b64a5"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/types.ts",
+      "sha256": "834c3f37d02d41a883e24b7eecc4b6b0a25f0aeb344ee05d27c258e915dc1598"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-date.ts",
+      "sha256": "c134ec674d9b6d1951cc837ffcac4e650012305e09d4bce56af431f4717a2a8e"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-generator.ts",
+      "sha256": "43ccc2ae1930b1fa17ca377f5333701d258fd26536a1abbbe78eee24100acc50"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-graph.test.ts",
+      "sha256": "adbdf6f4d24936cc1768c5726f019f4a52b92457607326e1243b4091fdaaa07e"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-graph.ts",
+      "sha256": "f9c0e18196d306c38a37e58ec89a0b29330027508351230928382c5e5c799a35"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-ingest-sanitize.ts",
+      "sha256": "06f753def947a0dc293564817c5797ede4ad1fb92784d5cfd522135bc48c51d0"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-linker.test.ts",
+      "sha256": "66ed3423d46684d87f0de93ab1bea485c0046ffb86046933000f9b4f742f397d"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-linker.ts",
+      "sha256": "dc929a3bdebfeaf10a6ccddca4eac515e0d0d3941a7542c9b21f6db0dc128627"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-links.ts",
+      "sha256": "578dbdd9aef48f668f701ca529f5ee8ee3120042eb922692f17c503614aec8fe"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-llm-compat.ts",
+      "sha256": "61cef71380925be4a6fe328c26f0b4c2e96b7fa00b8689692c508e950051c680"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-maintainer.test.ts",
+      "sha256": "fb27e17f01b20e861e2a1ec4d6dc17b65c9bb57590296f56568775af49b50e53"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-maintainer.ts",
+      "sha256": "8c60bf97bd11105aeef7c0adbb82570e31256e1ba40bd289631e9aab61cb1e5b"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-output-language.ts",
+      "sha256": "06c24d06e2c376a7da56c65f8108fc87349699366dee2fb8c8eca91bc1ceb2b5"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-page-files.ts",
+      "sha256": "1d543b4195f66226b5c0d3bf7413631b3e70b58458830b497186a0019ae7a96f"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-page-merge.ts",
+      "sha256": "74ee80e30999cc55c234eca37afe35842335218d20e857d7bba6bc476657b47e"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-page-model-view.ts",
+      "sha256": "9237c032ce18b65a7f292aea8ab75b6fc593b7ebb0e30dbcf123a40db07bdf08"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-paths.test.ts",
+      "sha256": "28586d9cc9ab31ec8572a45ad0206caacedd105648c0f9d6d7ad0c268caf917f"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-paths.ts",
+      "sha256": "f9e74391284ed405fabec9afde1861e36291b5fad103581c4698534489503d69"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-query.test.ts",
+      "sha256": "8593a8691a3fbc13603d1abff79c3e8ac6cde881bf5021f829dd9438333344f7"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-query.ts",
+      "sha256": "a7c103e97fb815e385ffc3f91b29c5279d48426bd35026495ce7b8a657b01172"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/wiki-schema-routing.ts",
+      "sha256": "0520ab8783c99dacf01eb08b96c2021906bba62aa8a01dd60cde1065ea3048a0"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l3/indexer.ts",
+      "sha256": "a1684ffe63ec6dd0975b471bf6415a57b4fd31ac478c47329b95e008700a260a"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l3/l3-tools.ts",
+      "sha256": "9c0494f604fd5f3ad0bbc804f0efd8e2f78932d8e3bf138b1c55386bb062eba5"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l3/l3.test.ts",
+      "sha256": "d92ba966fec0c9c35dece9d35c1297efa371064318e2d2afdffb0910b2e80ae8"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l3/recall.ts",
+      "sha256": "da117cbe63cfc7324872b278eefb20ce3b991da111ef1acf1f6c86aa26fda753"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l3/sqlite-store.ts",
+      "sha256": "62b918f29b172bd25a77b4d6cd186507ff4838fdad32676442e4d0ab71fc66d9"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/auto-profile.test.ts",
+      "sha256": "bb8900569ebc8f74717f778cecc14aeb255e345542d1f909d012d73342f60bb0"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/auto-profile.ts",
+      "sha256": "fdb1112ded022110671ac091f3055f9844cf29a8ad349368bdb24e553ca26f8c"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/context-pack.test.ts",
+      "sha256": "acfa7106714ad71788cb136eea9c1219d4814ad77d956cf6e23d3a7fad842800"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/context-pack.ts",
+      "sha256": "2f75222db8ed2d050f82118a9f0ec7c864564d3e696f01267ef004ec5b2a5c61"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/evidence.ts",
+      "sha256": "f6a9c57394a0773299bf6969019a839b9288dadaa333615ed0767473a84b302e"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/learner-tools.ts",
+      "sha256": "cf570147c5afcd41785bb4dde5ca2c9a4ace48aef9aac22185ef08c191b97b67"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/prerequisite-resolver.test.ts",
+      "sha256": "5d3031c2df45a8fab1fe1ac3980722b7720639be60f2f1d64eea59d7d248dffe"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/prerequisite-resolver.ts",
+      "sha256": "62bea1b80ae553b1674e90f7a80f2f3ee2612b831ce5c4bc21b4769fc1ef8ea1"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/prerequisite-store.test.ts",
+      "sha256": "6543e8275b7d924a30c340949618749ee8b8df85e8088090731a2b80a4292d21"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/prerequisite-store.ts",
+      "sha256": "93ab58fbb126ccc10c9a99c0ffa4f5b6475860e5870aeee815f589e5bbfa73f2"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/profile-store.test.ts",
+      "sha256": "e63c585d1d5ebd7cd1ae38c85d6ca998b7291df58d700954f871a304c0b1fb68"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/profile-store.ts",
+      "sha256": "eef5508568cca4e1d774eea586da02eecca45ebdcc16527fe3dec968f612a646"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/profile-updater.ts",
+      "sha256": "827b11ecab1e3a12a91b54373da52699d052a1da2a96809248bc4cc27a5600de"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/rebuild-profile.ts",
+      "sha256": "4d13b5f8d10daa50300079c67916fdbd925720eed6bab8e5631b208e8a940fc0"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/state-engine.test.ts",
+      "sha256": "64d36f790c2bfb8b1b009e3cdb7efebee438654f536be2047532d2cddc2792ee"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/state-engine.ts",
+      "sha256": "535ef26a243cd26bc13552d2cc796f2762701f0f30aab629e86f004d39ab358e"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/teaching-entry-gate.ts",
+      "sha256": "561ed938eaa301946adb6e858ede1885e0da09ac2d250b618e476f90b5223955"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/types.ts",
+      "sha256": "4033e59cb08ed4398505adc334ce20b10235ed89bc893a52966c14d37796bcf9"
+    },
+    {
+      "path": "apps/inno-agent/src/presets/preset-store.ts",
+      "sha256": "3d97bf5186be800c3a2867e3755debab3b1a6e289548d028f7067f09ff41f77d"
+    },
+    {
+      "path": "apps/inno-agent/src/runtime.ts",
+      "sha256": "c47cb76a9cc271f7c4184a2ce5a6179b2ebda5e37bc65e4833fce2d124a9f3cb"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/cron-scheduler.ts",
+      "sha256": "6ff22586e55cd813d820a92fa1289b0631786f511c9ccea04e5646e7e88e5044"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/cron-utils.test.ts",
+      "sha256": "a9d7bcfc271a49b1c17808a5fab6dba14d160a44b9d675b70e3c0b3332789f70"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/cron-utils.ts",
+      "sha256": "a4c8bda70c862ae3d09b433b6e733707e5e081f3ae0edc05c171a03093b509f6"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/deferred-runs.ts",
+      "sha256": "ec945a5172f54c374e996c67da0a927c411b66b534a67dbd29f298aaa383e667"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/job-runner.ts",
+      "sha256": "b74327076e10985d6ada2df57f318b58095644be0f8e3663e6b5c221ea28e1cc"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/job-store.test.ts",
+      "sha256": "f6c1d699eec8abed2a5050fd923ec0dd8e347fab431cd71b36c7729ccef1110c"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/job-store.ts",
+      "sha256": "ec77f391bfe0fd2ebca998ba59b176bb7bf27a2cdea2d65b735f217db5165255"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/scheduler-tools.ts",
+      "sha256": "1fb03530fd618cde1d348c50605f01a6c3532406925c3bdf0cadf94b05b369f0"
+    },
+    {
+      "path": "apps/inno-agent/src/scheduler/types.ts",
+      "sha256": "e2137d00374311bf4c39b951a067414af9d857023932bcebe43af36e01378944"
+    },
+    {
+      "path": "apps/inno-agent/src/server.smoke.test.ts",
+      "sha256": "77e4b7bcf63b29d4633ef341486827db0b7b9ea4c5d5171f2c731f807cbc1d58"
+    },
+    {
+      "path": "apps/inno-agent/src/server.ts",
+      "sha256": "94bc92b8a298ce701ea55fee30ad17e584d08ab8d093ba735c81e2a681585380"
+    },
+    {
+      "path": "apps/inno-agent/src/server/agent-command-store.test.ts",
+      "sha256": "cb94e633e138b4f9dea9d632acf6cafb397146709606327dfbb9a31dcf4debbb"
+    },
+    {
+      "path": "apps/inno-agent/src/server/agent-command-store.ts",
+      "sha256": "139ed292bbf375986d5c2f418d5d48f1a0bf10b0d3278811c930aa69204ce02f"
+    },
+    {
+      "path": "apps/inno-agent/src/server/attachments-store.ts",
+      "sha256": "fa5bb7e5b8547740a246b3a310a20f9ca288d507cf0a9aba4f263d43fcadbaa0"
+    },
+    {
+      "path": "apps/inno-agent/src/server/attachments.test.ts",
+      "sha256": "2d40ea063f5023462610483dbf5510a3005db56dcb36d30fa7a53d632564ef48"
+    },
+    {
+      "path": "apps/inno-agent/src/server/attachments.ts",
+      "sha256": "c075154bf418c333903a9410a873b9cf6b4e4659811e8f5a0730876d01cd2143"
+    },
+    {
+      "path": "apps/inno-agent/src/server/btw-store.test.ts",
+      "sha256": "e466a07ed6d3d49b62e8a0c86e4b2e636fe3df59f222f1e7c1fc60dc8b883ea7"
+    },
+    {
+      "path": "apps/inno-agent/src/server/btw-store.ts",
+      "sha256": "9847043dec47026f405708e4af77bf66cf71614a7a70a1f6e69da17153a9db91"
+    },
+    {
+      "path": "apps/inno-agent/src/server/file-helpers.ts",
+      "sha256": "c72c3a04bfdf51cfcbe1aba45bac9533e4f7caa417b62ff2cbc62b742670e8d9"
+    },
+    {
+      "path": "apps/inno-agent/src/server/http-helpers.test.ts",
+      "sha256": "de20ced9533a83b83c58fdc343488e2ff108076bc55dd296d093bdb1384bba88"
+    },
+    {
+      "path": "apps/inno-agent/src/server/http-helpers.ts",
+      "sha256": "32a9ebacfcbdb2a467f63dc156678dc83bcdf28ea927bc474344c8f5246eab2d"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/btw.test.ts",
+      "sha256": "4f2ca0c4879ecf2de787a3484c6318310b1ab6e79840d9f38a026d0056030dc3"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/btw.ts",
+      "sha256": "3df8bc82e2ddf37b79de8916863ae806c301d937a8e42420860766154d39aa06"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/channels.ts",
+      "sha256": "023abbac5e96b191863dc5eaa2f9e5ead29cbf15a217dab03abcf4c7e7494ba5"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/chat.ts",
+      "sha256": "71e14be982c7494cccc485e6edeafd63ee2b5dd08115c78f2287bac889b012aa"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/checkins.test.ts",
+      "sha256": "02cfc5e866e2a7bb2cb8fb9680d5dc84cbefd6617585658c3a7f0f5ebba1e319"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/checkins.ts",
+      "sha256": "fcbaee1b75d755b4c8098b601c6431c4276541b3254f32ac0908e8c4ab60cb01"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/commands.ts",
+      "sha256": "b24e123c2ca7b80c38bdec5877ba83ea720db16e2766b1089ad74a43ece5eeae"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/jobs.stream.test.ts",
+      "sha256": "bbfaa0cfb22f9507db981642e716ac29248b4f31db884619b9a5298ea00c4ee2"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/jobs.ts",
+      "sha256": "dfe89388e8bdfb1369fb090bddcd33a2238caab4ade4da623bda91d823c8e390"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/learner.ts",
+      "sha256": "abe42a2935f03a660494a81b7648ecced7bf8187ea54ae1b912e659d8ea0063d"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/practice.ts",
+      "sha256": "31dfb4abb6f23f68b053c883721b52603b6d258e0b0acc42eb40312b0d01c04c"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/presets.ts",
+      "sha256": "bf644a20039ba552865b7eed4f66c0c2b360c8e6252ac45389ad2ac9b4f44fee"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/sessions.context-usage.test.ts",
+      "sha256": "2ceeead40d414f30e750001a56b94106b262f3663beba27daf877572587381b8"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/sessions.topic.test.ts",
+      "sha256": "2365ed8fb4cc3a6c8264f6aa10f89f86ab84108c0be52122526c8cc46eeac556"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/sessions.ts",
+      "sha256": "4d4691f997ef08f3c68c83f88d0c2cf5496e93f59428594a8080dde1cb54a286"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/settings.ts",
+      "sha256": "41c511a09b317372bcb73731b02294c4b43a3f3eb56fa784e3f926118bc9a4bf"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/skills.ts",
+      "sha256": "72eafea7f99582ea2967d822a89b10634ae37ffa6208c778812b9b1f61018efa"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/wiki.ts",
+      "sha256": "92169de84bee7b70906f7eee9a94f76b4eab2f5e8be0404e1ddf3a680e747351"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/workspaces.switch.test.ts",
+      "sha256": "66335fdcf7e10dc69344522ff9228550fb1d55865ea1c106046e20be0b48abb8"
+    },
+    {
+      "path": "apps/inno-agent/src/server/routes/workspaces.ts",
+      "sha256": "226ceea9b043636e7878c3b3b6f52133d7d2bc561ca267b1a79f6f0ce55206ef"
+    },
+    {
+      "path": "apps/inno-agent/src/server/session-model.test.ts",
+      "sha256": "b4d8bb86e171107e8353328b0ca3f95c1c434ed370ddb8b39b26d85e7b68a5a9"
+    },
+    {
+      "path": "apps/inno-agent/src/server/session-model.ts",
+      "sha256": "0035d8be402cf749015e12ff70004c9388e6c85b513b6aa042dde57caff0eebf"
+    },
+    {
+      "path": "apps/inno-agent/src/server/skill-frontmatter.ts",
+      "sha256": "6b19bdf7075ec0477436de7eef58833f4dfdd8e785b778038d1dcc3b7b2a07db"
+    },
+    {
+      "path": "apps/inno-agent/src/server/trace-store.test.ts",
+      "sha256": "b7511957fed387b72c3f480b40335c0d5c5f4308ebc1fef92b95228c541258c6"
+    },
+    {
+      "path": "apps/inno-agent/src/server/trace-store.ts",
+      "sha256": "0dc4a71aada5f15559cada947c8705f461d925b1ed23a7f9f37cd74040c594b8"
+    },
+    {
+      "path": "apps/inno-agent/src/server/upload-prefix.test.ts",
+      "sha256": "4a64283733003f86d12f76b34d537ff7ad2071a6c68f5fcb30d9099884ba5da6"
+    },
+    {
+      "path": "apps/inno-agent/src/server/upload-prefix.ts",
+      "sha256": "195051913d3d2416929a1cc269d90d8acb09707fdeff79860370e0b1809b63f3"
+    },
+    {
+      "path": "apps/inno-agent/src/server/workspace-activity-store.test.ts",
+      "sha256": "ed171b8b8f32a4e4a752b4a19df47df70b5a9c8b8eb34ef73b7983870dcc6f1b"
+    },
+    {
+      "path": "apps/inno-agent/src/server/workspace-activity-store.ts",
+      "sha256": "0fd7a21b8848fa5f6337c8354363a7bfac0675e0c9f047f12255f83f2c13910a"
+    },
+    {
+      "path": "apps/inno-agent/src/server/workspace-switch.test.ts",
+      "sha256": "f5d42e743dd02f5e34db1cc9fa2b7dd1409528204042b85e63d19173580b984e"
+    },
+    {
+      "path": "apps/inno-agent/src/server/workspace-switch.ts",
+      "sha256": "e2aff370ebdf78914f4b620ddb31b0fca98925b9ce12b0ad1be5b92ab306b887"
+    },
+    {
+      "path": "apps/inno-agent/src/shared/context-usage.ts",
+      "sha256": "ee7b9760ed28c27ef3abfce145040669f522fb3e0925de4781f50abee8b0c1b0"
+    },
+    {
+      "path": "apps/inno-agent/src/showcase/case-exporter.ts",
+      "sha256": "dae887b4ac443b4073abbea188aecf450ffd24ae4e0b18371edec81ae15eb52b"
+    },
+    {
+      "path": "apps/inno-agent/src/storage/file-store.test.ts",
+      "sha256": "2b8f80309ab6302662696be8f38c5efdadcf980fbc5165996d608a8c871fa7c9"
+    },
+    {
+      "path": "apps/inno-agent/src/storage/file-store.ts",
+      "sha256": "41a5156376fa348be136d82fe2464dca651bf3949f582505425cdd67ad933aec"
+    },
+    {
+      "path": "apps/inno-agent/src/terminal/command-resolver.test.ts",
+      "sha256": "5f7247babe4451b13d62c7290d890616c4c4c089c3930caa8a7019b54f466916"
+    },
+    {
+      "path": "apps/inno-agent/src/terminal/command-resolver.ts",
+      "sha256": "aa4c88ca759d9ce505325c6fce9a919a59c36adac4402dba6c2c91749e22e003"
+    },
+    {
+      "path": "apps/inno-agent/src/terminal/local-pty-backend.ts",
+      "sha256": "6bd3ec3517943545bbf3d6b4e121e686940e3ecc44803a5592d7bda374f6166d"
+    },
+    {
+      "path": "apps/inno-agent/src/terminal/run-file.test.ts",
+      "sha256": "7a5e8e5835130bcae894381c0c09029b1b195771071ba98edfb919b1a3f6da3f"
+    },
+    {
+      "path": "apps/inno-agent/src/terminal/run-file.ts",
+      "sha256": "b0e066b77859a9a2f3f62e0365916baeebec0c8013c80f3b97b03ea5056f37ba"
+    },
+    {
+      "path": "apps/inno-agent/src/terminal/run-record-store.ts",
+      "sha256": "d8e9fc21c7284bff862920852a5f97acebc2e748b7eed5c3dc74bf3c3d90784e"
+    },
+    {
+      "path": "apps/inno-agent/src/terminal/terminal-session-manager.ts",
+      "sha256": "f0f25f51ef22363ab4eb7c03ee8c348634972c249fdf90fdd1a1cece27e60550"
+    },
+    {
+      "path": "apps/inno-agent/src/terminal/terminal-types.ts",
+      "sha256": "1512a1ac11c5537df59325cfcbd5da97a3cdbbabef84a8f7c9b30bc488f46661"
+    },
+    {
+      "path": "apps/inno-agent/src/utils/fetch-logger.test.ts",
+      "sha256": "f755821d686e9eebef9b75ee40c888b66db4944149a3a6e22b2c1614b6fad1ac"
+    },
+    {
+      "path": "apps/inno-agent/src/utils/fetch-logger.ts",
+      "sha256": "edadc04d1503c54aff94a1db0393e2f7e970dc5a9317cb83b753a853ce3abdb7"
+    },
+    {
+      "path": "apps/inno-agent/src/utils/path-safety.ts",
+      "sha256": "62c3d0f6ba81782f96f504ed59bafdf5f5d2aa28a5afd7b8262f5aea54275aed"
+    },
+    {
+      "path": "apps/inno-agent/src/utils/process-fallback.ts",
+      "sha256": "d43558cfc4ef8dd850f9d55faef28bbe6e808b9e957f93f826e92be5ddc89f6c"
+    },
+    {
+      "path": "apps/inno-agent/src/utils/proxy-bypass.ts",
+      "sha256": "f458861ac509e907e95e416222be2f546fd7d1c3cb1af52f201a83342a908141"
+    },
+    {
+      "path": "apps/inno-agent/src/workspace/workspace-registry.ts",
+      "sha256": "d29b45af52b5835beb0000d48ef5fae4e141a46f398b2763663e65db2492cddb"
+    },
+    {
+      "path": "apps/inno-agent/tsconfig.json",
+      "sha256": "ed9ed0707afa0b676911edf2bae4307042e25f7fa432cbdd828a1d9c4985659e"
+    },
+    {
+      "path": "apps/inno-agent/web/.gitignore",
+      "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910"
+    },
+    {
+      "path": "apps/inno-agent/web/index.html",
+      "sha256": "90bccc321e9e41a649128dcb9965aaf2ca226c25da30f1bebcc3c7a37371a63d"
+    },
+    {
+      "path": "apps/inno-agent/web/package.json",
+      "sha256": "c3f8e739232e8169ed079ff43137ba20660bc5c62683c637a617c6e64300abdc"
+    },
+    {
+      "path": "apps/inno-agent/web/public/icons/icon-192.png",
+      "sha256": "7edde87db15deac9e6a9f0922807859bf668f25eaed242281240213014b45120"
+    },
+    {
+      "path": "apps/inno-agent/web/public/icons/icon-512.png",
+      "sha256": "96dc2229398c5588e0a0b101ec50c58a50b8c124608eb2c169fd36f662aaf6e1"
+    },
+    {
+      "path": "apps/inno-agent/web/public/manifest.webmanifest",
+      "sha256": "33c5700e945ccfcfd63f8ef6841393785b6125aaec32678931975e72bc3a2b28"
+    },
+    {
+      "path": "apps/inno-agent/web/public/provider-icons/README.md",
+      "sha256": "e5dd0ed1d21c542530c3c9283268b351976ec11012052fec587e9fb7ec6a0eb6"
+    },
+    {
+      "path": "apps/inno-agent/web/public/provider-icons/bailian.svg",
+      "sha256": "9fccc143fd0b920d1814d369550c5ea412ce02e37537d625caa45b01fdc834e8"
+    },
+    {
+      "path": "apps/inno-agent/web/public/provider-icons/deepseek.png",
+      "sha256": "6342c2315c4b1754d867b9f16120c061b967d2a0a8d38138a27253018774589e"
+    },
+    {
+      "path": "apps/inno-agent/web/public/provider-icons/kimi-rounded.png",
+      "sha256": "4a9f295eb9c7d157fb62de38af6150dc88571b3e4098b9c2284ee38376e61177"
+    },
+    {
+      "path": "apps/inno-agent/web/public/provider-icons/minimax-user-icon.png",
+      "sha256": "4584ffa1be6ef3896cd4947ca8fb1169acb412e6fdcd79deb5622978092e79be"
+    },
+    {
+      "path": "apps/inno-agent/web/public/provider-icons/volcengine-icon.svg",
+      "sha256": "dc3edfa31da4604ad1124d597d642142d63a77463aadc638083174fd8eef3e3f"
+    },
+    {
+      "path": "apps/inno-agent/web/public/provider-icons/xiaomi-mi.png",
+      "sha256": "cbd7602e878c987180cbb14e86aa241541e3523e85362e1ac0bc7b896f93ea65"
+    },
+    {
+      "path": "apps/inno-agent/web/src/agent-command-bubbles.css",
+      "sha256": "e9b0ad59a51433bc495b9c974f09dc4c03bb2240f158692ed309d6f7db9f8d5d"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/btw.ts",
+      "sha256": "eaf0e103418f87cd151bbf120765673c220872ea8841f9a8b06607c5a8e67f55"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/chat.ts",
+      "sha256": "734f7f2b704b5ed63d3d415fda09fa3730a3f96d8141681821bf28777ea5eec3"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/checkins.ts",
+      "sha256": "8207a937758668fe3c29b88b91df192d9dae18d909988bb552ef515adbe28899"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/client.ts",
+      "sha256": "04384e091d74054c19f64bfd0282972bd374a8459614399c5622cebc277ad417"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/commands.ts",
+      "sha256": "1c6afc2ccc3482fbffa5a9046ae1d6f8514045d3c32f00a6adf676fdd5f45d69"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/jobs.ts",
+      "sha256": "73b6fd67e343e8561e5023cea51573f81b0b66b8cbbb322cb0be76dcfe09f4af"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/learner.ts",
+      "sha256": "68d1d9f55b8c18e9231face682bf5986cf2005d868956a44886998daeee3b354"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/mcp.ts",
+      "sha256": "cbaf559d35739b9311a384ef65cc3c1374f3d59dc47f3ed7d812f4efcf5b3a05"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/presets.ts",
+      "sha256": "0573827ee36502f57ba891b61cd89416460ed31d11c20ec7e1d2eec348f7e000"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/sessions.ts",
+      "sha256": "eaccdcaf80a934b2baff40fd3d1c35e50566f8987c78947540f88608586c6dae"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/settings.ts",
+      "sha256": "9d4fe5f2270cefc8146d4cc9b8123b991bb0b7329d03af02b45b1d5a0a719964"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/skills.ts",
+      "sha256": "d27fd2bd640b29a1750dd6eba5dbad5901721d0fa8d5537dd59b6d104501a8cd"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/terminal.ts",
+      "sha256": "5f9821a835fa976ecfdfa5b736fdb5d0f7803c5e8cc475f1f960784750d0f769"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/uploads.ts",
+      "sha256": "9d946891403da5eff4a9df4a27ccd72e109db46cfdbd76c9da21b0a3aa3656a8"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/wiki.ts",
+      "sha256": "5eac744aea218cf9c7127cc26b357161f598fac2a3b87d27d27a674edf0a4975"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/workspace.test.ts",
+      "sha256": "36221e256c8bb6e2d7807d0a047fecde82497c92fe776e0c0757564b2bf524cd"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/workspace.ts",
+      "sha256": "bfae410b06151503214dfa2b22f757c2d3ec87d4ef7f146d17377289c9ed6fb8"
+    },
+    {
+      "path": "apps/inno-agent/web/src/api/workspaces.ts",
+      "sha256": "6cdaa73b9cec7cd83b32f04562ef7fc377b92c892dc4c4dc806e5ce8a90a68c5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/app.css",
+      "sha256": "80c14a7b409d423d95e517288862ed16b719d790b95684b580d20a9657784314"
+    },
+    {
+      "path": "apps/inno-agent/web/src/custom-elements.d.ts",
+      "sha256": "819e55474a79e7d7628c3f78cfb5b6761de5085b356f37e0bfb591eb597f269c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/i18n/index.ts",
+      "sha256": "cd651f057aa178ff7e52f0c110c2fd0a25c3389fba5828d959b2f8ae5e706771"
+    },
+    {
+      "path": "apps/inno-agent/web/src/i18n/locales/en.json",
+      "sha256": "36155346639a18e4f16950366466fd81b55c39f60988f485f4aae903d1c8b6fd"
+    },
+    {
+      "path": "apps/inno-agent/web/src/i18n/locales/zh-CN.json",
+      "sha256": "7c6885f0b01731283a3ca8aff19985a97e2cec9783345d46b246fe919f8deb92"
+    },
+    {
+      "path": "apps/inno-agent/web/src/lib/schedule.ts",
+      "sha256": "2d27b927c9f2205f98c7610eb344140e0ea7c96de25702e9aabff461cfaea26d"
+    },
+    {
+      "path": "apps/inno-agent/web/src/main.tsx",
+      "sha256": "80c8d184f459e266a24f158619bf1725b9128cd649e0f1872c053278ba9b9055"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/App.tsx",
+      "sha256": "e25c0d80bc6e4f6a97769baf352183ba21d0db4c5b6db7730351b79dc3d884f3"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/BtwPanel.tsx",
+      "sha256": "019579a9a4bdcdabc23d08880e6e190fd5642acf5d4838c790d064fb5342e6ed"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ChatCenter.tsx",
+      "sha256": "e412b06f3918d11cae10b02efe2c7ecbf2f6ab03bfd2a8fbd36ea8c1c74bfb27"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ConversationMinimap.tsx",
+      "sha256": "90808fc83a51372285d96dfdb07e978ad3ccbed9e2097eb849b28e78fa100765"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/DesktopWindowChrome.tsx",
+      "sha256": "5c75744ce4a269f2ce7748d230f99b44eb08d787a5b634e022daad48343812ca"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/EChartsPreview.test.tsx",
+      "sha256": "323dd39af080b8c38bd5cacf9a5ffa492bdb7e69ba4feb8d0648245981225a04"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/EnhancedCodeRenderer.test.tsx",
+      "sha256": "6dcabae78a6741487bd4855c80f750e0a852c62503fbda838875c8f121d57a4e"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/FeaturePage.tsx",
+      "sha256": "6773beca2e80caab5fa28c7a27860dd9d666d2e0f3746cde497abe744dc98b69"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/FileName.tsx",
+      "sha256": "eb352a3646abee09f72c307848efdc0572a1f13ccae0df50dd3e627b1b0e4089"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/FileTypeIcon.tsx",
+      "sha256": "cb00154dabfd14a491d1d7c14cee7ae1d5a4cb87a078a169548be19ef324f965"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/JobsPanel.tsx",
+      "sha256": "ae59481ab9a9b689bec6965d21f651f5112a1d124cca649f16e9802377308578"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/LazyCodeEditor.tsx",
+      "sha256": "50c956069049b5f50660790e9e5b05679ceb1f75f866234c1ab5c64dea9d02c1"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/LazyMarkdownEditor.tsx",
+      "sha256": "73d8cf3b2f7e51d322092eca5f786784fb1d34d4cb3c4f7408bc5e4ecd541474"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/LearnerProfilePanel.tsx",
+      "sha256": "85197aacaebaf1bab680bf1a3276e3f5c3e13e3f9f2b930f2989d1738eda44b5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/MarkdownArtifact.error-boundary.test.tsx",
+      "sha256": "f37f329a4390941274f16851e5c4afa497a2c5cd80120823e01f56d0941805ad"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/MarkdownArtifact.streaming.test.tsx",
+      "sha256": "01e01c59a785d12ad8ce4aecbd90981b3e29ee32d51f9b9896f7d77dbbb0c4ae"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/MarkdownArtifact.test.tsx",
+      "sha256": "f87a2e07ee882067b39ee359750e31f617c499f594d26209bb307b0c7048d440"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/MarkdownArtifact.tsx",
+      "sha256": "94bd241635cf47efe0095ef7146beabafb32498c25fce7dca0504eadc9e0f6a2"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/MarkdownRuntime.tsx",
+      "sha256": "9c066684e83ce21709d057f81a13b7e6a9487f892e1f133b6ced3ef0da7721f6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/MermaidMarkdownRuntime.tsx",
+      "sha256": "00a9cb5b071f5797829d2ac2952a689ac1d9ad2504f7156f9e45954b947eae34"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/Notebook.tsx",
+      "sha256": "1f8308ad11d5fb51ffea2b22890f812b213424eaac6e74259c102ed7276a34c2"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/PermissionDialog.tsx",
+      "sha256": "6987933c2fc8732d61e6600482ddbad29050cde5d4693ac7ad993531b0d2aa08"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/QuestionDialog.tsx",
+      "sha256": "1c6b18d48a30ec2033248b1c818d55c8778565721472cf652cfce88cd376c57c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/SessionSidebar.tsx",
+      "sha256": "143357a205b50a23dee1bc5aacbc5571c3d381755c5e19bb3d4a976838988ae5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/SkillsPanel.tsx",
+      "sha256": "beaf51a457b8e0e755f1cf767983883fb78bf1e3141b59b993fe63a9ca9f1451"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/WorkspaceBrowser.tsx",
+      "sha256": "17a763aa1cafdfe773b763eee543f35b3ab1b73822d6f1319b0b9a8aeb468238"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/WorkspacePanel.tsx",
+      "sha256": "0e3f2795659c5db6bf215b42f8e10dce3f0f24490c242164e41c5cbe147c708d"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/WorkspaceSwitcher.test.tsx",
+      "sha256": "acc7397fc5f88ba2b9b5d822769cae38dcf35af817423e21cfcf854f7cde7c8c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/WorkspaceSwitcher.tsx",
+      "sha256": "38b555f86b2a428ad122f87d37a7a3b93760ae891aaa9d8092c0e98fd287a0a4"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/AgentTraceTimeline.test.tsx",
+      "sha256": "a2dcf130c37b9e5ec63f45f8a1f48ad99aa4b7f55687c6794bb1287973f0af3e"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/AgentTraceTimeline.tsx",
+      "sha256": "ed16b9b218767fb65522b8c6f3085d2bbb9aa0bcea4be1b2ec78b5f2fb9c5fed"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/AnsweredQuestionCard.tsx",
+      "sha256": "e7fb818fdaa5c03ae401e499e17f7cace4ed79ce77ede52246dafe2aac3cc7e2"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ChatComposer.model-menu.test.tsx",
+      "sha256": "8eb01ad88f07f11a6d23f5e078fcd8bbefb923b8daf59f12d1f738131be2d1f5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ChatComposer.tsx",
+      "sha256": "f0c829e3aaf16d912ecdebfdfae779d7848bed2bfe9961de2f8edc0667761771"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ChatComposer.workspace-control.test.tsx",
+      "sha256": "560de8d7b5f8f673ae9bbee455c3601c419e3a1234e8a2c500e6e395edb9fcca"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ChatConversation.tsx",
+      "sha256": "80dab13a7d4e408deac7b8bf5bcb2d99ef4fc7b561b3ac394752a4b87aaf801e"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ChatStatusBanners.tsx",
+      "sha256": "2da6c2394d8b14c0312bac80c3dc01f50aabcd076d79032ba7715906beacae3f"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ChatUploadChips.test.tsx",
+      "sha256": "1834f5bf130e25dd0e26ffd0b84990972d131332b6b526ce4fa1224f4e7816c8"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ChatUploadChips.tsx",
+      "sha256": "a27c69fe4a7690eeb2484ec0ffbe744b629d480600169c2b2b51cdd6d3e9a626"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ChatWelcome.tsx",
+      "sha256": "ce24ccc3bf1aa070db4b74f518826e066f64c580b5c0a12a3296497e041613dc"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ContextUsage.test.tsx",
+      "sha256": "d4349895f3fb43e9aad66d126f82711398cfcf1d3d875a7f72972735a6afa595"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ContextUsage.tsx",
+      "sha256": "9d8f57a73935dc5d51aa41025f5dad9ed8055e4ba313bb359510319d3a997fd7"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/JobStreamBubbles.tsx",
+      "sha256": "09cdd997ccc90541e0eea6c8f062d2356d428ed210337c4746b38ec635120e7e"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/MessageBubble.agent-command.test.tsx",
+      "sha256": "63cf4f3413e1a13d0f3e8b7b204ff263786f2df8b789b293359fb6172967928c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/MessageBubble.edit.test.tsx",
+      "sha256": "15aaf092101bf15c4becc0c2a0cf3e9c4b151d844215a528264e602cae4c3dca"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/MessageBubble.follow.test.tsx",
+      "sha256": "b7488782d69add458a7fe8376c3a8816f604845f720eb7f19de194ae7727f027"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/MessageBubble.tsx",
+      "sha256": "d281d8b609304772b63a6f3f314692a3152ffb7d2d77cf95c5749fa41d407e7b"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ModelProviderIcon.tsx",
+      "sha256": "8a6435a8594255c77c40c9e592139f54a2a5f0e092d56b28e8e535a63ea26250"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/PermissionModeControl.tsx",
+      "sha256": "d7e9552c2646a8a8e4e6a0cb812c555834ec732185d6bb458f2b51073c71235f"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/ScheduledRunBanner.tsx",
+      "sha256": "5aa830c9b6182d314401953bff3cc19766750a94c5aa666f7ecd79f06fa99820"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/SlashCommandPalette.tsx",
+      "sha256": "b7a4f7928916afdd94f40b3580ecd1889f04625333cafe6915c8c6d3943887f5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/StreamingBubbles.tsx",
+      "sha256": "0a367fa3253df22d313e9e368448916eca4b952791f60b77d68c6fc8124b7724"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/TodoWidget.tsx",
+      "sha256": "c68047d87fb054e3f3604828285609df91e433f372edb38415bd3e1cfa997e21"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/WorkspaceSwitchConfirm.test.tsx",
+      "sha256": "0cb598c3fa6b221d74cd74425c101ba9ba72261eca2a504ebe3cc8bffdf7cc60"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/WorkspaceSwitchConfirm.tsx",
+      "sha256": "0beed9247cfd4d5196fabc8cd5038e7492b8c414908335d5ea1b09a8ff44fd4c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/agent-command-message.test.ts",
+      "sha256": "0c83cafc15621f97ad8d4fc277d376daea798487e95be161ca9157a5c9e2acc9"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/agent-command-message.ts",
+      "sha256": "072ca83106bb6b1503a7c5da8497e6a43da44e9cd8986520a6702e400e94f90a"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/composer-utils.ts",
+      "sha256": "9c98155e206f12b1175810a481a1af41b574ffb7bc3935e71c9dd31a9f5a1a37"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/context-usage.css",
+      "sha256": "be69802d337f023f90f0d309ab5b5f747f64b5ca05fac33da0955fff59ee50c6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/model-menu-position.test.ts",
+      "sha256": "e4228539ed2b0dbbe63bccd73b07101709fb1bdc0dae124beff40b4bf075e0fe"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/model-menu-position.ts",
+      "sha256": "0bd67ed4b9a692b41f07940d91ec6f0feac9ba5bd708285f6056fee314289807"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/skill-message-collapse.test.ts",
+      "sha256": "3d28ea3d2fc86e6b44f2d2c209b871e7632eceb4568a82b3145afcc47878b141"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/skill-message-collapse.ts",
+      "sha256": "0a35297e9170e8e1681989808e8e5fc931e499dac5dd1b91beda00eb04ee0b27"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/slash-palette-utils.test.ts",
+      "sha256": "f57ca52b1e8d67a1cdefa7492043807ef86063a7abaf63112ceb246658a4695b"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/slash-palette-utils.ts",
+      "sha256": "2a534c1f2932d11e5191cabc3707d18066f34e95cb1084f9696d70360893c306"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/SmartInputOverlay.tsx",
+      "sha256": "a60d1588ca0fd3db5e239ea2bbf5e3a7a86a219edceea276aa95b922392ff7d7"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/clipboard.ts",
+      "sha256": "dabb9e1bdbd9ab80299cbdad967f6a1c420701aa8c0597f1a1765d655128bb3a"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/drag-utils.ts",
+      "sha256": "2c8b99a9c6f1221f6d378a873c10e2376fc9dbfe44776c62c6c20c983e2881e6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/engine.test.ts",
+      "sha256": "bed7028168dd978cecc8ca4cc87f2b29120879daff18d47a2f1af26468aaa195"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/engine.ts",
+      "sha256": "a34c38e73b768e698139b9f11f33151ae171d52f3ad4568f4b915b78e2a500bd"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/kinds.ts",
+      "sha256": "2e31442fe90c2623052f7f3bac09adcdd9b5b74b3b46ab245e78bea6ee9586af"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/rules.test.ts",
+      "sha256": "073c925b98e2acc0289f3e9e341ee28a23e8d69c5757a063ec542d6bfa4fefb9"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/rules.ts",
+      "sha256": "4d784ef1f3a814a5edb321cb32fec7d4b462e9091728424e9de59947a81c2616"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/smart-input/useSmartInput.ts",
+      "sha256": "f6bd001901926f708807b3563e32cd2b4078e19204f5125ce9cbee6ab986045e"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/chat/useContextUsage.ts",
+      "sha256": "f85d64799f927f692f18ad3e4cff69bb2edd84883a46de4ec4642f0ef3817409"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/hooks.ts",
+      "sha256": "f2402c3208e0133d980a3e58dde0208db173b1345fd0aebce79613b7860ebde5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/jobs/CheckInCard.tsx",
+      "sha256": "9a43fd7643188f9e7f477da4b58cd5bc0a15729a3d21b8eb8a879a74c512a630"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/jobs/ScheduleEditor.tsx",
+      "sha256": "73a1a2c375fcefe1a3b5e547baa002882902f8e1dbb4481e57170962131a76f7"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/jobs/runJobInConversation.ts",
+      "sha256": "d79449f894f29403771d48ecdea711aff1de099fb51486b46fd8d4270a89c72b"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/markdown/ArtifactRenderers.tsx",
+      "sha256": "b9c6cd6e3dbcea1f861f8622beb19624e79687fa38deb2465e370f2aea2e9655"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/markdown/EnhancedCodeRenderer.tsx",
+      "sha256": "b0688bd0949d0e4f76aa28fcd79a4c69182de31e2c9c2fd7412fa2b04f12cbce"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/markdown/EnhancedLink.tsx",
+      "sha256": "723b5b83812a6bc32a6d39432f019ce0519f3bec7c4497b64990f4b1f2adb015"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/markdown/EnhancedTable.tsx",
+      "sha256": "849c9144d0eba3c95df7f881c6a1c17926d953acd9f540a2554d68c4b5d13b09"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/markdown/MermaidArtifactRenderer.tsx",
+      "sha256": "354be51dacc5f6b4929c4948b6e650d3c2b2a0ebda08f4d92930388b6b28dd28"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/markdown/shared.tsx",
+      "sha256": "be2eab022d4ab3f9d39bea77e18613a6671a7a80b5a9512e6163e430bfecb01f"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/markdown/special-renderers.test.tsx",
+      "sha256": "98f9062e2a2a8b671b415a9097631356e0e508321d222b8bb56b597bd69eb0b0"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/markdown/special-renderers.tsx",
+      "sha256": "a72c649ffa9099aed05f2c946019dd3d5418782e558ca77e31eace890b2ba817"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/notebook/GraphView.tsx",
+      "sha256": "9e60b1f386e24a956a230816a9faac213991b37dac188ad902cfb418c84586ea"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/notebook/NodeInspector.tsx",
+      "sha256": "2cee1fd04638fc67038d1c3ccadbf8550e00512dc754c39d656e4310f5908e42"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/notebook/PageView.tsx",
+      "sha256": "6638f2b6b719b9af4b4ff12d96174253dfa535aa6f3257cdefc6887355c49657"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/notebook/ReviewView.tsx",
+      "sha256": "c8f82b085fb7952e0f670a15aa1d90ed2c531f8cc4e698392785fdebd51a3740"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/notebook/force-simulation.ts",
+      "sha256": "9f8f234ffca00fede8f8eeee7ab68f9477b288902b97581fc187c93dfb283024"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/office/DocxPreview.tsx",
+      "sha256": "eca812037158923a4d31f24a35d0c03023a14fb6389aa3129174aa5915101827"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/office/PptxPreview.tsx",
+      "sha256": "4f2ee95ece7b8c899f430daec4cf5b7606f63cdf3de8bd2045a3a605b848f031"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/office/XlsxPreview.tsx",
+      "sha256": "542cd0e4f7b1c410c343aa881b4041b68cb9c7e75e6a665d2d8613a2b54db566"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/AboutSettings.tsx",
+      "sha256": "9da5b2ca32da12ebdd96334ca1c8cadcbbcb79da9d9e652c98e0a77e12c00997"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/AddProviderWizard.tsx",
+      "sha256": "77398cc0179816ccf46d30c99038f52a4c92a02879c26d0ff1b7d79d3857665f"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/ChannelsSettings.tsx",
+      "sha256": "f5054ad864f97417bbafe46fe2f3d4a4dcba11dd17fa18abd9d537cce9285d69"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/GeneralSettings.tsx",
+      "sha256": "77b6da9476a244feba37fd875901213d700ed46b43cb0074f908527c2a45cfba"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/IntegrationsSettings.tsx",
+      "sha256": "059ed297b90ca0d0ff98519a30524a07c0cba4dbb85956b47c2d837dceaae412"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/McpSettings.tsx",
+      "sha256": "300d61b48e5e3f5b623f028f82abbe5837ff662b582b17c2105c6f7dc5a843b1"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/MemorySettings.tsx",
+      "sha256": "a5a1c0a7067d915ad1e2f156c176a01781259063a06f92313885e1900acf2cf4"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/ModelsSettings.tsx",
+      "sha256": "3ddba9abf6816acee82ac04cb74708065e92ecd55ff35a24db0316a0d19ad01b"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/SettingsOverlay.tsx",
+      "sha256": "a8c5e54667eb32bebc06427846c925c28ba6097386b42c68310596829502bbd0"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/SmartInputSettings.tsx",
+      "sha256": "513c8149cc96c9089d0c53f0e19243dcc52553fafd2fba55abb85b1a3af926b4"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/model-metadata.ts",
+      "sha256": "8f66b10713abe680e029574dad8ce8f099fb4c3f5b9eb13fe290e3bb986a52bb"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/primitives.tsx",
+      "sha256": "1e0a523bdf231f9897882f5fb5187b69f51670169a0761994687a1d0abb77cd6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/provider-presets.ts",
+      "sha256": "944662b629aa252501f4dba66c2aeb31fb730327965f194d110938cd59d49105"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/settings/shared.ts",
+      "sha256": "d3ee3403256360e816b3ebc429deead44793cce2ca6c4f3613fe4785aa09f22e"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/terminal/RunButton.test.tsx",
+      "sha256": "c6966a217c7322173bf4237ca4dfcf0f01bc5f3841db9c2184bffc36e743e97f"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/terminal/RunButton.tsx",
+      "sha256": "132c1013cd7c5afdbdad32769d91f490f76612711df3b25f16f6ed64b0eb31b6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/terminal/RunsPanel.tsx",
+      "sha256": "c58f7a5f70fad723829c110cd327ba4bb707ebb3ce790389dc887314b595d93c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/terminal/TerminalDrawer.tsx",
+      "sha256": "8c67848cae7d5241c41dcd0ce40b38cca12e63b171767419223e2339782de7f5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/terminal/TerminalView.tsx",
+      "sha256": "da9d538c15620599e26d118f2d483d429d9157a97fa78d9ae3f1169440346537"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/ContextMenu.tsx",
+      "sha256": "75c57ef4bd73faea370abc5efab5265abc83c7d1c86628537a95ac9ecdf7c0da"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/PopoverSurface.tsx",
+      "sha256": "07e38b689802d1fc9a492417ba53968c6510170d9c809de556b5f5296b6c8398"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/Spinner.tsx",
+      "sha256": "68e8f1c53adf7f53b663ad1132d900088c71e1270aa745b691e32fc5d4cc75f1"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/Switch.test.tsx",
+      "sha256": "1f3b56317090fd09cff4a5bac90afdbc242968d94760d27ae30fca096acd2ba0"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/Switch.tsx",
+      "sha256": "d9fed120fbe76116f1c54931f58b8baf503ecc78126883b7d10eb493d4810d31"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/checkbox.ts",
+      "sha256": "295a18aea28eb224c2203dc8a9c0fa4bca834a8b8f71c1257876899fc0822b62"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/dnd-backend.tsx",
+      "sha256": "ebf8e65faab36dc043c623dcc31d529a9e229bb3d24dfeca4209fea1345399c0"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/input.ts",
+      "sha256": "1801cd5e10ee9e794bbb4c74e5c7e53ab66dc5c49b48b6ccb433adbe9514d441"
+    },
+    {
+      "path": "apps/inno-agent/web/src/react/ui/long-press.ts",
+      "sha256": "b8540375b2cbed275909d1b14a94aa67cec6dec499840880c7d88a9cfd97759a"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/app-layout.test.ts",
+      "sha256": "5a975756c13cbb5cb2338ac57b8ec1f38e3dc4cddc2d5075c5e52f0431c6586d"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/app-layout.ts",
+      "sha256": "cb729b21bacac60c52c0050e9e884d55c1bdb487fa56b248118b95702fac0405"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/app-store.test.ts",
+      "sha256": "e60f4544ff27dd9ee1073fc6e4acf8197e790782d261191691167134a9d14081"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/app-store.ts",
+      "sha256": "91dddceefb5aff1b7404f752cdf0fb0270ad2cf533981a46235d6f343be50c3c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/btw-store.test.ts",
+      "sha256": "ea103a326b48bf11b28c634d5a880dc44156013323e65bc15b43409ebe926a72"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/btw-store.ts",
+      "sha256": "e939a644ede26849686a3facb7ea474a58e8e5ec58b0a8cf458902d2a9779fd6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/chat-store.test.ts",
+      "sha256": "4be571a47a67950f05c12e398645af114cf08bf0b3a49867a3090851f29768a9"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/chat-store.ts",
+      "sha256": "a5170b198b3eddde54a16f7aa9024eafaa3544fa5db060211753d23ea9e34b87"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/event-emitter.ts",
+      "sha256": "690161429a29f22792e66b28899e813ad2e6a4be351f38141f6143ea2017af18"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/jobs-store.test.ts",
+      "sha256": "07d1e257155c4fa758ca742838fb67c2e776982ea62f8830809d5a14e9bc372f"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/jobs-store.ts",
+      "sha256": "2f074e55e0e2570b86bbd4037763e9e2e371b344b0ae81fd217e45056ada7d99"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/learner-store.ts",
+      "sha256": "8be7231303486f7c644e16f1df6a62fa2cf3cc5f56b50cdee6212ae6cbd2cdb4"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/mcp-store.ts",
+      "sha256": "af88fae9bb06816792db2751309da2b957f0074a982ab6d2194e6e346a6ced14"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/notebook-store.ts",
+      "sha256": "8f86f1f3c5d36d62b55c1e3f01eb65a474b9b03c7ed46c027b6d9e34ddd19f2f"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/sessions-store.test.ts",
+      "sha256": "7d902e38bd49e4f6be20b08da432edbc14e104a1b49a25354b2caedcc33f3a52"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/sessions-store.ts",
+      "sha256": "fd077f56c5dd6bc0912b9237fe2148444ac740da41b53b5ecefa65dbe8e03ee7"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/settings-store.ts",
+      "sha256": "ea86f9d5117d5b03987c7c9ffeee3ffa0c70b0c3d24a23f6b90bddaef0f82a95"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/skills-store.test.ts",
+      "sha256": "a175d32889e9733a4a2b4c92f882d1dd0681738f00be8db5a30539c112489d7d"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/skills-store.ts",
+      "sha256": "fe52b90a84ccfbedd20f68a692ff1f5cd114f57c5b13f80a86fbb70cc535e9cb"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/terminal-store.test.ts",
+      "sha256": "ca25f15585e4181634b2db0caaee2f33c28aa3ea81e81f0d475ee80852d3b9a5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/terminal-store.ts",
+      "sha256": "332b38094919b528acd696d16c4c53553b50a27b033101c86d9c69305f3e8ab9"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/theme-store.ts",
+      "sha256": "40089b45887e9a4fda54dbc6246fe0409fb2aeb7f45d62a20f8993c56793257c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/window-expansion.test.ts",
+      "sha256": "c05f3b31caaf082cf7a914a2651b8cd0074cdabb1a15bcfee974739c131dc2e0"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/window-expansion.ts",
+      "sha256": "447319e46936d80377c2b9d441b4aab5956748d5e283b9982cca0981cf9c74be"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/workspace-store.ts",
+      "sha256": "63b89fea4c92aea0fc966c1432becf8689b5d21aea54dac5ea48abbf7b598f57"
+    },
+    {
+      "path": "apps/inno-agent/web/src/stores/workspaces-store.ts",
+      "sha256": "f4064a3c0b119cef537efb676799541ffaf08b00772593e39daf351a12f1f9ff"
+    },
+    {
+      "path": "apps/inno-agent/web/src/themes.css",
+      "sha256": "f16cd47c208c4dbcb33bd3a632a675737c33922c8fc0f0773f01e8f8d3621ade"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/btw.ts",
+      "sha256": "5eb39c1fc5007cd2758f85bd2924df115a046b5747a10f110ca73e87cb450e4c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/chat.ts",
+      "sha256": "3d99396dee5551197e6b80e7809dae4b52d7f0bd6f708f317681f85760afa266"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/checkins.ts",
+      "sha256": "5a50bf4ffd2fe80ba416bcce8229c65dd8ed76b93fa2caa3f3ecbf88fa1c47d6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/jobs.ts",
+      "sha256": "78079d947cbc6ac708814cdd3618af05c260c001dda22413a97aeec1c7ae24c6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/learner.ts",
+      "sha256": "1b8ccbf7d7008d292929ec695d3aeb5122fa5b48b8be95dafb4167c37dc12b76"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/mcp.ts",
+      "sha256": "1df24e972e6105452ebd62bf48077a5e623cec165d41276100249866efd63b0c"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/presets.ts",
+      "sha256": "c3ef05a28ece0f47113dbaff0f01a6ba3f38e1870ff748e5e2da28b959464c44"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/settings.ts",
+      "sha256": "43a92195e8bb4f169eea60d903d163e6d14bf19275d2a523af6dbaa47724b052"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/skills.ts",
+      "sha256": "905b0d242b876b6aea5ff0f2e6c95dd3ec73bba827af9044731c57535b94d68e"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/terminal.ts",
+      "sha256": "6f12bdd079e99d200647ef48b289c1a28dd89676cd158c8d03e02cb23114aa09"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/wiki.ts",
+      "sha256": "b295c4aab2cf4bef1f34c517fd3bb924c49bfb8e842b4c9347e8aa9e036c82ad"
+    },
+    {
+      "path": "apps/inno-agent/web/src/types/workspace.ts",
+      "sha256": "b9e3889079feb9772f6519ce3167a27ad32eea75e08eb3ad283dc1a05faed4b8"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/attachment-render.test.ts",
+      "sha256": "b23f6056dc746056ec0879c53e26f7117c7f6a10f0aee0dd4a3de111b42150b9"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/attachment-render.ts",
+      "sha256": "ab7ac8629a5c1bc719f898ab4822735c4f958290114ddf8363a815350a1b0aa0"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/btw-window.test.ts",
+      "sha256": "0e570d95fa4a47bb5a269e6e06549a7af06f7611e8ef2e3f38da56489bfb5b74"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/btw-window.ts",
+      "sha256": "5dc7ac58f8d98ece51824041ba639409802fdfed70cfbe65f89e89ea9d59f00d"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/category-grouping.ts",
+      "sha256": "c78b96d43742bab4956c1597467ade8d7e79232c11cce31b955721ebc505eef6"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/chat-trace.test.ts",
+      "sha256": "186c5efbe8786668e09f6c6c3d9ecc953a42ba4e23a794075b35180b099bd899"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/chat-trace.ts",
+      "sha256": "ab75005a972c7e3f0ec11d72edc60552e886fead196869742473a20bbb94de23"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/dynamic-import-recovery.ts",
+      "sha256": "1122e21121a64e9e1e94cca2932af4ef055d6e6e272b8ca1ac2066186a42e2f8"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/frontmatter.ts",
+      "sha256": "c8ec7533e55ce2db637150547b9bfcd24ded8af75a987eb399b35959d4fd39a3"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/graph-layout.ts",
+      "sha256": "d2599d2ed7203383f07169cbe35606c0edbe4e6ce4c20431bb8d996632d11ae2"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/markdown-math.test.ts",
+      "sha256": "a5d1a2704ab7e692c16a94e08b8ef7d422dca60b08ce79f37534a3cf8c2cf064"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/markdown-math.ts",
+      "sha256": "f0994b6f36b8fc2ed8272b3ab13db0df88d5ff026ecc4ecc8c5bdf8a5d231d06"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/markdown-svg.test.ts",
+      "sha256": "3845fe92d98bbc578fd72cc13c6600f836e5e83cfc1a3002d51e61b9407fc390"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/markdown-svg.ts",
+      "sha256": "82842ccc4cda2fd4e0ec13b796b6d73e845b441762e2484c53c114649579c1e5"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/mermaid-runtime.test.ts",
+      "sha256": "2da0ee5010d412ff1c98e49e29c6a3c237c067c62816ea7a4d4a04b3709f44ea"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/mermaid-runtime.ts",
+      "sha256": "35636c19f1208bcfa829415ff30424f3190ab0776c5bb4f12ea9111d371e8fc9"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/preset-cache.ts",
+      "sha256": "173bf2fe208943beef03b6343e537217ce42108e6587337820a39ddebe107026"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/questionnaire.test.ts",
+      "sha256": "2fad633db501368c681c08bbe38c089d3ffb39357a63c4d73b3a4e92a7c39469"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/questionnaire.ts",
+      "sha256": "9a73bffe4bf3bf158850a83eb928809cbeba58ad6f970904da6898e8671e578b"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/upload-limits.test.ts",
+      "sha256": "5df5fa66a7e0df4ece0be6af90b9b62d77990c0d6b3a5c0afd57b5b2e4594b29"
+    },
+    {
+      "path": "apps/inno-agent/web/src/utils/upload-limits.ts",
+      "sha256": "f9732d1520b0d63e0df874ed4c33c498423b4dc3dccd495d14e1f69cba2d99f2"
+    },
+    {
+      "path": "apps/inno-agent/web/src/vite-env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "apps/inno-agent/web/tsconfig.json",
+      "sha256": "398b1e680dc497cf8c15f002e377e6a4e29b352019f2d4d659ac4631f5ea4915"
+    },
+    {
+      "path": "apps/inno-agent/web/vite.config.ts",
+      "sha256": "e2fc6fcfbd7b44d812bd983c6ef0c9b116ee0edfc9aad277758a45adc461cde9"
+    },
+    {
+      "path": "apps/showcase/EXPORTING.md",
+      "sha256": "77980330b37eed17bdc8e098d383ef665b48cdec2d79d85122db453363d87b6e"
+    },
+    {
+      "path": "apps/showcase/README.md",
+      "sha256": "85c034aeebb425ce23944e6e3a8ede3589fbe57a9d804fc29aba198d86a6a7a4"
+    },
+    {
+      "path": "apps/showcase/index.html",
+      "sha256": "230c81b4f70a4ab2fcf7e3dba5c8f4bd03e519bd47e4331abe46fa00b99e5666"
+    },
+    {
+      "path": "apps/showcase/package.json",
+      "sha256": "a9842075ed098d828d1a17154a19d87d6179e7aa3b1978f0e0a335a35313922b"
+    },
+    {
+      "path": "apps/showcase/public/cases/gaokao-geometry.json",
+      "sha256": "9a5a6f2cb1c0b3bf5253704e891d6e0ae8274c674ddda20789077648d7480ca1"
+    },
+    {
+      "path": "apps/showcase/public/cases/index.json",
+      "sha256": "4e447e53fe6e74282cd4375f3f7fb226ad31924ababb0aa244198e75ef756da6"
+    },
+    {
+      "path": "apps/showcase/public/cases/l2-wiki-autoresearch.json",
+      "sha256": "ec80a0d62043773745e5df76570e65350f2acdef6553884f172c9247911ce72a"
+    },
+    {
+      "path": "apps/showcase/public/cases/paper-explain.json",
+      "sha256": "2cd8e25565a03d10367f6d61978c0b67257f191c9868e288972637df2632152a"
+    },
+    {
+      "path": "apps/showcase/public/cases/paper-explain/assets/2606.21228v2.pdf",
+      "sha256": "c65ad2edbf98b6f4f0d1e7c1c1d520246113cadcf6d32064cfcaf0e34d151e24"
+    },
+    {
+      "path": "apps/showcase/public/cases/problem-explain.json",
+      "sha256": "384df3951b80d6bc59eae87583ec1a78094d69562f8595c49ffafb4342d5a6c5"
+    },
+    {
+      "path": "apps/showcase/public/cases/trig-handout.json",
+      "sha256": "6af49f4530aaae65e78d48d209fc6d76c64a2fff7f8b818be51f3562c090a923"
+    },
+    {
+      "path": "apps/showcase/public/cases/trig-handout/assets/work/final.pdf",
+      "sha256": "0c8e95a793b05824268bcdb843ae59c1aa4325667dce3273206615c9a37c2f77"
+    },
+    {
+      "path": "apps/showcase/public/cases/trig-handout/assets/work/materials/ppt/ppt.pptx",
+      "sha256": "c93d30c693a6bd9adf052d67b6804a5de01df9da2656e03559eef2ff1d4607a1"
+    },
+    {
+      "path": "apps/showcase/src/App.tsx",
+      "sha256": "82d27f28c72d6c5dd114a6a0f84dade923cc7730ad3832cabf906544552472db"
+    },
+    {
+      "path": "apps/showcase/src/cases.ts",
+      "sha256": "79c43e5f690493fcb06267ecbf64daa2237a54e92b860601a253e9bf872a62ac"
+    },
+    {
+      "path": "apps/showcase/src/desktop-bridge.d.ts",
+      "sha256": "dd7e906815022194654bfb5d3acf4f0adf6a308a1075f6dcdd199ea9803d58ff"
+    },
+    {
+      "path": "apps/showcase/src/i18n.ts",
+      "sha256": "197cc5eae6b2b47a11d472bcdf41e9db840adc2941bef31efc95840fdadca051"
+    },
+    {
+      "path": "apps/showcase/src/main.tsx",
+      "sha256": "71fd009fdfc95d1dbda6014d03dea173339b1d8bec82ebdc85d42ad3e7895926"
+    },
+    {
+      "path": "apps/showcase/src/mock/runtime.ts",
+      "sha256": "6e2bc31f0cf7bbecb9addec307cf0bf2682e9c2e93430634b58599b8a6ec76ce"
+    },
+    {
+      "path": "apps/showcase/src/mock/streaming.ts",
+      "sha256": "b55aaffd507463bb347b72cf290e9687af273f986608de18c3fd878952c2f4c1"
+    },
+    {
+      "path": "apps/showcase/src/replay/Transport.tsx",
+      "sha256": "9bd565ac05efdb5e40a7cf22b0b9bf34f378a7f639ab89ce06f50e1fe29cbdcc"
+    },
+    {
+      "path": "apps/showcase/src/replay/driver.ts",
+      "sha256": "5ccd7dcc7cfe31cf5423a66566721c21c8061a48d827a1be798ddba7cceb531e"
+    },
+    {
+      "path": "apps/showcase/src/showcase.css",
+      "sha256": "c1cd774586d43c97254a6442de6f7d9c4badcb95bade533827636ce578b9b50a"
+    },
+    {
+      "path": "apps/showcase/src/vite-env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "apps/showcase/tsconfig.json",
+      "sha256": "68cf440d5f16bc234c241914f58ddefe5c7c9699d922c22a7d1e43a028f7a054"
+    },
+    {
+      "path": "apps/showcase/vite.config.ts",
+      "sha256": "87164f9738a7967a5c221b44f32057d57eac5b0463e6c9d850de6e4e054e95a0"
+    },
+    {
+      "path": "build/electron-builder.mac-signed.cjs",
+      "sha256": "1ed65c4ba83204a5caa1c3bd7721c723ad82d066f0dbe12e8a3c0dc39840f21e"
+    },
+    {
+      "path": "build/icon.icns",
+      "sha256": "393f33629c57de096aa770cf2db9bf12620b18772867fa23dad933e4a413043e"
+    },
+    {
+      "path": "build/icon.png",
+      "sha256": "96dc2229398c5588e0a0b101ec50c58a50b8c124608eb2c169fd36f662aaf6e1"
+    },
+    {
+      "path": "build/icon.svg",
+      "sha256": "3c8a3a846e4b9927320f69f24dd6c301ae3bae53d31079e1ed740aaaa1d735c5"
+    },
+    {
+      "path": "config.example.json",
+      "sha256": "ff5c81420e050058ecb606875fdcaa9852b1c3c89e1d1f6a985008bf03a05a10"
+    },
+    {
+      "path": "docker-compose.yml",
+      "sha256": "3ffa8d26d1855b744e68c63e1b25505bf605072e4f5bf6065e36759e44bf826e"
+    },
+    {
+      "path": "docs/PERMISSIONS_AND_SANDBOX.md",
+      "sha256": "13054e96d64f84cc9fbbba9edd4b01eb10b9d1b6cd468a91e10536c40f3ada80"
+    },
+    {
+      "path": "docs/SYSTEM_DEPENDENCIES.md",
+      "sha256": "eb49440f4d32954cf3b6ec7f3dc130ca1e5e2dbd3f06894f444a70920d2989c3"
+    },
+    {
+      "path": "docs/assets/app-overview-2026-09-13-v2.png",
+      "sha256": "d1418ed5442d4bb2e5c8ca0d9f3e57d41e3340350fb67ddcafe11dc844713ee1"
+    },
+    {
+      "path": "docs/assets/l2-wiki.png",
+      "sha256": "dc68ab0d8dbb88f2eae3d6831bedea4cc648ada4ad771c1e9b2ebc022878955a"
+    },
+    {
+      "path": "docs/assets/wechat-community-qr-2026-09-22.jpg",
+      "sha256": "2dc41380c71fdc25fc103132d2f5d0e7cc1b326d776536db1d43ef3b8a19b295"
+    },
+    {
+      "path": "docs/features/context-usage.md",
+      "sha256": "32bfd580cf210f0bb886c7c1b0a8c7ae3d59f2c5896205ddc8b0b504a8fd7182"
+    },
+    {
+      "path": "docs/inno-agent.pdf",
+      "sha256": "b17d58f5936549b31fbe4b7038c5ea983618ec09df053e73ab20416e248e5a97"
+    },
+    {
+      "path": "docs/learner-state-engine-design.md",
+      "sha256": "9e77d189efa9d9372461c6f70a911842317e990730fc1503e62e90c47023c01f"
+    },
+    {
+      "path": "docs/mac-app-packaging.md",
+      "sha256": "276925dabca2192567f2df118976baab6ff573e8f057b985572de30374de2634"
+    },
+    {
+      "path": "docs/mobile-layout-review-2026-09-14.md",
+      "sha256": "07e7c0fbf1992c83ea320f6713cbd0950ed061857e54ff4df98d1444886e3d79"
+    },
+    {
+      "path": "docs/pr231-review.md",
+      "sha256": "fd26f50ed114aeae93d73836fcd031da349c60be787c85be55b7fd6688d17272"
+    },
+    {
+      "path": "docs/quality-remediation-plan.md",
+      "sha256": "a9a25183311460efbb49c33b851a6fa0418562178b7a69d127d9d4c66d250e71"
+    },
+    {
+      "path": "docs/screenshots/l2-wiki-graph.jpg",
+      "sha256": "ae6509907bd49d426d1ede78e1b7abed905d0e7dc86b5a72f2937cb1d220f0fd"
+    },
+    {
+      "path": "docs/screenshots/l2-wiki-review.jpg",
+      "sha256": "d8fa03f8f530a8afcef4f11fc568b467a18c80d3ca26d5a6e4ab7fb0f8076e8b"
+    },
+    {
+      "path": "docs/screenshots/markdown-code-actions.png",
+      "sha256": "80d7aebc2911f788eeb36f5eb4be0c7fc3b283c12cbd79336bc1dfe8c1285683"
+    },
+    {
+      "path": "docs/screenshots/markdown-diagram-test.png",
+      "sha256": "29e38e036b6fe819567ee37181a6e010edc0ed8fe834dc66b0b6a363986c57f5"
+    },
+    {
+      "path": "docs/screenshots/markdown-echarts-test.png",
+      "sha256": "1390de77c40f465f46a39fd6cca56c358da4ffbdcdeafacd4af4a96fd1fb8525"
+    },
+    {
+      "path": "docs/screenshots/markdown-table-actions.png",
+      "sha256": "45785fce6a491f71a0537016ffe48e322c6df792297847b30bcbe242885b3e3c"
+    },
+    {
+      "path": "docs/use-cases/assets/01_new_workspace.png",
+      "sha256": "38bb740d002b5036ebee3f212aa8215aea8b2b4945cae7b5f25533f518e86a1a"
+    },
+    {
+      "path": "docs/use-cases/assets/02_agent_create.png",
+      "sha256": "33af9d7ab26ce08cdff03e6d41db81d83ef8303a028fa400498e6b2acf9c72d2"
+    },
+    {
+      "path": "docs/use-cases/assets/03_skill_uploaded.png",
+      "sha256": "b62964ff582ca9ed46bd8022c8f4e1833bc69e0d11e744bd9c569c8ac76a3081"
+    },
+    {
+      "path": "docs/use-cases/assets/04_vocab_explain.png",
+      "sha256": "3f2406474b097af35a605b746aa55d0abb2df516d0a9105c5d7bec48acfd968c"
+    },
+    {
+      "path": "docs/use-cases/assets/05_cards_result.png",
+      "sha256": "c6ac35438eb716f1f720847b96771e8bc6d29a90c774435d93e3e0d7516d95d4"
+    },
+    {
+      "path": "docs/use-cases/assets/06_skills_panel.png",
+      "sha256": "409bff323dab587aa70187337a4fa8d3d2e696e810680d72a718e51cca5bfa64"
+    },
+    {
+      "path": "docs/use-cases/skill-tutorial.md",
+      "sha256": "2e88a7db6dc731544cdc0badf615511ff6f2a465a1178cc098acb8929de99e1b"
+    },
+    {
+      "path": "electron/loading.html",
+      "sha256": "ba01ff6ae1393f81c6abe1c112f2114dfcec4e540cf9e5988e5650ce8752a205"
+    },
+    {
+      "path": "electron/main.js",
+      "sha256": "68a459146b7359449d31e5649c7fab042ff2f4bcf3993055aafefba0f4b441b7"
+    },
+    {
+      "path": "electron/preload.cjs",
+      "sha256": "1e2c7eff1f1c23d7f73658db1a9a10e8831df730be49434991c5a0255c8b84de"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "ead17fccdb63f734b71b0b7fc032aad99bae9bbc6716bb8b627e865c3c703a24"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a5ffe089e4f2068b1fd135f7c0fd23e57e5b388a8d99fef8341f33fb00e4f923"
+    },
+    {
+      "path": "restart-dev.sh",
+      "sha256": "fff5b2cbe1b18d4e55f3d695846fde2cf9b943cb929abee687bb5447500d4ded"
+    },
+    {
+      "path": "scripts/after-pack.cjs",
+      "sha256": "c3fb231815ee8970ee715b9b84d65bc42a4899fa7b52226b279c4fda91984eda"
+    },
+    {
+      "path": "scripts/build-linux.sh",
+      "sha256": "0fdecdd43c0b645e8deab37a7b2a735fdb5c6d405116c8735681bf83fcc64201"
+    },
+    {
+      "path": "scripts/build-mac-signed.sh",
+      "sha256": "0dbf480c896027006375b53c185b98ea4abdc62fa39dd1a617898b5d41f1e24c"
+    },
+    {
+      "path": "scripts/build-mac.sh",
+      "sha256": "38cf44adc96187a3e095cd710aa19cc7456bfd57a1ed2380e7be59a23be1a4cf"
+    },
+    {
+      "path": "scripts/check-mac-signing.cjs",
+      "sha256": "b6cbf2cf4c859e7e89173ea06104f66e2008a4541c5e74f1a95c24f3e852f2f0"
+    },
+    {
+      "path": "scripts/check-mac-signing.test.cjs",
+      "sha256": "233f8a400f2d0945a45b73048f23e0a817d22ad3be507f0c76f1233b69b586ff"
+    },
+    {
+      "path": "scripts/content-hub-server/.gitignore",
+      "sha256": "f31bd0261c249a30055b7ba54958aad4e748aff8d2628613a6c39a7a00840d19"
+    },
+    {
+      "path": "scripts/content-hub-server/Dockerfile",
+      "sha256": "23f2987409990be3269a28bd3e50ca69cfaa6fda1c5ca69e11b196eb770e36db"
+    },
+    {
+      "path": "scripts/content-hub-server/README.md",
+      "sha256": "b811475364635df76008106d086a6193bfb27bbb1d63569011837543fae3b420"
+    },
+    {
+      "path": "scripts/content-hub-server/content-example/skill-library/demo-skill/SKILL.md",
+      "sha256": "ad6fe1378df0b386bc5d152efd316111146b1481654508309d5c2fb1821e8351"
+    },
+    {
+      "path": "scripts/content-hub-server/content-example/workspace-templates/demo-template/agent.md",
+      "sha256": "00da7a06b1114cc8efbf807bd36d60a4e584a7d5d5d267ad3ca37afb4f071cb6"
+    },
+    {
+      "path": "scripts/content-hub-server/content-example/workspace-templates/demo-template/preset.json",
+      "sha256": "badb9cf23dcaa9ad0c1974e728b9b04826e299b93ff4c2ca87f174c0115307de"
+    },
+    {
+      "path": "scripts/content-hub-server/content-example/workspace-templates/zhishidian/agent.md",
+      "sha256": "00da7a06b1114cc8efbf807bd36d60a4e584a7d5d5d267ad3ca37afb4f071cb6"
+    },
+    {
+      "path": "scripts/content-hub-server/content-example/workspace-templates/zhishidian/preset.json",
+      "sha256": "2d6439e299d8240a64c101d17a9aa26e7a2bab6070c4b1a5750498ac50736566"
+    },
+    {
+      "path": "scripts/content-hub-server/server.mjs",
+      "sha256": "64cdc8914a1dc1a02fed2877047bbaada31a4d63512d1aa805d4c1ce00c9b9cc"
+    },
+    {
+      "path": "scripts/eval-l2-retrieval.ts",
+      "sha256": "439ae6e5ebaf3bdc8249e250385be744591a67d6ccea079fc884e33c7760151d"
+    },
+    {
+      "path": "scripts/export-showcase-cases.ts",
+      "sha256": "cf7d0965e4dcdefc64b8ba7fa8267eb6027424fa4bc47e338465ef3729a9e710"
+    },
+    {
+      "path": "scripts/mobile-layout-smoke.cjs",
+      "sha256": "ef0f004dfbb160e1baa709a63f9e38a9671581e1f1fefa8231cb456a3bb8b3d4"
+    },
+    {
+      "path": "scripts/smoke-plugins.ts",
+      "sha256": "d2ce0792e1378a453451f641983217eec1e885ea65e8a81a224c72f7ee50162f"
+    },
+    {
+      "path": "scripts/verify-mac-release.sh",
+      "sha256": "c1a4014ca5be6ab88a6fc1237467e17dd98ffc21c6191f9bdd5c9457bdd948a4"
+    },
+    {
+      "path": "scripts/view-showcase-export.mjs",
+      "sha256": "3f4d7db7efadfb1699c84d07981c497f33e4643a514570c4496b8802a2b56361"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "sha256": "478a425fe9f8f39dee52d1e3485e612e892113278e8f4430545600ad30a01bac"
+    },
+    {
+      "path": "vendor/xlsx-0.20.3.tgz",
+      "sha256": "8dc73fc3b00203e72d176e85b50938627c7b086e607c682e8d3c22c02bb99fe8"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "6dfed66717b386f23f5f5f7887898409305219e22ffd83148afb8adb8649a601"
+    },
+    {
+      "path": "vitest.setup.ts",
+      "sha256": "abb703173733f0ad5020bf178a2fc3745367ce64230c323e1d0fc52bc974a9ad"
+    }
+  ]
+}

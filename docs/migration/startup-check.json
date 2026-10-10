@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-04T13:58:47.462Z",
+  "status": "passed",
+  "url": "http://localhost:3200/",
+  "pid": 46794,
+  "title": "Clario",
+  "homepage": 200,
+  "asset": "/assets/index-B_LYDlPf.js",
+  "assetStatus": 200,
+  "webManifestName": "Clario",
+  "experience": "learning",
+  "memory": {
+    "l1Enabled": true,
+    "l2Enabled": true,
+    "l3Enabled": true
+  },
+  "hasConfiguredKey": false,
+  "goals": 0,
+  "sessions": 0,
+  "channels": [],
+  "mcpEnabled": false,
+  "existingConfigPreserved": true,
+  "config": "/Users/lili/Desktop/clario/runtime/clario/config/config.json",
+  "data": "/Users/lili/Desktop/clario/runtime/clario/data",
+  "workspace": "/Users/lili/Desktop/clario/workspace"
+}

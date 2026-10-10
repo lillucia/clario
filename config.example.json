@@ -1,0 +1,75 @@
+{
+	"experience": "learning",
+	"defaultProvider": "custom",
+	"defaultModel": "your-model-id",
+	"providers": {
+		"custom": {
+			"baseUrl": "https://provider.example/v1",
+			"api": "openai-completions",
+			"apiKey": "",
+			"models": [
+				{
+					"id": "your-model-id",
+					"name": "请先配置模型",
+					"input": [
+						"text"
+					],
+					"contextWindow": 32768,
+					"maxTokens": 4096
+				}
+			]
+		}
+	},
+	"server": {
+		"port": 3200
+	},
+	"channels": {
+		"feishu": {
+			"enabled": false,
+			"personalOnly": true,
+			"allowedUserIds": []
+		},
+		"wechat": {
+			"enabled": false,
+			"mode": "bridge",
+			"allowedUserIds": [],
+			"sidecarBaseUrl": "http://127.0.0.1:4319"
+		}
+	},
+	"subagents": {
+		"enabled": false
+	},
+	"contentHub": {
+		"type": "bundle",
+		"baseUrl": "http://127.0.0.1:9"
+	},
+	"memory": {
+		"l1Enabled": true,
+		"l2Enabled": true,
+		"l3Enabled": true
+	},
+	"mcp": {
+		"enabled": false
+	},
+	"ui": {
+		"theme": "light",
+		"closeBehavior": "ask",
+		"mathSingleDollar": false
+	},
+	"scheduler": {
+		"timezone": "Asia/Shanghai"
+	},
+	"ocrApi": {
+		"token": "",
+		"model": "PaddleOCR-VL-1.6",
+		"baseUrl": "https://paddleocr.aistudio-app.com/api/v2/ocr/jobs"
+	},
+	"plugins": {
+		"todo": {
+			"enabled": true
+		},
+		"webAccess": {
+			"enabled": true
+		}
+	}
+}

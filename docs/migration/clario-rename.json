@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-04T13:55:21.642Z",
+  "name": "Clario",
+  "previousRoot": "/Users/lili/Desktop/zhixu",
+  "root": "/Users/lili/Desktop/clario",
+  "parentManifestSha256": "ed4a10341545a76975ed9c1a7762c797e2b1a1616f59617e6f90070200bfcedc",
+  "statePreservedAtMove": true,
+  "stateFilesChecked": 17,
+  "originalSourceUnchanged": true,
+  "sourceFiles": 611,
+  "externalDependenciesUnchanged": true,
+  "changedFiles": [
+    ".dockerignore",
+    ".github/workflows/release-linux.yml",
+    ".github/workflows/release-mac.yml",
+    ".github/workflows/release-win.yml",
+    ".gitignore",
+    "CLAUDE.md",
+    "Dockerfile",
+    "Dockerfile.base",
+    "ELECTRON_BUILD.md",
+    "MIGRATION.md",
+    "QUICKSTART.md",
+    "README.md",
+    "README.zh-CN.md",
+    "apps/showcase/EXPORTING.md",
+    "apps/showcase/README.md",
+    "apps/showcase/index.html",
+    "apps/showcase/package.json",
+    "apps/showcase/public/cases/trig-handout.json",
+    "apps/showcase/src/App.tsx",
+    "apps/showcase/src/mock/runtime.ts",
+    "apps/showcase/src/showcase.css",
+    "apps/showcase/tsconfig.json",
+    "apps/showcase/vite.config.ts",
+    "apps/clario/README.md",
+    "apps/clario/package.json",
+    "apps/clario/src/agent/document-tools.ts",
+    "apps/clario/src/agent/learning-experience.test.ts",
+    "apps/clario/src/agent/observability-extension.ts",
+    "apps/clario/src/agent/ocr-tools.ts",
+    "apps/clario/src/agent/system-prompt.ts",
+    "apps/clario/src/channels/feishu/feishu-api.ts",
+    "apps/clario/src/cli.ts",
+    "apps/clario/src/config.ts",
+    "apps/clario/src/content-source/bundle-source.ts",
+    "apps/clario/src/content-source/github-source.ts",
+    "apps/clario/src/logger.ts",
+    "apps/clario/src/memory/l2/l2-tools.ts",
+    "apps/clario/src/memory/l2/wiki-page-merge.ts",
+    "apps/clario/src/runtime.ts",
+    "apps/clario/src/server.ts",
+    "apps/clario/src/server/routes/channels.ts",
+    "apps/clario/src/showcase/case-exporter.ts",
+    "apps/clario/web/index.html",
+    "apps/clario/web/package.json",
+    "apps/clario/web/public/manifest.webmanifest",
+    "apps/clario/web/src/i18n/index.ts",
+    "apps/clario/web/src/i18n/locales/en.json",
+    "apps/clario/web/src/i18n/locales/zh-CN.json",
+    "apps/clario/web/src/react/ChatCenter.tsx",
+    "apps/clario/web/src/react/SessionSidebar.tsx",
+    "apps/clario/web/src/react/chat/ChatWelcome.tsx",
+    "apps/clario/web/src/react/chat/LearningStart.tsx",
+    "apps/clario/web/src/react/chat/MessageBubble.tsx",
+    "apps/clario/web/src/react/chat/smart-input/engine.ts",
+    "apps/clario/web/src/react/chat/useContextUsage.ts",
+    "apps/clario/web/src/stores/app-store.ts",
+    "apps/clario/web/src/stores/theme-store.ts",
+    "apps/clario/web/src/utils/dynamic-import-recovery.ts",
+    "apps/clario/web/src/utils/preset-cache.ts",
+    "docker-compose.yml",
+    "docs/SYSTEM_DEPENDENCIES.md",
+    "docs/learner-state-engine-design.md",
+    "docs/mobile-layout-review-2026-09-14.md",
+    "docs/pr231-review.md",
+    "docs/quality-remediation-plan.md",
+    "docs/use-cases/skill-tutorial.md",
+    "docs/web-learning.md",
+    "electron/loading.html",
+    "electron/main.js",
+    "package-lock.json",
+    "package.json",
+    "restart-dev.sh",
+    "scripts/baseline/cli.mjs",
+    "scripts/baseline/common.mjs",
+    "scripts/baseline/common.test.mjs",
+    "scripts/baseline/verify-core.ts",
+    "scripts/baseline/verify-web.mjs",
+    "scripts/build-linux.sh",
+    "scripts/build-mac.sh",
+    "scripts/content-hub-server/server.mjs",
+    "scripts/eval-l2-retrieval.ts",
+    "scripts/export-showcase-cases.ts",
+    "scripts/mobile-layout-smoke.cjs",
+    "scripts/smoke-plugins.ts",
+    "scripts/start-web.mjs",
+    "scripts/verify-mac-release.sh",
+    "vitest.config.ts"
+  ],
+  "symlinkChanges": [
+    {
+      "path": "node_modules/.bin/clario",
+      "target": "../clario/dist/cli.js"
+    },
+    {
+      "path": "node_modules/clario",
+      "target": "../apps/clario"
+    },
+    {
+      "path": "node_modules/clario-showcase",
+      "target": "../apps/showcase"
+    },
+    {
+      "path": "node_modules/clario-web",
+      "target": "../apps/clario/web"
+    }
+  ],
+  "verification": "passed",
+  "baselineReport": "runtime/baseline/runs/2026-10-04T13-55-48-997Z-45929/report.json",
+  "finishedAt": "2026-10-04T13:58:47.845Z",
+  "archivedFiles": [
+    {
+      "path": "docs/migration/history/zhixu/MIGRATION.md",
+      "sha256": "cd09aa03dc1a8b5f51e5352cb70003630ea72c7c10aef4e337741e68c8198ed1"
+    },
+    {
+      "path": "docs/migration/history/zhixu/dependency-lock-reference.json",
+      "sha256": "de9f6c47e208ca96dd54d162bf3a3a260c73feb7eefacc100de55bfc377ea215"
+    },
+    {
+      "path": "docs/migration/history/zhixu/package-lock.json",
+      "sha256": "478865857b557124f476138134a3f3ce4e9edb607f692ef2a20ddd733e427690"
+    },
+    {
+      "path": "docs/migration/history/zhixu/result.json",
+      "sha256": "f4fc7ef8dc10207f53c2f2e1909d9232c88ed59ec0adcd04d3673a0d0b86f76e"
+    },
+    {
+      "path": "docs/migration/history/zhixu/source-manifest.json",
+      "sha256": "ed4a10341545a76975ed9c1a7762c797e2b1a1616f59617e6f90070200bfcedc"
+    },
+    {
+      "path": "docs/migration/history/zhixu/startup-check.json",
+      "sha256": "c86ef6387ed87c3f6a62758b58467d4081d2027d982e1bdaaa778d566cb7b9c8"
+    },
+    {
+      "path": "docs/migration/history/zhixu/verification-notes.md",
+      "sha256": "4191a9e988615e913b21e3da0386dc045ab5dd864efb3a0e25ac7c8ac41ba298"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "sourceLockfileSha256": "ead17fccdb63f734b71b0b7fc032aad99bae9bbc6716bb8b627e865c3c703a24",
+  "algorithm": "SHA-256 of recursively key-sorted JSON; workspace directory prefixes mapped; array order retained",
+  "externalPackageCount": 1590,
+  "externalPackagesSha256": "d276505de04500c390300b048d86d3f9f65bfa01a1fb308a6d10fbfdeb2cd319",
+  "dependencyDeclarationsSha256": "b47483fc6d7dd7a9106de80cfbd392214f129bfa7df4c08ea0b7cf261900614d"
+}

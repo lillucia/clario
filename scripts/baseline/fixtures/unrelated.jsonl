@@ -1,0 +1,2 @@
+{"type":"session","version":3,"id":"baseline-unrelated","timestamp":"2026-08-03T10:00:00.000Z","cwd":"/synthetic/baseline"}
+{"type":"message","id":"unrelated-user","timestamp":"2026-08-03T10:00:01.000Z","message":{"role":"user","content":[{"type":"text","text":"番茄炒蛋需要鸡蛋、番茄和少量食盐。"}]}}

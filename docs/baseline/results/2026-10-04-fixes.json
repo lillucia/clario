@@ -1,0 +1,783 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-provenance-fix-regression",
+  "generatedAt": "2026-10-04T11:57:14.064Z",
+  "status": "passed",
+  "referenceCommit": "fc74cd6a283e8226a4307ea8c3046c715cb6e5f3",
+  "applicationSourceUnchanged": false,
+  "provider": "deepseek",
+  "configuredModelId": "deepseek-flash",
+  "runtimeDirectory": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789",
+  "originalRecord": "docs/baseline/results/2026-10-04-live-learning.json",
+  "method": "Fresh synthetic L1/L2/L3 environment; reuse only the user-configured test provider. Production HTTP/SSE and real model; no direct memory seeding. Archive input matches original, with no lint-attribution hint added.",
+  "automatedRegression": {
+    "runDirectory": "runtime/baseline/runs/2026-10-04T11-47-41-731Z-24164",
+    "files": 97,
+    "tests": {
+      "passed": true,
+      "total": 744,
+      "passedTests": 744,
+      "failedTests": 0,
+      "skippedTests": 0,
+      "todoTests": 0,
+      "missing": [],
+      "incomplete": []
+    },
+    "checks": [
+      {
+        "id": "node-engine",
+        "status": "passed",
+        "actual": "v24.19.0",
+        "required": "^22.22.2 || ^24.15.0 || >=26 (locked jsdom test dependency); verified on Node 24.19.0"
+      },
+      {
+        "id": "sqlite-fts5",
+        "status": "passed"
+      },
+      {
+        "id": "lockfile-unchanged",
+        "status": "passed",
+        "expected": "ead17fccdb63f734b71b0b7fc032aad99bae9bbc6716bb8b627e865c3c703a24",
+        "actual": "ead17fccdb63f734b71b0b7fc032aad99bae9bbc6716bb8b627e865c3c703a24"
+      },
+      {
+        "id": "key-dependency-versions",
+        "status": "passed",
+        "packages": [
+          {
+            "name": "@earendil-works/pi-coding-agent",
+            "locked": "0.84.2",
+            "installed": "0.84.2"
+          },
+          {
+            "name": "@earendil-works/pi-ai",
+            "locked": "0.75.5",
+            "installed": "0.75.5"
+          },
+          {
+            "name": "typescript",
+            "locked": "5.9.3",
+            "installed": "5.9.3"
+          },
+          {
+            "name": "vite",
+            "locked": "6.4.2",
+            "installed": "6.4.2"
+          },
+          {
+            "name": "vitest",
+            "locked": "3.2.4",
+            "installed": "3.2.4"
+          },
+          {
+            "name": "jsdom",
+            "locked": "30.0.1",
+            "installed": "30.0.1"
+          },
+          {
+            "name": "node-pty",
+            "locked": "1.1.0",
+            "installed": "1.1.0"
+          }
+        ]
+      },
+      {
+        "id": "harness-tests",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "--test",
+          "scripts/baseline/common.test.mjs"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 67,
+        "log": "harness-tests.log"
+      },
+      {
+        "id": "build",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 46507,
+        "log": "build.log"
+      },
+      {
+        "id": "tests",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+          "test",
+          "--",
+          "--reporter=default",
+          "--reporter=json",
+          "--outputFile=/Users/lili/Desktop/inno-agent/runtime/baseline/runs/2026-10-04T11-47-41-731Z-24164/vitest.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 12301,
+        "log": "tests.log"
+      },
+      {
+        "id": "l2-retrieval",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "eval:l2-retrieval"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 278,
+        "log": "l2-retrieval.log"
+      },
+      {
+        "id": "core-fixtures",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "--import",
+          "tsx",
+          "scripts/baseline/verify-core.ts",
+          "--output",
+          "/Users/lili/Desktop/inno-agent/runtime/baseline/runs/2026-10-04T11-47-41-731Z-24164/core-fixtures.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 862,
+        "log": "core-fixtures.log"
+      },
+      {
+        "id": "web-pty",
+        "status": "passed",
+        "command": [
+          "/Users/lili/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "scripts/baseline/verify-web.mjs",
+          "--output",
+          "/Users/lili/Desktop/inno-agent/runtime/baseline/runs/2026-10-04T11-47-41-731Z-24164/web-pty.json"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false,
+        "interrupted": false,
+        "forcedKill": false,
+        "durationMs": 1781,
+        "log": "web-pty.log"
+      },
+      {
+        "id": "required-suites-executed",
+        "status": "passed",
+        "passed": true,
+        "total": 744,
+        "passedTests": 744,
+        "failedTests": 0,
+        "skippedTests": 0,
+        "todoTests": 0,
+        "missing": [],
+        "incomplete": []
+      }
+    ]
+  },
+  "realModelTurns": 3,
+  "successfulToolCalls": 4,
+  "checks": [
+    {
+      "id": "evaluator.persisted_done",
+      "status": "passed",
+      "actual": "done"
+    },
+    {
+      "id": "evaluator.tools_succeeded",
+      "status": "passed",
+      "actual": [
+        "record_learning_evidence"
+      ]
+    },
+    {
+      "id": "archive_and_query.persisted_done",
+      "status": "passed",
+      "actual": "done"
+    },
+    {
+      "id": "archive_and_query.tools_succeeded",
+      "status": "passed",
+      "actual": [
+        "l2_archive",
+        "l2_query"
+      ]
+    },
+    {
+      "id": "lint.persisted_done",
+      "status": "passed",
+      "actual": "done"
+    },
+    {
+      "id": "lint.tools_succeeded",
+      "status": "passed",
+      "actual": [
+        "l2_lint"
+      ]
+    },
+    {
+      "id": "evaluator.valid_source",
+      "status": "passed",
+      "actual": "model"
+    },
+    {
+      "id": "evaluator.persisted_source_matches_tool_result",
+      "status": "passed",
+      "actual": "model"
+    },
+    {
+      "id": "evaluator.exactly_one_record",
+      "status": "passed",
+      "actual": 1
+    },
+    {
+      "id": "evaluator.actual_answer_preserved",
+      "status": "passed",
+      "actual": "evd_c622acaa"
+    },
+    {
+      "id": "archive.same_input_as_original",
+      "status": "passed",
+      "actual": "Original archive prompt retained without corrective hints"
+    },
+    {
+      "id": "archive.negative_path_exercised",
+      "status": "passed",
+      "actual": {
+        "tools": [
+          "l2_archive",
+          "l2_query"
+        ],
+        "reviewCount": 4
+      }
+    },
+    {
+      "id": "archive.explicit_provenance",
+      "status": "passed",
+      "actual": {
+        "id": "l2src_3a505bdc",
+        "rawPath": "raw/uploads/2026-10-04-python二分查找左闭右开-9d5051.md",
+        "wikiPagePath": "wiki/sources/study-note.md",
+        "linkedPages": [
+          "wiki/concepts/二分查找.md",
+          "wiki/concepts/左闭右开区间.md"
+        ],
+        "reviewCount": 4,
+        "reviewSource": "archive_generation",
+        "lintPerformed": false,
+        "warnings": []
+      }
+    },
+    {
+      "id": "archive.indexed_source",
+      "status": "passed",
+      "actual": "l2src_3a505bdc"
+    },
+    {
+      "id": "archive.source_files_exist",
+      "status": "passed",
+      "actual": [
+        "raw/uploads/2026-10-04-python二分查找左闭右开-9d5051.md",
+        "extracted/python二分查找左闭右开-239db6.md",
+        "wiki/sources/study-note.md",
+        "wiki/concepts/二分查找.md",
+        "wiki/concepts/左闭右开区间.md"
+      ]
+    },
+    {
+      "id": "query.indexed_source_hit",
+      "status": "passed",
+      "actual": {
+        "mode": "indexed",
+        "hits": 3
+      }
+    },
+    {
+      "id": "lint.actual_call",
+      "status": "passed",
+      "actual": {
+        "disabled": false,
+        "pagesChecked": 3,
+        "sourcesChecked": 1,
+        "errors": 0,
+        "warnings": 0,
+        "findings": [],
+        "lintSource": "l2_lint",
+        "lintPerformed": true
+      }
+    },
+    {
+      "id": "lint.findings_count_consistent",
+      "status": "passed",
+      "actual": []
+    },
+    {
+      "id": "original.43_evidence_files_unchanged",
+      "status": "passed",
+      "actual": {
+        "count": 43,
+        "changed": []
+      }
+    },
+    {
+      "id": "automated.baseline_passed",
+      "status": "passed",
+      "actual": {
+        "passed": true,
+        "total": 744,
+        "passedTests": 744,
+        "failedTests": 0,
+        "skippedTests": 0,
+        "todoTests": 0,
+        "missing": [],
+        "incomplete": []
+      }
+    }
+  ],
+  "phases": [
+    {
+      "id": "evaluator",
+      "sessionId": "2026-10-04T11-49-40-933Z_01a106bf-93c5-76c4-b70c-ed7efb363eed.jsonl",
+      "turnId": "231d1333-3957-4401-80f7-6ebb71f8901f",
+      "starts": [
+        {
+          "type": "tool_start",
+          "toolCallId": "call_00_FLbwMKYeqU1HjtYiZvr75081",
+          "toolName": "record_learning_evidence",
+          "args": {
+            "concept_id": "programming.python.lists",
+            "kind": "application",
+            "result": "correct",
+            "score": 1,
+            "hint_level": 0,
+            "evaluator": "model",
+            "evaluator_confidence": 0.95,
+            "dedupe_key": "FIX_20261004_lists",
+            "metadata": {
+              "task": "nums=[3,8,15,22,39,47]，写出访问15的下标表达式，并说明 nums[-1] 与 nums[len(nums)] 的结果",
+              "student_answer": "nums[2] 访问 15；nums[-1] 得到 47；nums[len(nums)] 越界，抛出 IndexError",
+              "rubric": "三问全对=correct(1.0)：正向下标正确、负索引语义正确、越界行为正确；错一问=partial",
+              "scoring_rationale": "nums[2] 正确定位 15（0-based 下标）；nums[-1] 正确理解为倒数第一个元素 47；正确指出 len(nums)=6 超出合法下标 0-5，访问触发 IndexError。三项均正确，无提示，判为 correct/1.0",
+              "synthetic_fixture": true
+            }
+          },
+          "piEventType": "tool_execution_start"
+        }
+      ],
+      "ends": [
+        {
+          "type": "tool_end",
+          "toolCallId": "call_00_FLbwMKYeqU1HjtYiZvr75081",
+          "toolName": "record_learning_evidence",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "学习证据已记录: evd_c622acaa；已存储评分来源：model；当前状态 fragile。"
+              }
+            ],
+            "details": {
+              "event_id": "evt_220179f8",
+              "evidence_id": "evd_c622acaa",
+              "evaluator": "model",
+              "state": {
+                "concept_id": "programming.python.lists",
+                "concept_name": "lists",
+                "domain": "programming.python",
+                "mastery": 0.31849374999999996,
+                "estimate_confidence": 0.6124375,
+                "stability_days": 1.03915,
+                "retrievability": 0.9999999976529849,
+                "last_evidence_at": "2026-10-04T11:49:44.845Z",
+                "last_successful_retrieval_at": "2026-10-04T11:49:44.845Z",
+                "last_result": "correct",
+                "next_review_at": "2026-10-08T00:15:24.032Z",
+                "exposure_count": 0,
+                "retrieval_count": 1,
+                "lapse_count": 0,
+                "successful_transfer_count": 0,
+                "active_misconception_ids": [],
+                "evidence_ids": [
+                  "evt_220179f8",
+                  "evd_c622acaa"
+                ],
+                "state_label": "fragile",
+                "diagnosis": "近期有成功表现，但稳定度或证据质量仍不足。",
+                "next_actions": [
+                  "用一道轻微变式验证能否独立应用。"
+                ]
+              }
+            }
+          },
+          "isError": false,
+          "piEventType": "tool_execution_end"
+        }
+      ],
+      "finalText": "已记录独立诊断作答（证据 `evd_c622acaa`，概念 `programming.python.lists`，kind=application，hint_level=0，evaluator=model，score=1.0，metadata 内含原答案与评分理由）。\n\n三处全对：正向下标、负索引、越界行为都判断准确，说明你在列表下标这一层已能独立应用，接下来可以进入切片与嵌套列表的迁移练习。"
+    },
+    {
+      "id": "archive_and_query",
+      "sessionId": "2026-10-04T11-49-40-933Z_01a106bf-93c5-76c4-b70c-ed7efb363eed.jsonl",
+      "turnId": "77cf8eac-769c-4c7c-8326-a78efc89df06",
+      "starts": [
+        {
+          "type": "tool_start",
+          "toolCallId": "call_00_JeELZNhoJE2CxV6eyEJF5605",
+          "toolName": "l2_archive",
+          "args": {
+            "title": "Python二分查找左闭右开",
+            "sourceType": "markdown",
+            "sourceIdentity": "study-note.md",
+            "origin": "user_upload",
+            "tags": [
+              "binary-search",
+              "python",
+              "algorithm"
+            ],
+            "content": "# Python 二分查找：左闭右开区间\n\n材料编号：BINSEARCH_SOURCE_20261004\n\n前提：nums 升序排列。搜索区间为 [left, right)，初始化 left = 0，right = len(nums)。\n每次取 mid = (left + right) // 2。若 nums[mid] 小于 target，令 left = mid + 1；若大于 target，令 right = mid；相等则返回 mid。\n循环条件是 left < right。区间为空仍未命中时返回 -1。right 不是可访问下标，因此不能读取 nums[right]。\n\n练习：nums = [1, 3, 5, 7, 9]，target = 7。mid 依次为 2、4、3，最终返回下标 3。\n\n这是为本次真实模型学习流程编写的合成教学材料，不含个人资料。"
+          },
+          "piEventType": "tool_execution_start"
+        },
+        {
+          "type": "tool_start",
+          "toolCallId": "call_00_ET_nhHBiHIJ08TJTSwJ4JTI0840",
+          "toolName": "l2_query",
+          "args": {
+            "query": "BINSEARCH_SOURCE_20261004"
+          },
+          "piEventType": "tool_execution_start"
+        }
+      ],
+      "ends": [
+        {
+          "type": "tool_end",
+          "toolCallId": "call_00_JeELZNhoJE2CxV6eyEJF5605",
+          "toolName": "l2_archive",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "资料已归档到 L2 Wiki。\n\n- ID: l2src_3a505bdc\n- 标题: Python二分查找左闭右开\n- 原始文件: raw/uploads/2026-10-04-python二分查找左闭右开-9d5051.md\n- Wiki 页面: wiki/sources/study-note.md\n- 自动维护: 新建 3 个概念/实体页，更新 0 个\n- 标签: binary-search, python, algorithm\n\nWiki 索引已更新。\n- 归档生成的待审阅建议（reviewCount）: 4 个；来源为归档生成过程，不是 l2_lint 发现的结构问题。\n\n本次 l2_archive 未执行 l2_lint，不能据此判断知识库是否存在结构问题。"
+              }
+            ],
+            "details": {
+              "id": "l2src_3a505bdc",
+              "rawPath": "raw/uploads/2026-10-04-python二分查找左闭右开-9d5051.md",
+              "wikiPagePath": "wiki/sources/study-note.md",
+              "linkedPages": [
+                "wiki/concepts/二分查找.md",
+                "wiki/concepts/左闭右开区间.md"
+              ],
+              "reviewCount": 4,
+              "reviewSource": "archive_generation",
+              "lintPerformed": false,
+              "warnings": []
+            }
+          },
+          "isError": false,
+          "piEventType": "tool_execution_end"
+        },
+        {
+          "type": "tool_end",
+          "toolCallId": "call_00_ET_nhHBiHIJ08TJTSwJ4JTI0840",
+          "toolName": "l2_query",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "## Wiki 索引\n\n# Wiki Index\n\n## Recently Updated\n- [[sources/study-note]] — Python 二分查找：左闭右开区间\n- [[concepts/二分查找]] — 二分查找\n- [[concepts/左闭右开区间]] — 左闭右开区间\n\n---\n## 查询结果: \"BINSEARCH_SOURCE_20261004\" (3 条匹配)\n\n### [[Python 二分查找：左闭右开区间]]  `wiki/sources/study-note.md`  (lexical)\n\n---\ntype: source\ntitle: Python 二分查找：左闭右开区间\ncreated: 2026-10-04\nupdated: 2026-10-04\ntags: [binary-search, python, algorithm, teaching-material]\nrelated: [二分查找, 左闭右开区间]\nsources: [\"study-note.md\"]\nauthors: []\nyear: 2026\nurl: \"\"\nvenue: \"\"\nsource_ids: [\"l2src_3a505bdc\"]\nstatus: draft\nconfidence: medium\n---\n\n# Python 二分查找：左闭右开区间\n\n## 概要\n\n本材料为一次真实模型学习流程编写的合成教学材料（材料编号 BINSEARCH_SOURCE_20261004），讲解在升序数组 `nums` 上使用**左闭右开**区间 `[left, right)` 实现二分查找的写法。材料不含个人资料。\n\n## 前提与区间约定\n\n- 前提：`nums` 升序排列。\n- 搜索区间为 `[left, right)`，初始化 `left = 0`，`right = len(nums)`。\n- `right` 不是可访问下标，因此不能读取 `nums[right]`。\n\n## 算法步骤\n\n1. 每次取 `mid = (left + right) // 2`。\n2. 若 `nums[mid]` 小于 `target`，令 `left = mid + 1`。\n3. 若 `nums[mid]` 大于 `target`，令 `right = mid`。\n4. 若 `nums[mid]` 等于 `target`，返回 `mid`。\n\n## 循环条件与失败返回\n\n- 循环条件为 `left < right`。\n- 区间为空（即 `left == right`）仍未命中时返回 `-1`。\n\n## 按材料描述整理的一种实现\n\n```python\ndef binary_search(nums, target):\n    left, right = 0, len(nums)          # 搜索区间 [left, right)\n    while left < right:\n        mid = (left + right) // 2\n        if nums[mid] < target:\n            left = mid + 1\n        elif nums[mid] > target:\n            right = mid\n        else:\n            return mid\n    return -1                            # 区间为空仍未命中\n```\n\n## 例题\n\n- 输入：`nums = [1, 3, 5, 7, 9]`，`target = 7`。\n- `mid` 依次为 2、4、3。\n- 最终返回下标 3。\n\n## 相关页面\n\n- [[二分查找]]\n- [[左闭右开区间]]\n\n---\n\n### [[二分查找]]  `wiki/concepts/二分查找.md`  (graph)\n\n---\ntype: concept\ntitle: 二分查找\ncreated: 2026-10-04\nupdated: 2026-10-04\ntags: [binary-search, algorithm, search]\nrelated: [左闭右开区间, study-note]\nsources: [\"study-note.md\"]\nconcept_id: algorithms.binary_search\nprerequisites:\n  - concept_id: algorithms.half_open_interval\n    relation: required\n    required_level: 0.65\n    importance: 0.9\n    source: teacher\n    source_confidence: 0.9\n    rationale: 令 right = mid 的更新方式与循环条件 left < right 都依赖左闭右开区间的定义。\n    scope: python-list-ascending-search\nsource_ids: [\"l2src_3a505bdc\"]\nstatus: draft\nconfidence: medium\n---\n\n# 二分查找\n\n## 定义\n\n二分查找是在有序序列上通过不断折半收缩搜索区间来定位目标元素的方法。本页记录的是 [[study-note]] 给出的 Python 写法：在升序数组 `nums` 上使用 [[左闭右开区间]] `[left, right)` 搜索 `target`。\n\n## 前提条件\n\n- `nums` 升序排列。\n- `target` 为待查找的值；命中时返回其下标，未命中时返回 `-1`。\n\n## 区间维护规则\n\n| 环节 | 取值 | 说明 |\n|---|---|---|\n| 初始化 | `left = 0`，`right = len(nums)` | 搜索区间为 `[left, right)` |\n| 取中 | `mid = (left + right) // 2` | 每轮循环计算一次 |\n| `nums[mid] < target` | `left = mid + 1` | 排除 `mid` 及其左侧 |\n| `nums[mid] > target` | `right = mid` | 排除 `mid` 及其右侧 |\n| `nums[mid] == target` | 返回 `mid` | 查找成功 |\n\n## 循环条件与终止\n\n- 循环条件为 `left < right`：区间非空时继续收缩。\n- 当 `left == right` 时区间为空；若此时仍未命中，返回 `-1`。\n\n## 边界注意事项\n\n- `right` 不是可访问下标，因此不能读取 `nums[right]`。\n- 收缩时写 `right = mid` 而不是 `right = mid - 1`，与左闭右开区间保持一致。\n\n## 例题\n\n- `nums = [1, 3, 5, 7, 9]`，`target = 7`。\n- `mid` 依次为 2、4、3，最终返回下标 3。\n\n## 相关页面\n\n- [[左闭右开区间]]\n- [[study-note]]\n\n---\n\n### [[左闭右开区间]]  `wiki/concepts/左闭右开区间.md`  (graph)\n\n---\ntype: concept\ntitle: 左闭右开区间\ncreated: 2026-10-04\nupdated: 2026-10-04\ntags: [interval, boundary, binary-search]\nrelated: [二分查找, study-note]\nsources: [\"study-note.md\"]\nconcept_id: algorithms.half_open_interval\nsource_ids: [\"l2src_3a505bdc\"]\nstatus: draft\nconfidence: medium\n---\n\n# 左闭右开区间\n\n## 定义\n\n左闭右开区间写作 `[left, right)`：包含左端点 `left`，但不包含右端点 `right`。在 [[二分查找]] 中，它用来表示当前仍然有效的搜索范围。\n\n## 在该算法中的体现\n\n| 环节 | 取值 | 含义 |\n|---|---|---|\n| 初始化 | `left = 0`，`right = len(nums)` | 区间覆盖整个数组，`right` 位于最后一个元素之后 |\n| 取中 | `mid = (left + right) // 2` | 在区间内部取一点 |\n| 命中较小 | `left = mid + 1` | 新区间从 `mid` 之后开始 |\n| 命中较大 | `right = mid` | `mid` 被排除，新区间止于 `mid` 之前 |\n| 循环条件 | `left < right` | 区间非空 |\n| 区间为空 | `left == right` | 查找失败，返回 `-1` |\n\n## 关键约束\n\n- `right` 不是可访问下标，因此不能读取 `nums[right]`。\n- 由于右端点是开区间，收缩右边界时赋值 `right = mid`，而不是 `mid - 1`。\n\n## 相关页面\n\n- [[二分查找]]\n- [[study-note]]\n\n---\n"
+              }
+            ],
+            "details": {
+              "disabled": false,
+              "mode": "indexed",
+              "hits": [
+                {
+                  "path": "wiki/sources/study-note.md",
+                  "title": "Python 二分查找：左闭右开区间",
+                  "score": 0.016666666666666666,
+                  "via": [
+                    "lexical"
+                  ],
+                  "sourceIds": [
+                    "l2src_3a505bdc"
+                  ]
+                },
+                {
+                  "path": "wiki/concepts/二分查找.md",
+                  "title": "二分查找",
+                  "score": 0.015,
+                  "via": [
+                    "graph"
+                  ],
+                  "sourceIds": [
+                    "l2src_3a505bdc"
+                  ]
+                },
+                {
+                  "path": "wiki/concepts/左闭右开区间.md",
+                  "title": "左闭右开区间",
+                  "score": 0.015,
+                  "via": [
+                    "graph"
+                  ],
+                  "sourceIds": [
+                    "l2src_3a505bdc"
+                  ]
+                }
+              ],
+              "lintPerformed": false
+            }
+          },
+          "isError": false,
+          "piEventType": "tool_execution_end"
+        }
+      ],
+      "finalText": "归档与查询均已完成，以下为工具实际返回内容（非对话复述）：\n\n**l2_archive 结果**\n- 标题：Python二分查找左闭右开\n- 来源 ID：`l2src_3a505bdc`\n- 原始文件：`raw/uploads/2026-10-04-python二分查找左闭右开-9d5051.md`\n- 来源页：`wiki/sources/study-note.md`\n- 自动维护：新建 3 个概念/实体页，更新 0 个\n- 标签：binary-search, python, algorithm\n- 归档生成的待审阅建议（reviewCount）：4 个（来自归档过程，不是 l2_lint 结论；本次未执行 l2_lint）\n\n**l2_query(\"BINSEARCH_SOURCE_20261004\") 实际命中 3 条**\n1. `wiki/sources/study-note.md` —— [[Python 二分查找：左闭右开区间]]，匹配方式 lexical；frontmatter 中 `sources: [\"study-note.md\"]`、`source_ids: [\"l2src_3a505bdc\"]`，正文含材料编号 BINSEARCH_SOURCE_20261004。\n2. `wiki/concepts/二分查找.md` —— [[二分查找]]，匹配方式 graph；含 `concept_id: algorithms.binary_search` 与前置关系 `algorithms.half_open_interval`（required, source=teacher）。\n3. `wiki/concepts/左闭右开区间.md` —— [[左闭右开区间]]，匹配方式 graph；含 `concept_id: algorithms.half_open_interval`。\n\n三页 `source_ids` 一致指向 `l2src_3a505bdc`，来源可追溯；索引的 Recently Updated 也列出了这三页。"
+    },
+    {
+      "id": "lint",
+      "sessionId": "2026-10-04T11-49-40-933Z_01a106bf-93c5-76c4-b70c-ed7efb363eed.jsonl",
+      "turnId": "ebea9e15-88d0-45ba-846a-f009369dc72c",
+      "starts": [
+        {
+          "type": "tool_start",
+          "toolCallId": "call_00_ET_ngyIx92yq5bDQ8y8ikUI2164",
+          "toolName": "l2_lint",
+          "args": {},
+          "piEventType": "tool_execution_start"
+        }
+      ],
+      "ends": [
+        {
+          "type": "tool_end",
+          "toolCallId": "call_00_ET_ngyIx92yq5bDQ8y8ikUI2164",
+          "toolName": "l2_lint",
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "结果来源：l2_lint（只读结构检查已完成）。\n\nL2 Lint：检查 3 个页面、1 个来源；0 个错误、0 个警告。\n\n未发现结构问题。"
+              }
+            ],
+            "details": {
+              "disabled": false,
+              "pagesChecked": 3,
+              "sourcesChecked": 1,
+              "errors": 0,
+              "warnings": 0,
+              "findings": [],
+              "lintSource": "l2_lint",
+              "lintPerformed": true
+            }
+          },
+          "isError": false,
+          "piEventType": "tool_execution_end"
+        }
+      ],
+      "finalText": "l2_lint 已实际执行（只读，未修改任何文件）。本次返回结果：\n\n- 检查范围：3 个页面、1 个来源\n- 错误：0\n- 警告：0\n- 结论：未发现结构问题\n\n即刚归档的 [[Python 二分查找：左闭右开区间]]、[[二分查找]]、[[左闭右开区间]] 三页在 frontmatter、双链、来源追溯与 manifest/index 一致性上均通过检查。需要说明的是，之前 l2_archive 返回的 reviewCount=4 是归档过程生成的待审阅建议，与本轮 l2_lint 的 0 错误 0 警告不是同一口径。"
+    }
+  ],
+  "finalResponseReview": {
+    "method": "Read complete final responses and compare against tool_start/tool_end and persisted records; not a general natural-language verifier.",
+    "evaluator": "Reports evaluator=model and actual evidence ID.",
+    "archive": "Reports 4 archive-generated review items and explicitly states no l2_lint was run in this turn.",
+    "lint": "Reports actual lint: 3 pages, 1 source, 0 errors, 0 warnings; distinguishes this from archive reviewCount=4."
+  },
+  "limitations": [
+    "Hard rejection applies to this model-facing evaluator field. Internal APIs and historical deterministic/teacher records remain supported.",
+    "L2 result provenance and prompting reduce attribution errors; this one positive replay does not guarantee all future free-form responses.",
+    "Other model-editable profile and prerequisite-source fields are not hardened in this change. No real-user educational outcome was measured.",
+    "No OS-level isolation, scheduled delivery, multichannel or full browser interaction acceptance claimed."
+  ],
+  "source": [
+    {
+      "path": "apps/inno-agent/src/agent/system-prompt.ts",
+      "sha256": "80c63f9e735413acd76221930e8ecb693460508b32fce5fd22b17d571f9c6057"
+    },
+    {
+      "path": "apps/inno-agent/src/agent/teaching-entry-agent.test.ts",
+      "sha256": "d6ffb3e186b265fb336cc3fcddd32c24bb67d6845a76da23197a971a9bd16c69"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-tools.test.ts",
+      "sha256": "c9f5c578bff473656d768ea5b07415974462e0f483251543de09a0a83ef39bf5"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/l2/l2-tools.ts",
+      "sha256": "d2d8bdd1f4cb5359de7e186104b3b707f8323aa0925ec40ef7bc96364230f55d"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/learner-tools.ts",
+      "sha256": "64cc3df1b1d33e3172308b6d9fa3e049e66ebb5881f51536863c525b1bef9338"
+    },
+    {
+      "path": "apps/inno-agent/src/memory/learner/learner-tools.test.ts",
+      "sha256": "f18b3817fc0861fe3a54f1980b0c74567f0965f4e023eeb9d374d2c80a0edeec"
+    },
+    {
+      "path": "scripts/baseline/verify-core.ts",
+      "sha256": "65bf650ba29de5cf7892100f8eeb1bb80ff41549b73bc76573135657cef9a88e"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/archive_and_query.events.jsonl",
+      "sha256": "dcb542e3d546df861c86afb55c021335fea2a7c344aafb51e30e50e0417c9415"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/archive_and_query.request.json",
+      "sha256": "9b95718948ed9e16ec9b55c3acca0482aff2b0c892d21e67d4b57d1a7b958731"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/archive_and_query.result.json",
+      "sha256": "bacd4aa10649c85c3f83752d4ec7ca4e9cbfd9b68d3afbc77b802687020f0dee"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/archive_and_query.session.json",
+      "sha256": "648a9e48d1a3552c8411a03a30c7ac035af290fb391d7bebb998b61339e82333"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/evaluator.events.jsonl",
+      "sha256": "135e8478c79737ec59e771079e103e640edb0af50a50eafa17bf2997e8710574"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/evaluator.request.json",
+      "sha256": "925c16387313963aaa7c1c056480dc49fd4756a1f3ce053913815a3ef2d5891d"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/evaluator.result.json",
+      "sha256": "c013d204a1fa52404b46af2663b22c56fdb274df96ff6c9a0ebc988f3218eda2"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/evaluator.session.json",
+      "sha256": "39487f0701b9372a75f53f23109beb7f7245a238bfa4abf556ea7b97c9ccf2b2"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/lint.events.jsonl",
+      "sha256": "8cd4d31d7487e6a8d288d6443f60010578686bfc961681e1b38c73a44ab5f8ef"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/lint.request.json",
+      "sha256": "47092062cd1a5f0fe25aa9e78f143121abb899863c64d6693ede8f2da0c861fd"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/lint.result.json",
+      "sha256": "ee0dc07ccf7c6ff7f8c9c5ff9f8d6c944ace50144eb379069fadfb6e5e4989d2"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/lint.session.json",
+      "sha256": "abdc9285f6d337ed99cf633dfee85cbb865178c8bc240b425f22cc968318f7f9"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/captures/session-A.json",
+      "sha256": "bba6af5a3364254b0a6094efdf6adfd37290010b598be4c91fa426511fe281f8"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/evaluator-prompt.txt",
+      "sha256": "fe83fd5b2da1df41fd8dc2606bd60b80e2140b08578c2627317dd8cf92a454e3"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/archive-prompt.txt",
+      "sha256": "733ae1be4534689b2f1c1d846a81975045eb3c5bea492743388969ee19e0449d"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/lint-prompt.txt",
+      "sha256": "c262939d9f41def50c8437c7626407df6501991483a8f945c03acd86d05b1637"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/drive.mjs",
+      "sha256": "ff19ab96f397d244d7a13de87501f9880dfaae1af3cc0288ef86011bc8ba30b4"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/inspect.mjs",
+      "sha256": "7101a24d7e899e73cb187f21b17358601c7fa644a845762661b91253add8efb3"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/learner/profile.json",
+      "sha256": "ac7680f33059333dda58ec43f11bb21108c1b6449df0b1e9a4982b76de565319"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/learner/events.jsonl",
+      "sha256": "bc291d1c43f86b47ad50ff51d21d86d37bc5199951bc8f10be518ac1f1c7998a"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/l2/manifest.jsonl",
+      "sha256": "550f7d69b8adb06f395f76e51c9e50833ec3e548dcf730102980ff62c626d105"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/l2/reviews.jsonl",
+      "sha256": "4877dd4d8fd422eb5b4f7ae72c45cbc85dbb79d5101b2904897724aaf13230b6"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/l2/raw/uploads/2026-10-04-python二分查找左闭右开-9d5051.md",
+      "sha256": "ce9113893d6f5594bb5e51cd461c77e23e68b6bd1323afb2350cfe48518b50a5"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/l2/extracted/python二分查找左闭右开-239db6.md",
+      "sha256": "25f1f6fb46e6e31d39f1c1d589e00a8db93508bf611f8897375614d268f8d1f2"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/l2/wiki/sources/study-note.md",
+      "sha256": "7036d305e15edf458613d1e4be762ae18bd340b8a2ac996193694b21f6e3b0fa"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/l2/wiki/concepts/二分查找.md",
+      "sha256": "898c548430f5e52a2df16bcd8ceaa2f4b015d7be627b34d644cf4fdabbd5f07e"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/l2/wiki/concepts/左闭右开区间.md",
+      "sha256": "ed76711ad4af42735dff99a4b63fff80d1c8fb14ad9858957f702534f312a382"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/sessions/2026-10-04T11-49-40-933Z_01a106bf-93c5-76c4-b70c-ed7efb363eed.jsonl",
+      "sha256": "2c14134ba8a8b9b836afe49dcc2b99e8657b6c50184dedafb19c06639e0ea137"
+    },
+    {
+      "path": "runtime/baseline/fixes/2026-10-04T11-45-43-557Z-23789/environment/data/sessions/traces.json",
+      "sha256": "55543355290182c4a7fb3e93ac16e974a77e29cfd4c1ee72c3a3a5f82b7109c6"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-04T11-47-41-731Z-24164/report.json",
+      "sha256": "76e0e714af626d9fb5f8766e6c161e5f4149b48f854d5ffa1ff0a30240419e17"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-04T11-47-41-731Z-24164/vitest.json",
+      "sha256": "28c630ecb33ed28f543cf9e0af2296ab7a2f2d47b246057be1d72fb78564b8bb"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-04T11-47-41-731Z-24164/core-fixtures.json",
+      "sha256": "26bd3e0a0ba115a011819e93f23d77e6f05739d0170f4215dbfff7559d05ab3c"
+    },
+    {
+      "path": "runtime/baseline/runs/2026-10-04T11-47-41-731Z-24164/web-pty.json",
+      "sha256": "19c257d7f10956dd6c238508f18799cdd3a676c7c8af42a20ede1e3f7524fb9b"
+    }
+  ]
+}
