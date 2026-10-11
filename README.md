@@ -39,6 +39,3 @@ npm run showcase:build
 
 [快速开始](QUICKSTART.md) · [学习体验](docs/web-learning.md) · [基线验证](docs/baseline/README.md) · [权限与沙箱](docs/PERMISSIONS_AND_SANDBOX.md) · [系统依赖](docs/SYSTEM_DEPENDENCIES.md)
 
-## 许可
-
-项目采用 [MIT 许可证](LICENSE)。继承代码的原作者版权声明保留在许可证中。
