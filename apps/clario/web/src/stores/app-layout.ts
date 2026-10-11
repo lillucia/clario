@@ -63,7 +63,7 @@ export function fitPanelLayout(
 
 	// If the requested workspace would squeeze the chat, hide the optional
 	// left column first. This is used by direct workspace-opening call sites
-	// that do not go through the Electron window-expansion path.
+	// that need to fit within the current browser viewport.
 	if (availableWorkspaceWidth < WORKSPACE_QUARTER_MIN_WIDTH && !nextSidebarCollapsed) {
 		nextSidebarCollapsed = true;
 		availableWorkspaceWidth = viewportWidth - CHAT_BASELINE_WIDTH;

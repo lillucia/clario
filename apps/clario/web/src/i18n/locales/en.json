@@ -99,19 +99,6 @@
 		"sessionBusyStop": "Stop it and retry",
 		"sessionBusyDismiss": "Dismiss"
 	},
-	"desktop": {
-		"closeDialog": {
-			"title": "Close Clario",
-			"message": "How would you like to close Clario?",
-			"detail": "Choose “Close window” to keep the app running in the background, or “Quit app” to stop the background service. Check “Remember my choice” to use it next time. You can change it later in Settings > General.",
-			"buttons": {
-				"hide": "Close window",
-				"quit": "Quit app",
-				"cancel": "Cancel"
-			},
-			"remember": "Remember my choice"
-		}
-	},
 	"sessions": {
 		"export": "Export as Markdown",
 		"exportShowcase": "Export as replay case",

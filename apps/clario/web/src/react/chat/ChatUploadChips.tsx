@@ -95,17 +95,13 @@ export function ChatUploadChips({ uploads, onRemove, onRetry, onInsertAsBubble, 
 	if (uploads.length === 0) return null;
 
 	/**
-	 * Click on a chip: local files open with the OS default handler (Electron
-	 * shell), workspace files open in the app preview panel. Inner buttons
+	 * Click on a chip: local files open in a browser tab,
+	 * workspace files open in the app preview panel. Inner buttons
 	 * (remove/retry) handle their own clicks.
 	 */
 	const openUpload = (item: PendingUpload) => {
 		if (item.source === "workspace") {
 			onOpenWorkspaceFile?.(item.path);
-			return;
-		}
-		if (item.file && window.innoDesktop?.openLocalFile) {
-			void window.innoDesktop.openLocalFile(item.file);
 			return;
 		}
 		// Browser fallback: preview the picked file in a new tab.

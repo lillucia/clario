@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef } from "react";
-import { appStore, type RightPanelTab, type WorkspaceMode } from "@inno-web/stores/app-store.js";
+import { appStore, type AppPage, type WorkspaceMode } from "@inno-web/stores/app-store.js";
 import { sessionsStore } from "@inno-web/stores/sessions-store.js";
 import { settingsStore } from "@inno-web/stores/settings-store.js";
 import { workspacesStore } from "@inno-web/stores/workspaces-store.js";
@@ -10,6 +10,9 @@ import { WorkspacePanel } from "@inno-web/react/WorkspacePanel.js";
 import { fetchCaseIndex } from "./cases.js";
 import { mockBackend } from "./mock/runtime.js";
 import { replayDriver } from "./replay/driver.js";
+import { FeaturePage } from "@inno-web/react/FeaturePage.js";
+import { PanelToolbar } from "@inno-web/react/PanelToolbar.js";
+import { InnoDndProvider } from "@inno-web/react/ui/dnd-backend.js";
 import { ReplayTransport } from "./replay/Transport.js";
 
 let initializationPromise: Promise<void> | null = null;
@@ -49,7 +52,7 @@ function initializeShowcase(): Promise<void> {
  */
 export function App() {
 	const app = useStoreSnapshot(appStore, () => ({
-		rightPanelTab: appStore.rightPanelTab,
+		page: appStore.page,
 		sidebarCollapsed: appStore.sidebarCollapsed,
 		workspaceMode: appStore.workspaceMode,
 		workspaceWidth: appStore.workspaceWidth,
@@ -82,17 +85,11 @@ export function App() {
 		return () => window.removeEventListener("hashchange", onHashChange);
 	}, []);
 
-	const setTab = useCallback((tab: RightPanelTab) => appStore.setRightPanelTab(tab), []);
 	const setWorkspaceMode = useCallback((mode: WorkspaceMode) => appStore.setWorkspaceMode(mode), []);
 	const setWorkspaceWidth = useCallback((width: number) => appStore.setWorkspaceWidth(width), []);
-	const openSidebar = useCallback(() => appStore.setSidebarCollapsed(false), []);
 	const openPresetPanels = useCallback(() => {
 		appStore.setRightPanelTab("preview");
 		appStore.setWorkspaceMode("half");
-	}, []);
-	const openRightPanel = useCallback((tab: Exclude<RightPanelTab, "preview">) => {
-		appStore.setRightPanelTab(tab);
-		appStore.setWorkspaceMode("quarter");
 	}, []);
 	const openPreviewFile = useCallback((minimumWidth: number) => {
 		appStore.setRightPanelTab("preview");
@@ -132,29 +129,39 @@ export function App() {
 		return () => mql.removeEventListener("change", handler);
 	}, []);
 
+	const chatVisible = app.page === "chat";
+	const layoutWorkspaceMode = chatVisible ? app.workspaceMode : "collapsed";
+
 	return (
-		<div
-			className={`app-layout app-layout--sidebar-${app.sidebarCollapsed ? "collapsed" : "expanded"} app-layout--workspace-${app.workspaceMode}`}
-			style={{ "--inno-workspace-width": `${app.workspaceWidth}px` } as React.CSSProperties}
-		>
-			<SessionSidebar collapsed={app.sidebarCollapsed} onOpen={openSidebar} />
-			<div className="relative h-full min-h-0 min-w-0">
-				<ChatCenter
-					onOpenPresetPanels={openPresetPanels}
-					onOpenRightPanel={openRightPanel}
-					onPreviewFile={openPreviewFile}
+		<InnoDndProvider>
+			<div
+				className={`app-layout app-layout--browser app-layout--sidebar-${app.sidebarCollapsed ? "collapsed" : "expanded"} app-layout--workspace-${layoutWorkspaceMode}`}
+				style={{ "--inno-workspace-width": `${app.workspaceWidth}px` } as React.CSSProperties}
+			>
+				<SessionSidebar collapsed={app.sidebarCollapsed} />
+				{chatVisible ? (
+					<ChatCenter onOpenPresetPanels={openPresetPanels} onPreviewFile={openPreviewFile} />
+				) : (
+					<FeaturePage page={app.page as Exclude<AppPage, "chat">} />
+				)}
+				{chatVisible ? (
+					<WorkspacePanel
+						mode={app.workspaceMode}
+						width={app.workspaceWidth}
+						onModeChange={setWorkspaceMode}
+						onWidthChange={setWorkspaceWidth}
+						onPreviewFile={openPreviewFile}
+					/>
+				) : null}
+				<PanelToolbar
+					showWorkspaceControl={chatVisible}
+					sidebarCollapsed={app.sidebarCollapsed}
+					workspaceCollapsed={app.workspaceMode === "collapsed"}
+					onToggleSidebar={() => appStore.toggleSidebar()}
+					onToggleWorkspace={() => appStore.setWorkspaceMode(app.workspaceMode === "collapsed" ? "half" : "collapsed")}
 				/>
-				<ReplayTransport />
 			</div>
-			<WorkspacePanel
-				activeTab={app.rightPanelTab}
-				mode={app.workspaceMode}
-				width={app.workspaceWidth}
-				onTabChange={setTab}
-				onModeChange={setWorkspaceMode}
-				onWidthChange={setWorkspaceWidth}
-				onPreviewFile={openPreviewFile}
-			/>
-		</div>
+			<ReplayTransport />
+		</InnoDndProvider>
 	);
 }

@@ -12,7 +12,7 @@
  *     [--id my-case] [--title 标题] [--title-en Title] [--description ...] \
  *     [--tags a,b] [--max-user-turns N] [--workspace-name x] [--exclude p1,p2]
  *
- * Defaults: --sessions-dir runtime/data/sessions --out apps/showcase/public/cases
+ * Defaults: --sessions-dir runtime/clario/data/sessions --out apps/showcase/public/cases
  *
  * `--list` prints every recorded session (time, workspace, turns, first user
  * message) so you can pick one; `--session` exports it without editing the
@@ -131,8 +131,8 @@ function main(): void {
 		const idx = args.indexOf(`--${name}`);
 		return idx >= 0 && args[idx + 1] ? args[idx + 1] : fallback;
 	};
-	const sessionsDir = resolve(flag("sessions-dir", join(repoRoot, "runtime/data/sessions")));
-	const dataDir = resolve(flag("data-dir", join(repoRoot, "runtime/data")));
+	const sessionsDir = resolve(flag("sessions-dir", join(repoRoot, "runtime/clario/data/sessions")));
+	const dataDir = resolve(flag("data-dir", join(repoRoot, "runtime/clario/data")));
 	const outDir = resolve(flag("out", join(repoRoot, "apps/showcase/public/cases")));
 	const only = flag("only", "").split(",").map((s) => s.trim()).filter(Boolean);
 

@@ -13,7 +13,7 @@
  *   node scripts/view-showcase-export.mjs [--cases <dir>] [--port <N>] [--build] [--no-open]
  *   npm run showcase:view [-- --cases <dir> …]
  *
- * Defaults: --cases runtime/data/showcase-exports/cases --port 4175
+ * Defaults: --cases runtime/clario/data/showcase-exports/cases --port 4175
  * Builds apps/showcase/dist automatically when missing (or with --build).
  */
 
@@ -31,7 +31,7 @@ const flag = (name, fallback) => {
 	const idx = args.indexOf(`--${name}`);
 	return idx >= 0 && args[idx + 1] ? args[idx + 1] : fallback;
 };
-const casesDir = resolve(flag("cases", join(repoRoot, "runtime/data/showcase-exports/cases")));
+const casesDir = resolve(flag("cases", join(repoRoot, "runtime/clario/data/showcase-exports/cases")));
 const port = Number(flag("port", "4175"));
 const noOpen = args.includes("--no-open");
 

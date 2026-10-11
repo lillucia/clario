@@ -8,7 +8,7 @@ import { cpSync, existsSync, readFileSync, readdirSync, realpathSync, rmSync, st
 import { tmpdir } from "node:os";
 import { basename, dirname, extname, join, relative, resolve, sep } from "node:path";
 import { EnvHttpProxyAgent, setGlobalDispatcher } from "undici";
-import { assertDesktopExperienceSupported, getEffectiveConfig, getExperience, loadConfig, type InnoConfig } from "./config.js";
+import { getEffectiveConfig, getExperience, loadConfig, type InnoConfig } from "./config.js";
 import { installFetchLogger } from "./utils/fetch-logger.js";
 import { canonicalContainmentRoot, isWithin } from "./utils/path-safety.js";
 import { applyProviderProxyBypass } from "./utils/proxy-bypass.js";
@@ -104,7 +104,6 @@ applyRuntimeEnvironment(paths);
 
 // Electron must reject a Web-only profile before advertising readiness.
 // Normal Web startup keeps its lazy-config/bootstrap behavior.
-if (process.env.INNO_DESKTOP === "1") assertDesktopExperienceSupported(loadConfig(paths.configPath));
 
 // Port is resolved from CLI / env only — config.json is read lazily.
 const port = parsed.options.port

@@ -160,7 +160,7 @@ function WorkspacePanelContent({ mode, width, onModeChange, onWidthChange, onPre
 		const generation = ++resizeCommitGenerationRef.current;
 		// When the current chat column is already at its baseline width, the
 		// renderer cannot fit a wider workspace without first making more room.
-		// Electron can expand the host window; browser builds safely fall back to
+		// Use the browser viewport and fall back to
 		// the existing fitPanelLayout constraint inside onWidthChange.
 		await ensureWindowForPanel("right", nextWidth, mode);
 		// The host-window resize can emit a second renderer resize event after
@@ -271,33 +271,6 @@ function WorkspacePanelContent({ mode, width, onModeChange, onWidthChange, onPre
 			event.currentTarget.setPointerCapture(event.pointerId);
 		}
 
-		// On desktop, include the amount of host-window space that can still be
-		// expanded on either edge. The commit uses the right edge first and moves
-		// the window left when the right edge is already at the display boundary.
-		const getWindowWidthCapacity = window.innoDesktop?.getWindowWidthCapacity;
-		if (getWindowWidthCapacity) {
-			void Promise.all([
-				getWindowWidthCapacity("right").catch(() => 0),
-				getWindowWidthCapacity("left").catch(() => 0),
-			]).then(([rightCapacity, leftCapacity]) => {
-				const active = resizeStartRef.current;
-				if (!active || active.pointerId !== event.pointerId) return;
-				const expandedViewportWidth = window.innerWidth
-					+ Math.max(0, Math.round(rightCapacity))
-					+ Math.max(0, Math.round(leftCapacity));
-				resizeMaxWidthRef.current = Math.min(
-					WORKSPACE_MAX_WIDTH,
-					Math.max(
-						resizeMaxWidthRef.current,
-						getMaximumWorkspaceWidth(expandedViewportWidth, appStore.sidebarCollapsed, mode),
-					),
-				);
-				const maxWidth = resizeMaxWidthRef.current;
-				setResizeLimitReached(
-					resizePreviewWidthRef.current !== null && resizePreviewWidthRef.current >= maxWidth,
-				);
-			});
-		}
 	}, [mode, width]);
 
 	const collapsed = mode === "collapsed";

@@ -1,6 +1,6 @@
 # Content Hub — 本地资源服务器:配置与使用
 
-一个**零依赖**的本地内容服务,让 inno-agent 从你自己的机器(而不是默认的公共 GitHub 仓库)拉取**技能库**和**工作区模板(预设)**。适合私有部署、离线使用、或想自己维护一套内容。
+一个**零依赖**的本地内容服务,让 Clario 从你自己的机器(而不是默认的公共 GitHub 仓库)拉取**技能库**和**工作区模板(预设)**。适合私有部署、离线使用、或想自己维护一套内容。
 
 - 服务脚本:`scripts/content-hub-server/server.mjs`(Node ≥ 20,仅用内置模块 + 系统 `tar`)
 - 自带样例:`scripts/content-hub-server/content-example/`(开箱即跑)
@@ -10,7 +10,7 @@
 ## 一图看懂
 
 ```
-你的内容目录                      本地服务 (:8787)                inno-agent 后端 (:3000)
+你的内容目录                      本地服务 (:8787)                Clario 后端 (:3200)
 content/                          server.mjs                       contentHub.type = "bundle"
 ├── skill-library/<id>/SKILL.md   ──扫描──►  GET /index.json   ◄──  baseUrl = http://localhost:8787
 └── workspace-templates/<id>/     ──打包──►  GET /…/<id>.tar.gz ◄──  简单模式预设卡片 / 技能库
@@ -48,9 +48,9 @@ CONTENT_DIR=scripts/content-hub-server/content-example PORT=8787 \
 | `PORT` | `8787` | 监听端口 |
 | `HUB_TOKEN` | 空 | 设置后要求 `Authorization: Bearer <token>`,私有部署建议开 |
 
-### ② 让 inno-agent 指向它
+### ② 让 Clario 指向它
 
-编辑 `runtime/config/config.json`,把 `contentHub` 改成:
+编辑 `runtime/clario/config/config.json`,把 `contentHub` 改成:
 
 ```json
 {
@@ -142,8 +142,6 @@ content/
 样例只是演示。要提供真实内容,把 `CONTENT_DIR` 指向你自己的目录即可。最实用的做法是**指向一个 git 仓库的工作副本**(仓库管内容,服务管打包):
 
 ```bash
-# 例:把 inno-agent-hub 仓库 clone 下来直接当内容源
-git clone git@github.com:Chloris-Blaxk/inno-agent-hub.git /path/to/hub
 CONTENT_DIR=/path/to/hub node scripts/content-hub-server/server.mjs
 ```
 
@@ -156,7 +154,7 @@ CONTENT_DIR=/path/to/hub node scripts/content-hub-server/server.mjs
 
 ## 接口契约(供二次开发)
 
-inno-agent 的 `BundleServiceSource` 只依赖三个只读接口:
+Clario 的 `BundleServiceSource` 只依赖三个只读接口:
 
 | 请求 | 返回 |
 |---|---|

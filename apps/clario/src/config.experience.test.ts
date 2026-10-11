@@ -3,7 +3,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import {
-	assertDesktopExperienceSupported, getEffectiveConfig, getExperience,
+	getEffectiveConfig, getExperience,
 	isComputerUseEnabled, loadConfig, normalizeConfig, saveConfig, type InnoConfig,
 } from "./config.js";
 
@@ -67,18 +67,11 @@ describe("experience configuration", () => {
 		for (const name of ["todo", "webAccess", "computerUse"] as const) expect(restored.plugins?.[name]?.enabled).toBe(true);
 	});
 
-	it("overrides desktop defaults and explicit computer-use opt-ins in learning mode", () => {
+	it("disables computer-use opt-ins in learning mode and ignores legacy desktop defaults", () => {
 		vi.stubEnv("INNO_DESKTOP", "1");
 		expect(isComputerUseEnabled(config())).toBe(false);
 		expect(isComputerUseEnabled({ ...config(), plugins: undefined })).toBe(false);
-		expect(isComputerUseEnabled({ ...config(), experience: "full", plugins: undefined })).toBe(true);
+		expect(isComputerUseEnabled({ ...config(), experience: "full", plugins: undefined })).toBe(false);
 	});
 
-	it("rejects a learning profile only for the desktop entry", () => {
-		vi.stubEnv("INNO_DESKTOP", "0");
-		expect(() => assertDesktopExperienceSupported(config())).not.toThrow();
-		vi.stubEnv("INNO_DESKTOP", "1");
-		expect(() => assertDesktopExperienceSupported(config())).toThrow("Web-only");
-		expect(() => assertDesktopExperienceSupported({ ...config(), experience: "full" })).not.toThrow();
-	});
 });

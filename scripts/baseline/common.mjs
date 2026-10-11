@@ -21,7 +21,7 @@ export function prepareEnvironment(path) {
   if (existsSync(path)) throw new Error(`Refusing to overwrite an existing environment: ${path}`);
   for (const part of ["config", "data", "skills", "workspace"]) mkdirSync(join(path, part), { recursive: true });
   writeJson(join(path, "config", "config.json"), {
-    defaultProvider: "baseline-dummy", defaultModel: "baseline-dummy-model",
+    experience: "learning", defaultProvider: "baseline-dummy", defaultModel: "baseline-dummy-model",
     providers: { "baseline-dummy": {
       baseUrl: "http://127.0.0.1:9", api: "openai-completions", apiKey: "baseline-placeholder",
       models: [{ id: "baseline-dummy-model", name: "Baseline (no real model)", contextWindow: 32768, maxTokens: 2048 }],
@@ -39,7 +39,7 @@ export function prepareEnvironment(path) {
   return path;
 }
 
-// No provider credentials or inherited Inno paths enter the test subprocesses.
+// No provider credentials or inherited runtime paths enter the test subprocesses.
 // Do not set INNO_CONFIG_FILE/CONFIG_DIR here: server.smoke.test creates its own
 // --home, which these environment variables would otherwise silently override.
 export function isolatedEnv(path, { offline = true } = {}) {
@@ -109,13 +109,6 @@ export function serverArgs(path, port) {
     "--workspace", join(path, "workspace"), "--port", String(port)];
 }
 
-// Migration comparison always keeps the original reference manifest unchanged.
-export function mapReferencePath(path, mappings = []) {
-  const mapping = [...mappings].sort((a, b) => b.from.length - a.from.length)
-    .find(({ from }) => path === from || path.startsWith(from + "/"));
-  return mapping ? mapping.to + path.slice(mapping.from.length) : path;
-}
-
 export function currentCommit(directory = root) {
   try {
     return execFileSync("git", ["rev-parse", "--verify", "--quiet", "HEAD"], { cwd: directory, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
@@ -127,37 +120,17 @@ export function currentCommit(directory = root) {
   }
 }
 
-export function inspectReferenceFiles(reference, directory, applicationPaths, mappings = []) {
-  const source = { originalTree: reference.tree, pathMappings: mappings,
-    changedReferenceFiles: [], changedSourceFiles: [], missingReferenceFiles: [] };
-  for (const file of reference.files) {
-    const path = join(directory, mapReferencePath(file.path, mappings));
-    if (!existsSync(path)) source.missingReferenceFiles.push(file.path);
-    else if (sha256(readFileSync(path)) !== file.sha256) {
-      source.changedReferenceFiles.push(file.path);
-      if (file.path.startsWith("apps/")) source.changedSourceFiles.push(file.path);
-    }
-  }
-  const referencePaths = new Set(reference.files.map((file) => mapReferencePath(file.path, mappings)));
-  source.addedApplicationFiles = [...new Set(applicationPaths)].filter((path) => path && !referencePaths.has(path));
-  source.referenceApplicationUnchanged = !source.changedSourceFiles.length &&
-    !source.missingReferenceFiles.some((path) => path.startsWith("apps/")) && !source.addedApplicationFiles.length;
-  return source;
-}
-
 function canonical(value) {
   if (Array.isArray(value)) return value.map(canonical);
   if (value && typeof value === "object") return Object.fromEntries(Object.keys(value).sort().map((key) => [key, canonical(value[key])]));
   return value;
 }
 
-// Workspace names/links can change during migration. Every external package's
-// complete lock metadata (not only version) and local dependency declarations
-// must retain the original content. Normalize only migrated directory prefixes.
-export function dependencyFingerprint(lock, mappings = []) {
+// Fingerprint Clario dependency metadata and workspace declarations.
+export function dependencyFingerprint(lock) {
   const external = {}, declarations = {};
   for (const [path, entry] of Object.entries(lock.packages ?? {})) {
-    const targetPath = mapReferencePath(path, mappings);
+    const targetPath = path;
     if (/(^|\/)node_modules\//.test(path)) {
       if (!entry.link) external[targetPath] = entry;
     } else {
@@ -168,58 +141,6 @@ export function dependencyFingerprint(lock, mappings = []) {
   return { externalPackageCount: Object.keys(external).length,
     externalPackagesSha256: sha256(JSON.stringify(canonical(external))),
     dependencyDeclarationsSha256: sha256(JSON.stringify(canonical(declarations))) };
-}
-
-export function migrationLockChecks(lockBytes, migration, dependencyReference) {
-  const actual = sha256(lockBytes);
-  const fingerprint = dependencyFingerprint(JSON.parse(lockBytes.toString()), migration.pathMappings);
-  const fields = ["externalPackageCount", "externalPackagesSha256", "dependencyDeclarationsSha256"];
-  return [
-    { id: "lockfile-migration-pinned", status: actual === migration.targetLockfileSha256 ? "passed" : "failed",
-      expected: migration.targetLockfileSha256, actual, original: migration.sourceLockfileSha256,
-      note: "The lockfile was renamed for Clario; this does not assert original lockfile bytes are unchanged." },
-    { id: "external-dependencies-unchanged", status: dependencyReference.sourceLockfileSha256 === migration.sourceLockfileSha256 &&
-        fields.every((key) => fingerprint[key] === dependencyReference[key]) ? "passed" : "failed",
-      originalLockfileSha256: dependencyReference.sourceLockfileSha256, expected: Object.fromEntries(fields.map((key) => [key, dependencyReference[key]])), actual: fingerprint },
-  ];
-}
-
-// The migration snapshot remains historical evidence. An explicitly recorded
-// upgrade pins the next lockfile and its normalized upstream dependency graph.
-export function upgradeLockChecks(lockBytes, migration, upgrade) {
-  const actual = sha256(lockBytes);
-  const fingerprint = dependencyFingerprint(JSON.parse(lockBytes.toString()), upgrade.pathMappings ?? []);
-  const fields = ["externalPackageCount", "externalPackagesSha256", "dependencyDeclarationsSha256"];
-  const expected = upgrade.upstream?.dependencyFingerprint ?? {};
-  const validSha = (value, length) => typeof value === "string" && new RegExp(`^[a-f0-9]{${length}}$`).test(value);
-  const validReference = upgrade.schemaVersion === 1 && typeof upgrade.id === "string" && upgrade.id.length > 0 &&
-    validSha(upgrade.previousLockfileSha256, 64) && validSha(upgrade.targetLockfileSha256, 64) &&
-    validSha(upgrade.upstream?.commit, 40) && validSha(upgrade.upstream?.lockfileSha256, 64) &&
-    Number.isInteger(expected.externalPackageCount) && expected.externalPackageCount > 0 &&
-    validSha(expected.externalPackagesSha256, 64) && validSha(expected.dependencyDeclarationsSha256, 64);
-  return [
-    { id: "dependency-upgrade-lineage", status: validReference &&
-        upgrade.previousLockfileSha256 === migration.targetLockfileSha256 &&
-        JSON.stringify(canonical(upgrade.pathMappings)) === JSON.stringify(canonical(migration.pathMappings)) ? "passed" : "failed",
-      previousLockfileSha256: upgrade.previousLockfileSha256, migrationLockfileSha256: migration.targetLockfileSha256,
-      upstreamCommit: upgrade.upstream?.commit, upstreamLockfileSha256: upgrade.upstream?.lockfileSha256,
-      note: "The original migration lock remains a historical baseline; current dependencies follow this recorded upstream upgrade." },
-    { id: "lockfile-upgrade-pinned", status: actual === upgrade.targetLockfileSha256 ? "passed" : "failed",
-      expected: upgrade.targetLockfileSha256, actual },
-    { id: "upstream-dependencies-matched", status: fields.every((key) => fingerprint[key] === expected[key]) ? "passed" : "failed",
-      upstreamLockfileSha256: upgrade.upstream?.lockfileSha256, expected, actual: fingerprint,
-      note: "Compares all external lock metadata and dependency declarations with the recorded upstream version, allowing only workspace path renames." },
-  ];
-}
-
-export function upgradeEvidenceCheck(upgrade, directory) {
-  const required = ["docs/migration/source-manifest.json", "docs/migration/dependency-lock-reference.json"];
-  const evidence = upgrade.preservedEvidence ?? [];
-  const missing = required.filter((path) => !evidence.some((file) => file.path === path));
-  const changed = evidence.filter((file) => !existsSync(join(directory, file.path)) ||
-    sha256(readFileSync(join(directory, file.path))) !== file.sha256).map((file) => file.path);
-  return { id: "migration-evidence-preserved", status: !missing.length && !changed.length ? "passed" : "failed",
-    checkedFiles: evidence.length, missingReferences: missing, changedFiles: changed };
 }
 
 // Node may install a different Pi version for the web UI at the root. Resolve
@@ -236,4 +157,20 @@ export function inspectInstalledDependencies(lock, names, fromDirectory = root, 
       return { name, resolvedFrom: relative(lockDirectory, fromDirectory) || ".", installed: null, error: error.message };
     }
   });
+}
+
+
+export function projectLockChecks(lockBytes, reference) {
+  const actual = sha256(lockBytes);
+  const fingerprint = dependencyFingerprint(JSON.parse(lockBytes.toString()));
+  const expected = reference.dependencyFingerprint ?? {};
+  const fields = ["externalPackageCount", "externalPackagesSha256", "dependencyDeclarationsSha256"];
+  const valid = reference.schemaVersion === 1 && reference.project === "clario" &&
+    /^[a-f0-9]{64}$/.test(reference.lockfileSha256 ?? "") &&
+    Number.isInteger(expected.externalPackageCount) && expected.externalPackageCount > 0 &&
+    fields.slice(1).every((key) => /^[a-f0-9]{64}$/.test(expected[key] ?? ""));
+  return [
+    { id: "clario-lockfile-pinned", status: valid && actual === reference.lockfileSha256 ? "passed" : "failed", expected: reference.lockfileSha256, actual },
+    { id: "clario-dependencies-matched", status: valid && fields.every((key) => fingerprint[key] === expected[key]) ? "passed" : "failed", expected, actual: fingerprint },
+  ];
 }

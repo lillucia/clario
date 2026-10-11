@@ -135,13 +135,12 @@ function buildSafeSettings(storedConfig: InnoConfig) {
 			? { ...config.contentHub, token: maskSecret(config.contentHub.token) }
 			: undefined,
 		// Effective computer-use state for the settings UI: `enabled` resolves
-		// the INNO_DESKTOP default, `explicit` is the user's override (null =
+		// the default-off policy, `explicit` is the user's override (null =
 		// unset). Changes only take effect on server restart (the extension
 		// registers its tools at session init).
 		computerUse: {
 			enabled: isComputerUseEnabled(config),
 			explicit: storedConfig.plugins?.computerUse?.enabled ?? null,
-			isDesktop: process.env.INNO_DESKTOP === "1",
 		},
 	};
 }

@@ -5,11 +5,11 @@
 ## 总览
 
 ```
-真实会话(runtime/data/sessions/*.jsonl + 工作区文件 + L1/L2 数据)
+真实会话(runtime/clario/data/sessions/*.jsonl + 工作区文件 + L1/L2 数据)
       │
       │  ① 产品内点按钮   或   ② CLI: npm run showcase:export -- --session <子串>
       ▼
-案例目录 runtime/data/showcase-exports/cases/(index.json + <id>.json + assets/)
+案例目录 runtime/clario/data/showcase-exports/cases/(index.json + <id>.json + assets/)
       │
       │  npm run showcase:view
       ▼
@@ -36,14 +36,14 @@
 ```bash
 npm run build                  # 构建后端 + 前端
 bash restart-dev.sh stop       # 停掉旧进程
-npm run server -- --home ./runtime --workspace ./workspace --port 3000
+npm start
 ```
 
 ### 每次导出
 
 1. 打开 Clario 界面,左侧会话列表**悬停**要导出的那条会话;
 2. 在动作栏点**场记板图标**「导出为回放案例」(在「导出为 Markdown」图标旁边);
-3. 弹窗显示案例标题和导出目录(`runtime/data/showcase-exports/cases/`),点确定即可。
+3. 弹窗显示案例标题和导出目录(`runtime/clario/data/showcase-exports/cases/`),点确定即可。
    多次导出自动合并到同一个 index,不用管命名和覆盖。
 
 标题默认取会话名(你改过名或自动生成过标题就用它),否则用首条用户消息。
@@ -66,20 +66,20 @@ npm run showcase:list
 npm run showcase:export -- --session 15-55-58 \
   --title 高考数学立体几何题讲解 \
   --tags 互动提问,题目讲解 \
-  --out runtime/data/showcase-exports/cases
+  --out runtime/clario/data/showcase-exports/cases
 
 # 第 3 步:看回放
 npm run showcase:view
 ```
 
-会话文件在 `runtime/data/sessions/*.jsonl`(其他部署:`<数据目录>/sessions/`)。`--session` 的子串匹配到多个会话时会报错并列出候选,加长子串即可。
+会话文件在 `runtime/clario/data/sessions/*.jsonl`(其他部署:`<数据目录>/sessions/`)。`--session` 的子串匹配到多个会话时会报错并列出候选,加长子串即可。
 
 ### CLI 参数完整参考
 
 | 参数 | 作用 | 默认值 |
 |---|---|---|
 | `--session <子串>` | 要导出的 session 文件名子串(必填) | — |
-| `--out <dir>` | 案例输出目录 | `apps/showcase/public/cases`(**注意**:这是发布目录,本地自看请指到 `runtime/data/showcase-exports/cases`) |
+| `--out <dir>` | 案例输出目录 | `apps/showcase/public/cases`(**注意**:这是发布目录,本地自看请指到 `runtime/clario/data/showcase-exports/cases`) |
 | `--id <id>` | 案例 id(URL 路由用) | `<日期>-<uuid前8位>` |
 | `--title` / `--title-en` | 案例标题(中/英) | 首条用户消息前 40 字 |
 | `--description` | 案例描述 | 空 |
@@ -87,8 +87,8 @@ npm run showcase:view
 | `--max-user-turns N` | 只保留前 N 个用户回合(截断长会话) | 不截断 |
 | `--workspace-name` | 回放里工作区的显示名 | 工作区目录名 |
 | `--exclude p1,p2` | 从文件快照排除的工作区相对路径 | 空 |
-| `--sessions-dir <dir>` | session JSONL 所在目录 | `runtime/data/sessions` |
-| `--data-dir <dir>` | 数据目录(画像快照来源) | `runtime/data` |
+| `--sessions-dir <dir>` | session JSONL 所在目录 | `runtime/clario/data/sessions` |
+| `--data-dir <dir>` | 数据目录(画像快照来源) | `runtime/clario/data` |
 | `--only id1,id2` | 只导出 CASES 注册表里的指定案例 | 全部 |
 
 `--only` 和 `--session` 都是**增量 upsert** index.json,不会冲掉同目录里已有的其他案例。
@@ -96,7 +96,7 @@ npm run showcase:view
 ## showcase:view 详解
 
 ```bash
-npm run showcase:view                      # 默认:overlay = runtime/data/showcase-exports/cases,端口 4175
+npm run showcase:view                      # 默认:overlay = runtime/clario/data/showcase-exports/cases,端口 4175
 npm run showcase:view -- --cases <dir>     # 换 overlay 目录(比如从别的机器拷贝来的案例包)
 npm run showcase:view -- --port 4180       # 换端口
 npm run showcase:view -- --build           # 强制重新构建 showcase 静态产物
@@ -112,7 +112,7 @@ npm run showcase:view -- --no-open         # 不自动开浏览器
 
 ```bash
 # 在导出的机器上:整个 cases 目录就是一个自包含案例包
-tar czf my-cases.tgz -C runtime/data/showcase-exports cases
+tar czf my-cases.tgz -C runtime/clario/data/showcase-exports cases
 # 在目标机器上(需要有本仓库 checkout + 构建环境):
 tar xzf my-cases.tgz
 npm run showcase:view -- --cases ./cases

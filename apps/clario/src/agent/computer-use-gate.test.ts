@@ -20,9 +20,9 @@ describe("isComputerUseEnabled", () => {
 		expect(isComputerUseEnabled(configWith())).toBe(false);
 	});
 
-	it("defaults on under the desktop app (INNO_DESKTOP=1)", () => {
+	it("ignores the removed desktop entry flag", () => {
 		process.env.INNO_DESKTOP = "1";
-		expect(isComputerUseEnabled(configWith())).toBe(true);
+		expect(isComputerUseEnabled(configWith())).toBe(false);
 	});
 
 	it("explicit enabled: true opts in without INNO_DESKTOP (local CLI)", () => {
@@ -30,7 +30,7 @@ describe("isComputerUseEnabled", () => {
 		expect(isComputerUseEnabled(configWith(true))).toBe(true);
 	});
 
-	it("explicit enabled: false wins even under the desktop app", () => {
+	it("explicit enabled: false stays disabled with a legacy desktop flag", () => {
 		process.env.INNO_DESKTOP = "1";
 		expect(isComputerUseEnabled(configWith(false))).toBe(false);
 	});

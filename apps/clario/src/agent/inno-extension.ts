@@ -804,9 +804,7 @@ export function createInnoExtension(
 		// machine's local screen, which only makes sense — and is only
 		// acceptable — on a local install. Registered when
 		// plugins.computerUse.enabled === true (explicit opt-in, e.g. a local
-		// CLI run) or when unset and INNO_DESKTOP=1 (set by electron/main.js);
-		// explicit `enabled: false` always wins, and online deployments (no
-		// INNO_DESKTOP) stay off unless explicitly enabled.
+		// CLI run). Tools stay off unless explicitly enabled.
 		//
 		// TS-only source, loaded through jiti like the other bundled plugins.
 		// The package has no exports map, so the entry loads by subpath. It

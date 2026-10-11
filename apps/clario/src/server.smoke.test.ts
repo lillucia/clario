@@ -8,7 +8,7 @@ import { afterAll, beforeAll, describe, expect, it } from "vitest";
 
 /**
  * HTTP smoke tests for server.ts — the safety net for the route-domain
- * extraction in docs/quality-remediation-plan.md (P2).
+ * extracted server route modules.
  *
  * server.ts is a side-effect-only entry point (no exports), so these tests
  * spawn it as a child process against a throwaway --home with a dummy

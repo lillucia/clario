@@ -9,11 +9,7 @@ import { spawn, type IPty } from "node-pty";
  * bit. node-pty `posix_spawn`s this helper, so a missing bit fails with the
  * opaque error "posix_spawnp failed." and the terminal never connects.
  *
- * The primary fix lives in the electron-builder `afterPack` hook (the installed
- * app bundle is read-only, so the bit must be set at pack time). This runtime
- * guard is a best-effort fallback for dev runs and any writable install. It
- * mirrors node-pty's own asar→asar.unpacked path translation so it targets the
- * file that is actually executed, not the virtual copy inside app.asar.
+ * This runtime guard repairs the helper permissions for writable installs.
  */
 let _helperChecked = false;
 function ensureSpawnHelperExecutable(): void {

@@ -23,11 +23,9 @@ apps/*/web/dist/
 graphify-out/
 .claude/
 
-# Icon build intermediates (keep icon.svg/icns/png)
-build/icon.iconset/
-
 # Docs (local only)
 apps/inno-agent/docs/
+docs/导学-Clario.md
 .zcode/
 
 # Signing credentials: never commit private keys, exports, or local passwords
@@ -40,3 +38,9 @@ apps/inno-agent/docs/
 
 # Clario local state
 .clario/
+
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.cache/
+.vite/

@@ -33,7 +33,7 @@ const sleep = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve,
  *
  * The driver only orchestrates: turn sequencing, pause/speed (via the shared
  * replayControl the SSE producer reads), seek (detach + canonical prefix),
- * and one-time right-panel tab reveals for the notebook/profile panels —
+ * and one-time page reveals for the notebook/learner views —
  * the preview panel reveals itself through the store's file-tool machinery.
  */
 export class ReplayDriver extends EventEmitter<ReplayDriverEvents> {
@@ -46,7 +46,7 @@ export class ReplayDriver extends EventEmitter<ReplayDriverEvents> {
 	private attachRequestId = 0;
 	private lastWikiCount = 0;
 	private lastProfileVisible = false;
-	private autoOpenedTabs = new Set<string>();
+	private autoOpenedPages = new Set<string>();
 
 	constructor() {
 		super();
@@ -78,7 +78,8 @@ export class ReplayDriver extends EventEmitter<ReplayDriverEvents> {
 		this.doc = null;
 		this.lastWikiCount = 0;
 		this.lastProfileVisible = false;
-		this.autoOpenedTabs.clear();
+		this.autoOpenedPages.clear();
+		appStore.setPage("chat", "none");
 		this.caseId = caseId;
 		chatStore.detach();
 		mockBackend.setCurrent(caseId, 0);
@@ -149,34 +150,30 @@ export class ReplayDriver extends EventEmitter<ReplayDriverEvents> {
 		}
 	}
 
-	/** One-time right-panel reveals for the panels that don't open themselves:
+	/** One-time feature-page reveals for views that do not open themselves:
 	 *  the preview panel opens via the store's file-tool machinery; the wiki
 	 *  list refresh is triggered by the store on l2_archive completion — the
-	 *  driver only switches the tab so the viewer notices. */
+	 *  driver switches to the current feature page so the viewer notices. */
 	private syncPanels(): void {
 		const wikiCount = mockBackend.wikiVisibleCount();
 		if (wikiCount > this.lastWikiCount) {
 			this.lastWikiCount = wikiCount;
-			this.autoOpenPanel("notebook");
+			this.autoOpenPage("notebook");
 		}
 		const profileVisible = mockBackend.profileVisible();
 		if (profileVisible !== this.lastProfileVisible) {
 			this.lastProfileVisible = profileVisible;
 			if (profileVisible) {
 				void learnerStore.load();
-				this.autoOpenPanel("profile");
+				this.autoOpenPage("learner");
 			}
 		}
 	}
 
-	private autoOpenPanel(tab: "notebook" | "profile"): void {
-		if (this.autoOpenedTabs.has(tab)) return;
-		this.autoOpenedTabs.add(tab);
-		if (appStore.workspaceMode === "collapsed") {
-			appStore.setWorkspaceMode("half");
-			appStore.setWorkspaceWidth(560);
-		}
-		appStore.setRightPanelTab(tab);
+	private autoOpenPage(page: "notebook" | "learner"): void {
+		if (this.autoOpenedPages.has(page)) return;
+		this.autoOpenedPages.add(page);
+		appStore.setPage(page, "none");
 	}
 
 	play(): void {
@@ -213,7 +210,8 @@ export class ReplayDriver extends EventEmitter<ReplayDriverEvents> {
 	}
 
 	restart(): void {
-		this.autoOpenedTabs.clear();
+		this.autoOpenedPages.clear();
+		appStore.setPage("chat", "none");
 		this.resetTo(0);
 		this.play();
 	}

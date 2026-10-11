@@ -1329,21 +1329,21 @@ inno-app-shell {
 }
 
 /* A full workspace can start at the window's left edge when the session rail
-   is collapsed. Keep its title clear of the native traffic lights instead of
+   is collapsed. Keep its title clear of the panel controls instead of
    letting the renderer header slide underneath them. */
 .app-layout--workspace-full.app-layout--sidebar-collapsed > .workspace-panel .inno-workspace-panel-header {
 	padding-left: var(--inno-window-chrome-title-inset);
 }
 
 /* Give the workspace title a little more breathing room from the panel edge.
-   Full mode with the session rail collapsed keeps its larger traffic-light
+   Full mode with the session rail collapsed keeps its larger toolbar
    safe area above. */
 .inno-workspace-panel-header {
 	padding-left: 20px;
 	padding-right: 16px;
 }
 
-/* Keep the title's traffic-light safe area on the same timeline as the
+/* Keep the title's toolbar safe area on the same timeline as the
    horizontal column transition. Otherwise it jumps left before the column
    itself starts moving when the sidebar is opened. */
 .inno-conversation-header,
@@ -1352,9 +1352,7 @@ inno-app-shell {
 	transition: padding-left 220ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Electron's macOS window uses a hidden title bar so the application surface
-   reaches the top edge. The renderer owns the same compact toolbar shape as
-   the reference app while the native traffic lights remain above it. */
+/* Panel controls float above the application layout. */
 .app-layout > .inno-window-chrome {
 	position: absolute;
 	inset: 0;
@@ -1376,9 +1374,7 @@ inno-app-shell {
 	padding: var(--inno-window-chrome-control-top) 0 0;
 	background: transparent;
 	border-bottom: 0;
-	/* Keep the overlay limited to the renderer-owned control. A full-width
-	   app-region drag surface can swallow clicks on the workspace header in
-	   Electron; the underlying headers already provide their own drag regions. */
+	/* Keep the overlay limited to the controls so headers remain clickable. */
 	pointer-events: none;
 	-webkit-app-region: no-drag;
 	user-select: none;
@@ -1460,77 +1456,17 @@ inno-app-shell {
 	box-shadow: var(--inno-ring);
 }
 
-.inno-window-chrome-right-actions {
-	position: absolute;
-	top: var(--inno-window-chrome-control-top);
-	right: calc(16px + var(--inno-window-chrome-control-size) + 8px);
-	z-index: 1;
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	pointer-events: auto;
-}
 
-.inno-window-chrome-btw-button {
-	transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease, transform 100ms ease;
-}
 
-.inno-window-chrome-btw-button:hover {
-	background: var(--inno-surface-muted);
-}
 
-.inno-window-chrome-btw-button:active {
-	transform: scale(0.97);
-}
 
-.inno-window-chrome-btw-button.is-active {
-	background: var(--inno-accent-soft);
-	color: var(--inno-accent);
-}
-
-/* Keep the sidebar brand row below the traffic lights. The conversation and
-   workbench headers intentionally occupy the same top row as the compact
-   window chrome, matching the reference layout's title hierarchy. Browsers
-   need no such offset — their only chrome control is the collapsed-state
-   expand button, which never overlaps the expanded header. */
-.app-layout--desktop .inno-sidebar-header {
-	padding-top: var(--inno-window-chrome-height);
-	-webkit-app-region: drag;
-}
-
-/* The welcome view has no title header of its own. Keep its top strip as a
-   real drag surface so the browser-like landing state is draggable too. */
-.app-layout--desktop .inno-chat-top-drag-region {
-	position: absolute;
-	inset: 0 0 auto;
-	height: var(--inno-window-chrome-height);
-	z-index: 2;
-	-webkit-app-region: drag;
-}
-
-.app-layout--desktop .inno-conversation-header,
-.app-layout--desktop .inno-workspace-header,
-.app-layout--desktop .inno-feature-header {
-	-webkit-app-region: drag;
-}
-
-.app-layout--desktop .inno-conversation-header,
-.app-layout--desktop .inno-workspace-header,
-.app-layout--desktop .inno-feature-header {
-	margin-top: 0;
-}
 
 /* Feature pages also start at the window edge when the session rail is
-   collapsed. Keep their titles clear of macOS traffic lights — and of the
+   collapsed. Keep their titles clear of panel controls — and of the
    chrome toggle, which also renders in browsers — just like the conversation
    and workspace headers. */
 .app-layout--sidebar-collapsed .inno-feature-header {
 	padding-left: var(--inno-window-chrome-title-inset);
-}
-
-.app-layout--desktop .inno-conversation-header {
-	background: var(--inno-chat-bg);
-	backdrop-filter: none;
 }
 
 .inno-conversation-heading {
@@ -1544,21 +1480,6 @@ inno-app-shell {
 .inno-conversation-workspace-chip {
 	border: 1px solid color-mix(in srgb, var(--inno-border) 78%, transparent);
 	background: var(--inno-chip-bg);
-}
-
-.app-layout--desktop .inno-sidebar-header button,
-.app-layout--desktop .inno-conversation-header button,
-.app-layout--desktop .inno-workspace-header button,
-.app-layout--desktop .inno-feature-header button,
-.app-layout--desktop .inno-sidebar-header input,
-.app-layout--desktop .inno-conversation-header input,
-.app-layout--desktop .inno-workspace-header input,
-.app-layout--desktop .inno-feature-header input,
-.app-layout--desktop .inno-sidebar-header a,
-.app-layout--desktop .inno-conversation-header a,
-.app-layout--desktop .inno-workspace-header a,
-.app-layout--desktop .inno-feature-header a {
-	-webkit-app-region: no-drag;
 }
 
 .inno-workspace-header-button {
@@ -1688,7 +1609,7 @@ inno-app-shell {
 	}
 
 	/* The shared toolbar also renders in browsers. Do not reserve macOS
-	   traffic-light space on phones, or the toggle covers the page title. */
+	   toolbar space on phones, or the toggle covers the page title. */
 	.app-layout--browser {
 		--inno-window-chrome-height: 48px;
 		--inno-window-chrome-control-left: calc(8px + env(safe-area-inset-left, 0px));

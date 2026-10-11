@@ -1,11 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { MessageCircleQuestion } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { appStore, pageFromSearch, type AppPage, type WorkspaceMode } from "../stores/app-store.js";
 import { settingsStore } from "../stores/settings-store.js";
 import { themeStore, type ThemeId } from "../stores/theme-store.js";
 import { sessionsStore } from "../stores/sessions-store.js";
-import { btwStore } from "../stores/btw-store.js";
 import { workspacesStore } from "../stores/workspaces-store.js";
 import { chatStore } from "../stores/chat-store.js";
 import { terminalStore } from "../stores/terminal-store.js";
@@ -15,7 +13,7 @@ import { ChatCenter } from "./ChatCenter.js";
 import { FeaturePage } from "./FeaturePage.js";
 import { SessionSidebar } from "./SessionSidebar.js";
 import { WorkspacePanel } from "./WorkspacePanel.js";
-import { DesktopWindowChrome } from "./DesktopWindowChrome.js";
+import { PanelToolbar } from "./PanelToolbar.js";
 import { SettingsOverlay } from "./settings/SettingsOverlay.js";
 import {
 	CHAT_ONLY_BP,
@@ -38,7 +36,6 @@ function initializeApp(): Promise<void> {
 
 export function App() {
 	const { t } = useTranslation();
-	const isDesktopWindow = Boolean(window.innoDesktop);
 	const [workspaceNarrowHint, setWorkspaceNarrowHint] = useState(false);
 	const workspaceHintTimerRef = useRef<number | null>(null);
 	const showWorkspaceNarrowHint = useCallback(() => {
@@ -55,22 +52,6 @@ export function App() {
 		workspaceMode: appStore.workspaceMode,
 		workspaceWidth: appStore.workspaceWidth,
 	}));
-	const currentSessionId = useStoreSnapshot(sessionsStore, () => sessionsStore.currentSessionId);
-	const btwPanelVisible = useStoreSnapshot(btwStore, () => btwStore.isVisible && btwStore.activeSessionId === sessionsStore.currentSessionId);
-	// The BtwPanel only mounts inside ChatCenter, so the desktop chrome button
-	// must hide on feature pages — clicking it there would open nothing.
-	const desktopBtwControl = isDesktopWindow && app.page === "chat" && app.workspaceMode === "collapsed" && currentSessionId ? (
-		<button
-			type="button"
-			className={`inno-window-chrome-button inno-window-chrome-btw-button ${btwPanelVisible ? "is-active" : ""}`}
-			title="随便问问"
-			aria-label="随便问问"
-			aria-expanded={btwPanelVisible}
-			onClick={() => void btwStore.openOrRestore(currentSessionId)}
-		>
-			<MessageCircleQuestion size={15} />
-		</button>
-	) : undefined;
 	useEffect(() => {
 		void initializeApp();
 		const onPopState = () => {
@@ -309,7 +290,7 @@ export function App() {
 		<>
 			<InnoDndProvider>
 				<div
-					className={`app-layout app-layout--${isDesktopWindow ? "desktop" : "browser"} app-layout--sidebar-${app.sidebarCollapsed ? "collapsed" : "expanded"} app-layout--workspace-${layoutWorkspaceMode}`}
+					className={`app-layout app-layout--browser app-layout--sidebar-${app.sidebarCollapsed ? "collapsed" : "expanded"} app-layout--workspace-${layoutWorkspaceMode}`}
 					style={{ "--inno-workspace-width": `${app.workspaceWidth}px` } as React.CSSProperties}
 				>
 					<SessionSidebar collapsed={app.sidebarCollapsed} />
@@ -327,11 +308,10 @@ export function App() {
 							onPreviewFile={openFilePreview}
 						/>
 					) : null}
-					<DesktopWindowChrome
+					<PanelToolbar
 						showWorkspaceControl={chatVisible}
 						sidebarCollapsed={app.sidebarCollapsed}
 						workspaceCollapsed={app.workspaceMode === "collapsed"}
-						btwControl={desktopBtwControl}
 						onToggleSidebar={toggleSidebar}
 						onToggleWorkspace={toggleWorkspace}
 					/>

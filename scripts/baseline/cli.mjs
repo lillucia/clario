@@ -2,7 +2,7 @@ import { spawn, execFileSync } from "node:child_process";
 import { createWriteStream, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { once } from "node:events";
 import { join, relative, resolve } from "node:path";
-import { root, outputRoot, sha256, readJson, writeJson, runId, prepareEnvironment, isolatedEnv, npmCli, inspectTests, serverArgs, supportsBaselineNode, currentCommit, inspectReferenceFiles, migrationLockChecks, upgradeLockChecks, upgradeEvidenceCheck, inspectInstalledDependencies } from "./common.mjs";
+import { root, outputRoot, sha256, readJson, writeJson, runId, prepareEnvironment, isolatedEnv, npmCli, inspectTests, serverArgs, supportsBaselineNode, currentCommit, projectLockChecks, inspectInstalledDependencies } from "./common.mjs";
 
 const mode = process.argv[2];
 const argumentsAfterMode = process.argv.slice(3);
@@ -107,23 +107,11 @@ async function verify() {
   const environment = prepareEnvironment(join(runDir, "environment"));
   const env = isolatedEnv(environment);
   const reference = readJson(join(root, "docs/baseline/reference.json"));
-  const migrationPath = join(root, "docs/migration/source-manifest.json");
-  const migration = existsSync(migrationPath) ? readJson(migrationPath) : undefined;
-  const upgradePath = join(root, "docs/upgrades/pi-0.99.2.json");
-  const upgrade = existsSync(upgradePath) ? readJson(upgradePath) : undefined;
   const report = {
-    schemaVersion: 1, id, startedAt: new Date().toISOString(), status: "running",
-    referenceCommit: reference.commit, currentCommit: currentCommit(),
-    environment: { node: process.version, executable: process.execPath, platform: process.platform, arch: process.arch, timezone: env.TZ,
-      npm: execFileSync(process.execPath, [npmCli(), "--version"], { encoding: "utf8", env }).trim() },
-    migration: migration ? { manifest: relative(root, migrationPath), manifestSha256: sha256(readFileSync(migrationPath)),
-      name: migration.name, sourceCommit: migration.sourceCommit, sourceHasUncommittedChanges: migration.sourceHasUncommittedChanges,
-      sourceLockfileSha256: migration.sourceLockfileSha256, targetLockfileSha256: migration.targetLockfileSha256 } : undefined,
-    upgrade: upgrade ? { manifest: relative(root, upgradePath), manifestSha256: sha256(readFileSync(upgradePath)),
-      id: upgrade.id, upstream: upgrade.upstream, previousLockfileSha256: upgrade.previousLockfileSha256,
-      targetLockfileSha256: upgrade.targetLockfileSha256 } : undefined,
-    source: inspectReferenceFiles(reference, root,
-      git("ls-files", "--cached", "--others", "--exclude-standard", "apps").split("\n"), migration?.pathMappings),
+    schemaVersion: 1, project: "clario", id, startedAt: new Date().toISOString(), status: "running",
+    currentCommit: currentCommit(),
+    reference: { manifest: "docs/baseline/reference.json", manifestSha256: sha256(readFileSync(join(root, "docs/baseline/reference.json"))), lockfileSha256: reference.lockfileSha256 },
+    environment: { node: process.version, executable: process.execPath, platform: process.platform, arch: process.arch, timezone: env.TZ, npm: execFileSync(process.execPath, [npmCli(), "--version"], { encoding: "utf8", env }).trim() },
     checks: [], manualAcceptance: { status: "not_run", reason: "No real provider configured; see docs/baseline/acceptance.md." },
   };
   const fingerprint = (directory) => readdirSync(join(root, directory), { withFileTypes: true }).flatMap((entry) => {
@@ -143,21 +131,7 @@ async function verify() {
     report.checks.push({ id: "sqlite-fts5", status: "passed" });
   } catch (err) { report.checks.push({ id: "sqlite-fts5", status: "failed", error: err.message }); }
   const lockBytes = readFileSync(join(root, "package-lock.json"));
-  if (migration) {
-    if (upgrade) {
-      report.checks.push(...upgradeLockChecks(lockBytes, migration, upgrade), upgradeEvidenceCheck(upgrade, root));
-    } else {
-      report.checks.push(...migrationLockChecks(lockBytes, migration, readJson(join(root, "docs/migration/dependency-lock-reference.json"))));
-    }
-    const history = migration.files.filter((file) => file.sourcePath === "docs/baseline/reference.json" || file.sourcePath.startsWith("docs/baseline/results/"));
-    const changed = history.filter((file) => !existsSync(join(root, file.targetPath)) || sha256(readFileSync(join(root, file.targetPath))) !== file.sourceSha256)
-      .map((file) => file.targetPath);
-    report.checks.push({ id: "historical-evidence-preserved", status: history.length > 0 && !changed.length ? "passed" : "failed", checkedFiles: history.length, changedFiles: changed });
-  } else {
-    if (upgrade) report.checks.push({ id: "dependency-upgrade-lineage", status: "failed", error: "An upstream upgrade requires the preserved migration source manifest." });
-    const actual = sha256(lockBytes);
-    report.checks.push({ id: "lockfile-unchanged", status: actual === reference.lockfileSha256 ? "passed" : "failed", expected: reference.lockfileSha256, actual });
-  }
+  report.checks.push(...projectLockChecks(lockBytes, reference));
   if (!existsSync(join(root, "node_modules/typescript/bin/tsc"))) {
     report.checks.push({ id: "dependencies-installed", status: "failed", error: "Run npm ci with a supported Node version before baseline:verify." });
   } else {
@@ -190,17 +164,12 @@ async function verify() {
   report.status = report.checks.every((c) => c.status === "passed") ? "passed" : "failed";
   report.finishedAt = new Date().toISOString();
   save();
-  const markdown = ["# Clario可验证基线执行报告", "", `- 时间：${report.startedAt}`, `- 原版提交：\`${reference.commit}\``,
+  const markdown = ["# Clario 基线执行报告", "", `- 时间：${report.startedAt}`,
     `- 当前提交：\`${report.currentCommit}\``, `- Node：${report.environment.node}；npm：${report.environment.npm}`,
-    `- 原版应用文件保持一致（按迁移路径映射比较）：${report.source.referenceApplicationUnchanged}`,
-    ...(migration ? [`- 迁移映射：${migration.pathMappings.map(({ from, to }) => `\`${from}\` → \`${to}\``).join("；")}`,
-      ...(upgrade ? [`- 当前依赖升级：\`${upgrade.id}\`；上游提交 \`${upgrade.upstream?.commit}\`。`,
-        "- 原迁移与历史证据保留；当前锁文件按升级 SHA 固定，并与已记录的新版上游依赖比较。"] :
-        ["- 锁文件按迁移后的 SHA 固定，同时核对原外部依赖；不宣称原锁文件字节未变。"]) ] : []),
-    `- 自动检查：**${report.status}**`, `- 真实模型 / 人工验收：**not_run**`, "",
+    "- 依赖参照：Clario 当前 package-lock.json 与独立依赖指纹。",
+    `- 自动检查：**${report.status}**`, "- 真实模型 / 人工验收：**not_run**", "",
     "| 检查 | 状态 | 日志 |", "|---|---|---|", ...report.checks.map((c) => `| ${c.id} | ${c.status} | ${c.log ? `[log](${c.log})` : c.error ?? "—"} |`), "",
-    "## 与原版的差异", "", ...report.source.changedReferenceFiles.map((p) => `- 修改：\`${p}\``), ...report.source.missingReferenceFiles.map((p) => `- 缺失：\`${p}\``), "",
-    "原始 Vitest JSON、日志及合成环境与此报告保存在同一目录。通过表示固定环境中的工程检查通过，不表示真实教学效果或多端交付已验证。", ""].join("\n");
+    "Vitest JSON、日志及合成环境保存在本目录。自动检查通过不等于真实模型教学或人工验收通过。", ""].join("\n");
   writeFileSync(join(runDir, "report.md"), markdown);
   writeJson(join(outputRoot, "latest.json"), { id, report: relative(root, join(runDir, "report.json")) });
   log(`Report: ${join(runDir, "report.md")}`);

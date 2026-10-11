@@ -297,12 +297,8 @@ export interface InnoConfig {
 	 *   template — hand edits to that file are lost on a mode switch.
 	 * - `computerUse` (@injaneity/pi-computer-use): desktop GUI control
 	 *   tools (find_roots / observe_ui / search_ui / act_ui / browser tools).
-	 *   Drives the local screen, so unlike the other plugins it is NOT on by
-	 *   default everywhere: unset `enabled` means on only when INNO_DESKTOP=1
-	 *   (set by electron/main.js for the desktop app); `enabled: true` opts
-	 *   in anywhere (e.g. a local CLI run); `enabled: false` always wins.
-	 *   Online deployments (no INNO_DESKTOP) stay off unless explicitly
-	 *   enabled. On macOS the helper app (~/Applications/pi-computer-use.app)
+	 *   Drives the local screen and stays off unless explicitly
+	 *   enabled via `plugins.computerUse.enabled`. On macOS the helper app (~/Applications/pi-computer-use.app)
 	 *   needs Accessibility + Screen Recording grants; headless sessions
 	 *   cannot prompt, so a missing grant surfaces as a tool error with
 	 *   grant instructions.
@@ -700,17 +696,12 @@ export function getConfiguredPort(config: InnoConfig, override?: number): number
 	return config.server?.port ?? 3000;
 }
 
-/**
- * Computer-use gate. Desktop GUI control only makes sense on a local install:
- * default-on under the Electron desktop app (INNO_DESKTOP=1, set by
- * electron/main.js), default-off everywhere else (online deployments, plain
- * server/CLI). `plugins.computerUse.enabled` overrides in both directions.
- */
+/** Local computer-use tools require an explicit opt-in in full mode. */
 export function isComputerUseEnabled(config: InnoConfig): boolean {
 	if (getExperience(config) === "learning") return false;
 	const explicit = config.plugins?.computerUse?.enabled;
 	if (typeof explicit === "boolean") return explicit;
-	return process.env.INNO_DESKTOP === "1";
+	return false;
 }
 
 export function getExperience(config: Pick<InnoConfig, "experience">): InnoExperience {
@@ -741,13 +732,6 @@ export function getEffectiveConfig(config: InnoConfig): InnoConfig {
 			permissionSystem: { ...config.plugins?.permissionSystem, enabled: config.plugins?.permissionSystem?.enabled !== false },
 		},
 	};
-}
-
-/** Electron keeps its original full experience; learning is the Web entry. */
-export function assertDesktopExperienceSupported(config: InnoConfig): void {
-	if (process.env.INNO_DESKTOP === "1" && getExperience(config) === "learning") {
-		throw new Error('The learning experience is Web-only. Start the Web server, or use a separate desktop configuration with experience: "full".');
-	}
 }
 
 /**

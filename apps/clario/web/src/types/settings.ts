@@ -117,8 +117,8 @@ export interface InnoSettings {
 		computerUse?: { enabled?: boolean };
 	};
 	/** Effective computer-use state from the backend (resolves the
-	 *  INNO_DESKTOP default; `explicit` is the user's override, null = unset). */
-	computerUse?: { enabled: boolean; explicit: boolean | null; isDesktop: boolean };
+	 *  default-off policy; `explicit` is the user's override, null = unset). */
+	computerUse?: { enabled: boolean; explicit: boolean | null };
 	smartInput?: SmartInputSettings;
 	mcp?: { enabled: boolean };
 	ui?: { theme: string; closeBehavior: WindowCloseBehavior; mathSingleDollar: boolean };
